@@ -27,12 +27,10 @@ module.exports = {
     }),
     extend : {
       colors: {
-        'ss-orange': '#f15927',
-        'ss-orange-100': '#ff8352',
-        'ss-orange-200': '#ff7254',
-        'ss-orange-contrast': '#9072f1',
-        'ss-highlight': '#FDF6F1',
-        'ss-blue': '#27bff1',
+        'seo-primary': '#f15927',
+        'seo-contrast': '#9072f1',
+        'seo-highlight': '#FDF6F1',
+        'seo-primary-blue': '#27bff1',
       },
       backgroundColor: ['group-hover'],
       keyframes: {
