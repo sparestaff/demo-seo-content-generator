@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { useState } from 'react';
 import Button from 'antd/lib/button'
 import { APIWithoutAuth } from 'utils/api'
