@@ -1,7 +1,5 @@
-import React from "react";
-
 const KeywordPillarPage = () => {
-  return <div>index</div>;
+  return <span>Something</span>;
 };
 
 export default KeywordPillarPage;
