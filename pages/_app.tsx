@@ -1,7 +1,13 @@
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import Header from "components/layout/Header";
 import "../styles/globals.css";
-import '../styles/custom-antd.css';
+import "../styles/custom-antd.css";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Header />
+      <Component {...pageProps} />
+    </>
+  );
 }
