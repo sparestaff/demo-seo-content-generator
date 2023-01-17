@@ -1,13 +1,25 @@
 import Link from "next/link";
+import Image from "next/image";
 import Button from "antd/lib/button";
+import { SAFEMODE_LOGO } from "utils/constants";
 
 const NavBar = () => {
   return (
-    <>
-      <div className="max-w-6xl mx-auto flex items-center justify-between font-bold px-6 h-20">
-        <div className="text-2xl">SAFEMODE</div>
+    <div className="sticky top-0 shadow z-50">
+      <div className="max-w-6xl mx-auto flex items-center justify-between font-bold px-6 h-20 bg-white">
         <div>
-          <ul className="flex flex-row gap-7">
+          <Link href="https://safemode.com.au/">
+            <Image
+              src={SAFEMODE_LOGO}
+              alt="safemode-logo"
+              width={150}
+              height={150}
+              priority
+            />
+          </Link>
+        </div>
+        <div>
+          <ul className="flex flex-row items-center gap-7">
             <li>
               <Button
                 type="primary"
@@ -65,7 +77,7 @@ const NavBar = () => {
         </div>
       </div>
       <hr />
-    </>
+    </div>
   );
 };
 
