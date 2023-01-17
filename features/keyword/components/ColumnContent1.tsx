@@ -46,7 +46,7 @@ const ColumnContent1 = () => {
           </div>
           <div>
             Custom content #11 | If the quote is approved, we&apos;ll fix your
-            computer and notify you when it&apos;s ready. Our work comes with
+            computer and notify you when it&apos;s ready. Our work comes with{" "}
             <Link href="https://safemode.com.au/our-guarantees/">
               gearantees
             </Link>
