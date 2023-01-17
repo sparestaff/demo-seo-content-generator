@@ -10,6 +10,7 @@ import ColumnContent2 from "features/keyword/components/ColumnContent2";
 import ColumnContent3 from "features/keyword/components/ColumnContent3";
 import ColumnContent4 from "features/keyword/components/ColumnContent4";
 import BusinessDescription4 from "features/keyword/components/BusinessDescription4";
+import MainFeedback from "features/keyword/components/MainFeedback";
 
 const KeywordPillarPage = () => {
   return (
@@ -26,6 +27,7 @@ const KeywordPillarPage = () => {
       <ColumnContent3 />
       <ColumnContent4 />
       <BusinessDescription4 />
+      <MainFeedback />
     </>
   );
 };

@@ -1,5 +1,4 @@
 import Button from "antd/lib/button";
-import { AiFillStar } from "react-icons/ai";
 
 const BusinessDescription4 = () => {
   return (
