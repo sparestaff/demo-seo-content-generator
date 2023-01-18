@@ -46,6 +46,7 @@ const Articles = () => {
           <Card
             key={idx}
             hoverable
+            className="cursor-pointer"
             cover={
               <Image src={item.src} width={200} height={200} alt={item.alt} />
             }
@@ -63,8 +64,9 @@ const Articles = () => {
       </div>
       <div className="flex justify-center">
         <Button
-          type="default"
+          type="primary"
           shape="round"
+          className="bg-transparent text-seo-primary"
           href="https://safemode.com.au/blog/"
         >
           See all articles
