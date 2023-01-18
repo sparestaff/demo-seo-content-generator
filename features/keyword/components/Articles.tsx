@@ -33,7 +33,7 @@ const Articles = () => {
   ];
 
   return (
-    <>
+    <div className="max-w-6xl mx-auto">
       <h4 className="text-black text-center font-sans font-bold text-3xl py-5">
         Our top computer tips and tricks
       </h4>
@@ -72,7 +72,7 @@ const Articles = () => {
           See all articles
         </Button>
       </div>
-    </>
+    </div>
   );
 };
 

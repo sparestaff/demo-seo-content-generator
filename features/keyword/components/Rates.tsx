@@ -32,14 +32,16 @@ const images = [
 
 const Rates = () => {
   return (
-    <div className="flex flex-row justify-between items-center px-6 py-5 bg-gray-100/50 -mx-6">
-      <div className="text-lg font-bold">We&apos;re rated in:</div>
-      <div className="flex items-center justify-evenly w-4/5">
-        {images.map((item, idx) => (
-          <div key={idx}>
-            <Image src={item.src} alt={item.alt} width={80} height={80} />
-          </div>
-        ))}
+    <div className="bg-gray-100/50">
+      <div className="max-w-6xl mx-auto flex flex-row justify-between items-center px-6 py-5 ">
+        <div className="text-lg font-bold">We&apos;re rated in:</div>
+        <div className="flex items-center justify-evenly w-4/5">
+          {images.map((item, idx) => (
+            <div key={idx}>
+              <Image src={item.src} alt={item.alt} width={80} height={80} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

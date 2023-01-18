@@ -4,7 +4,7 @@ import { HERO_SECTION_IMAGE } from "utils/constants";
 
 const ColumnContent1 = () => {
   return (
-    <div className="flex justify-between items-center w-full">
+    <div className="flex justify-between items-center max-w-6xl mx-auto">
       <div className="grid grid-cols-1 content-center gap-10 w-1/2">
         <h3 className="text-3xl text-black font-bold font-sans">
           Custom content #7 | How it works
@@ -26,9 +26,9 @@ const ColumnContent1 = () => {
             02.{" "}
           </div>
           <div>
-            Custom content #9 | Our technicians give you a quote for repairs (
-            <span className="font-bold font-sans">FREE</span> quote) and
-            estimated completion date.
+            Custom content #9 | Our keyword technicians give you a quote for
+            repairs (<span className="font-bold font-sans">FREE</span> quote)
+            and estimated completion date.
           </div>
         </div>
         <div className="flex gap-10 items-center">
@@ -48,7 +48,7 @@ const ColumnContent1 = () => {
             Custom content #11 | If the quote is approved, we&apos;ll fix your
             computer and notify you when it&apos;s ready. Our work comes with{" "}
             <Link href="https://safemode.com.au/our-guarantees/">
-              gearantees
+              guarantees
             </Link>
             .
           </div>
