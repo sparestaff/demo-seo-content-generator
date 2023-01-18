@@ -4,7 +4,7 @@ import { ImQuotesLeft } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
 const MainFeedback = () => {
   return (
-    <div className="flex justify-between items-center w-full px-10 rounded-lg bg-seo-primary">
+    <div className="flex justify-between items-center max-w-6xl mx-auto mb-20 px-10 rounded-lg bg-seo-primary ">
       <div className="grid grid-cols-1 content-center gap-5 w-1/2">
         <span className="text-4xl text-yellow-500">
           <ImQuotesLeft />

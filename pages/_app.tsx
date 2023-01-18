@@ -1,7 +1,6 @@
 import type { AppProps } from "next/app";
 // components
 import Header from "components/layout/Header";
-import CSSWrapper from "components/layout/CSSWrapper";
 import ContactBanner from "components/layout/ContactBanner";
 import NavBar from "components/layout/NavBar";
 import Footer from "components/layout/Footer";
@@ -15,9 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Header />
       <ContactBanner />
       <NavBar />
-      <CSSWrapper>
-        <Component {...pageProps} />
-      </CSSWrapper>
+      <Component {...pageProps} />
       <Footer />
     </>
   );

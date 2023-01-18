@@ -3,7 +3,7 @@ import { HERO_SECTION_IMAGE } from "utils/constants";
 
 const ColumnContent2 = () => {
   return (
-    <div className="flex justify-between items-center w-full">
+    <div className="flex justify-between items-center max-w-6xl mx-auto">
       <div>
         <Image
           src={HERO_SECTION_IMAGE}

@@ -20,17 +20,19 @@ const ServiceAreas = () => {
     },
   ];
   return (
-    <div className="py-20 text-center">
-      <h4 className="text-black text-center font-sans font-bold text-3xl py-5">
-        ServiceAreas
-      </h4>
-      <p>Custom content #24 | Find keyword in your area</p>
-      <div className="grid grid-cols-4 py-10">
-        {links.map((item, idx) => (
-          <Link key={idx} href={item.link}>
-            {item.body}
-          </Link>
-        ))}
+    <div className="bg-gray-100/50 text-center">
+      <div className="max-w-6xl mx-auto pt-5 pb-20 mt-10 ">
+        <h4 className="text-black text-center font-sans font-bold text-3xl py-5">
+          Service areas
+        </h4>
+        <p>Custom content #24 | Find keyword in your area</p>
+        <div className="grid grid-cols-4 py-10">
+          {links.map((item, idx) => (
+            <Link key={idx} href={item.link}>
+              {item.body}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

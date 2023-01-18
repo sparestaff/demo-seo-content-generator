@@ -2,7 +2,7 @@ import Button from "antd/lib/button";
 
 const BusinessDescription = () => {
   return (
-    <div className="text-center">
+    <div className="text-center max-w-6xl mx-auto">
       <h3 className="text-3xl text-black font-bold font-sans">
         Custom content #3 | Top rated keyword since 2004
       </h3>

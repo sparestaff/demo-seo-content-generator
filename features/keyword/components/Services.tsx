@@ -52,7 +52,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-14">
+    <div className="py-14 max-w-6xl mx-auto">
       <Slider>
         {sliderItems.map((item, idx) => (
           <div
