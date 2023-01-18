@@ -14,6 +14,8 @@ import MainFeedback from "features/keyword/components/MainFeedback";
 import SubFeedback from "features/keyword/components/SubFeedback";
 import FAQ from "features/keyword/components/FAQ";
 import Articles from "features/keyword/components/Articles";
+import ServiceAreas from "features/keyword/components/ServiceAreas";
+import BottomContent from "features/keyword/components/BottomContent";
 
 const KeywordPillarPage = () => {
   return (
@@ -34,6 +36,8 @@ const KeywordPillarPage = () => {
       <SubFeedback />
       <FAQ />
       <Articles />
+      <ServiceAreas />
+      <BottomContent />
     </>
   );
 };

@@ -1,3 +1,4 @@
+// Mutual images
 export const SAFEMODE_LOGO =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673864129/seo-content-generator-mvp/safemode-logo.webp";
 export const HERO_SECTION_IMAGE =
