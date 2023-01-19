@@ -1,6 +1,12 @@
 import Link from "next/link";
 
-const ServiceAreas = ({ keyword }: { keyword: string | undefined }) => {
+const ServiceAreas = ({
+  keyword,
+  content24,
+}: {
+  keyword: string | undefined;
+  content24: string | undefined;
+}) => {
   const links = [
     {
       body: `${keyword} location1`,
@@ -25,7 +31,7 @@ const ServiceAreas = ({ keyword }: { keyword: string | undefined }) => {
         <h4 className="text-black text-center font-sans font-bold text-3xl py-5">
           Service areas
         </h4>
-        <p>Custom content #24 | Find {keyword} in your area</p>
+        <p>{content24 ?? `Find ${keyword} in your area`}</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">
           {links.map((item, idx) => (
             <Link key={idx} href={item.link}>

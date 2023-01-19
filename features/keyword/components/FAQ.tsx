@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import Collapse from "antd/lib/collapse";
 const { Panel } = Collapse;
 
-const FAQ = () => {
+const FAQ = ({ content22 }: { content22: string | undefined }) => {
   type PanelItem = {
     key: string;
     header: string;
@@ -234,8 +234,12 @@ const FAQ = () => {
         Frequently asked questions
       </h4>
       <p className="text-center py-10">
-        Custom content #22 | Your questions answered by our computer experts.
-        Can&apos;t find an answer?
+        {content22 ?? (
+          <>
+            Custom content #22 | Your questions answered by our computer
+            experts. Can&apos;t find an answer?
+          </>
+        )}
         <br />
         Call us on: <Link href="tel:1800858382">1800 85 83 82</Link>
       </p>
