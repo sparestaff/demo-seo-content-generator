@@ -99,7 +99,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-neutral-700 py-10">
-        <div className="grid grid-cols-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-4 max-w-6xl mx-auto gap-10 px-5">
           {FooterLinks.map((item, idx) => (
             <div className="flex flex-col" key={idx}>
               <p className="text-white font-bold mb-3">{item.title}</p>
@@ -118,7 +118,7 @@ const Footer = () => {
       </footer>
       <div className="bg-neutral-800 py-5">
         <div className="max-w-6xl mx-auto ">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
             <div className="text-gray-300">
               © Copyright Safemode Computer Service | All Rights Reserved
             </div>

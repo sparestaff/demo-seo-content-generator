@@ -4,14 +4,14 @@ import { HERO_SECTION_IMAGE } from "utils/constants";
 
 const ColumnContent1 = () => {
   return (
-    <div className="flex justify-between items-center w-full">
-      <div className="grid grid-cols-1 content-center gap-10 w-1/2">
+    <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center text-center max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
         <h3 className="text-3xl text-black font-bold font-sans">
           Custom content #7 | How it works
         </h3>
-        <div className="flex gap-10 items-center">
+        <div className="flex sm:gap-10 gap-5 items-center">
           <div className="text-seo-primary text-3xl font-bold font-sans">
-            01.{" "}
+            01.
           </div>
           <div>
             Custom content #8 | Use our easy{" "}
@@ -21,19 +21,19 @@ const ColumnContent1 = () => {
             to schedule an appointment. Walk-in is also accepted.
           </div>
         </div>
-        <div className="flex gap-10 items-center">
+        <div className="flex sm:gap-10 gap-5 items-center">
           <div className="text-seo-primary text-3xl font-bold font-sans">
-            02.{" "}
+            02.
           </div>
           <div>
-            Custom content #9 | Our technicians give you a quote for repairs (
-            <span className="font-bold font-sans">FREE</span> quote) and
-            estimated completion date.
+            Custom content #9 | Our keyword technicians give you a quote for
+            repairs (<span className="font-bold font-sans">FREE</span> quote)
+            and estimated completion date.
           </div>
         </div>
-        <div className="flex gap-10 items-center">
+        <div className="flex sm:gap-10 gap-5 items-center">
           <div className="text-seo-primary text-3xl font-bold font-sans">
-            03.{" "}
+            03.
           </div>
           <div>
             Custom content #10 | You decide if you&apos;d like to proceed with
@@ -42,13 +42,13 @@ const ColumnContent1 = () => {
         </div>
         <div className="flex gap-10 items-center">
           <div className="text-seo-primary text-3xl font-bold font-sans">
-            04.{" "}
+            04.
           </div>
           <div>
             Custom content #11 | If the quote is approved, we&apos;ll fix your
             computer and notify you when it&apos;s ready. Our work comes with{" "}
             <Link href="https://safemode.com.au/our-guarantees/">
-              gearantees
+              guarantees
             </Link>
             .
           </div>

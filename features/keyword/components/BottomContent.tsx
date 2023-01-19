@@ -2,7 +2,7 @@ import Button from "antd/lib/button";
 
 const BottomContent = () => {
   return (
-    <div className="text-center bg-seo-primary py-20">
+    <div className="text-center bg-seo-primary py-20 px-5 sm:px-5 md:px-5 lg:px-5 lg:px-5">
       <h2 className="text-6xl text-white font-bold font-sans">
         Custom content #25 | Need keyword?
       </h2>

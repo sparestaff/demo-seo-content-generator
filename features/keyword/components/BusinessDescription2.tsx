@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const BusinessDescription2 = () => {
   return (
-    <div className="text-center py-20">
+    <div className="text-center py-20 max-w-6xl mx-auto sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h3 className="text-3xl text-black font-bold font-sans">
         Custom content #5 | Same-day keyword
       </h3>

@@ -33,15 +33,15 @@ const Articles = () => {
   ];
 
   return (
-    <>
+    <div className="max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h4 className="text-black text-center font-sans font-bold text-3xl py-5">
         Our top computer tips and tricks
       </h4>
-      <p>
+      <p className="text-center">
         Custom content #23 | Read our best tips and tricks on everything from
         computer tuneup to how to DIY upgrade your own computer.
       </p>
-      <div className="grid grid-cols-3 gap-10 py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 py-10">
         {articlesItems.map((item, idx) => (
           <Card
             key={idx}
@@ -72,7 +72,7 @@ const Articles = () => {
           See all articles
         </Button>
       </div>
-    </>
+    </div>
   );
 };
 

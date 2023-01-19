@@ -4,8 +4,8 @@ import { HERO_SECTION_IMAGE } from "utils/constants";
 
 const HeroSection = () => {
   return (
-    <div className="sm:flex sm:justify-between sm:items-center grid grid-cols-1 justify-items-center">
-      <div className="flex flex-col gap-5">
+    <div className="sm:flex sm:justify-between sm:items-center grid grid-cols-1 justify-items-center sm:max-w-6xl sm:mx-auto my-10 sm:px-5 md:px-5 lg:px-5 xl:px-0">
+      <div className="flex flex-col gap-5 text-center sm:text-left">
         <h2 className="text-6xl text-black font-bold font-sans">
           Custom content #1 |<br />
           Rated Best 3<br />
