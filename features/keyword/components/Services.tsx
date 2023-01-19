@@ -12,12 +12,12 @@ type SliderItem = {
   desc: string;
 };
 
-const Services = () => {
+const Services = ({ keyword }: { keyword: string | undefined }) => {
   const sliderItems: SliderItem[] = [
     {
       icon: <AiOutlineTeam />,
-      title: "Expert keyword",
-      desc: "Our keyword technicians have over 15 years of experience with both Windows and Apple Mac.",
+      title: `Expert ${keyword}`,
+      desc: `Our ${keyword} technicians have over 15 years of experience with both Windows and Apple Mac.`,
     },
     {
       icon: <AiFillThunderbolt />,

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
 
-const ColumnContent1 = () => {
+const ColumnContent1 = ({ keyword }: { keyword: string | undefined }) => {
   return (
     <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center text-center max-w-6xl mx-auto">
       <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
@@ -26,7 +26,7 @@ const ColumnContent1 = () => {
             02.
           </div>
           <div>
-            Custom content #9 | Our keyword technicians give you a quote for
+            Custom content #9 | Our {keyword} technicians give you a quote for
             repairs (<span className="font-bold font-sans">FREE</span> quote)
             and estimated completion date.
           </div>
