@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import BreadCrumbs from "features/keyword/components/BreadCrumbs";
 import HeroSection from "features/keyword/components/HeroSection";
 import Rates from "features/keyword/components/Rates";
@@ -18,26 +19,28 @@ import ServiceAreas from "features/keyword/components/ServiceAreas";
 import BottomContent from "features/keyword/components/BottomContent";
 
 const KeywordPillarPage = () => {
+  const router = useRouter();
+  const keyword = router?.query?.keyword?.toString();
   return (
     <>
-      <HeroSection />
+      <HeroSection keyword={keyword} />
       <Rates />
-      <BreadCrumbs />
-      <BusinessDescription />
-      <Services />
-      <BusinessDescription2 />
+      <BreadCrumbs keyword={keyword} />
+      <BusinessDescription keyword={keyword} />
+      <Services keyword={keyword} />
+      <BusinessDescription2 keyword={keyword} />
       <ColumnContent1 />
-      <BusinessDescription3 />
+      <BusinessDescription3 keyword={keyword} />
       <ColumnContent2 />
       <ColumnContent3 />
-      <ColumnContent4 />
+      <ColumnContent4 keyword={keyword} />
       <BusinessDescription4 />
       <MainFeedback />
       <SubFeedback />
       <FAQ />
       <Articles />
-      <ServiceAreas />
-      <BottomContent />
+      <ServiceAreas keyword={keyword} />
+      <BottomContent keyword={keyword} />
     </>
   );
 };

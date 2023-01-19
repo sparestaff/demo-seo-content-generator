@@ -1,10 +1,10 @@
 import Button from "antd/lib/button";
 
-const BusinessDescription3 = () => {
+const BusinessDescription3 = ({ keyword }: { keyword: string | undefined }) => {
   return (
     <div className="text-center py-20 max-w-6xl mx-auto">
       <h3 className="text-3xl text-black font-bold font-sans">
-        Custom content #12 | We&apos;ve mastered keyword
+        Custom content #12 | We&apos;ve mastered {keyword}
       </h3>
       <p className="py-5 w-4/5 mx-auto">
         Custom content #13 | After 40,000 repairs completed, done by our own

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
 
-const ColumnContent4 = () => {
+const ColumnContent4 = ({ keyword }: { keyword: string | undefined }) => {
   return (
     <div className="max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10">
@@ -16,7 +16,7 @@ const ColumnContent4 = () => {
         </div>
         <div className="grid grid-cols-1 content-center gap-5 md:gap-10 w-full md:w-1/2">
           <h3 className="text-3xl text-black font-bold font-sans text-center py-10">
-            Custom content #18 | Why our keyword experts are different
+            Custom content #18 | Why our {keyword} experts are different
           </h3>
           <div className="text-center">
             Custom content #19 | Lorem Ipsum is simply dummy text of the
