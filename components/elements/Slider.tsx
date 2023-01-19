@@ -7,7 +7,7 @@ const Slider = ({ children }: any) => {
   const { isSm, isMd, isLg } = useWindowSize();
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: isSm ? 2 : isMd || isLg ? 3 : 4,
     slidesToScroll: 1,
