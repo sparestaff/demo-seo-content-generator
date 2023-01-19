@@ -29,7 +29,7 @@ const KeywordPillarPage = () => {
       <BusinessDescription keyword={keyword} />
       <Services keyword={keyword} />
       <BusinessDescription2 keyword={keyword} />
-      <ColumnContent1 />
+      <ColumnContent1 keyword={keyword} />
       <BusinessDescription3 keyword={keyword} />
       <ColumnContent2 />
       <ColumnContent3 />
