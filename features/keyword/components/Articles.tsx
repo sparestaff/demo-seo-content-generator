@@ -6,7 +6,7 @@ import { LENOVO_IMAGE, DELL_IMAGE, APPLE_RESCUE_IMAGE } from "utils/constants";
 
 const { Meta } = Card;
 
-const Articles = () => {
+const Articles = ({ content23 }: { content23: string | undefined }) => {
   const articlesItems = [
     {
       src: LENOVO_IMAGE,
@@ -66,7 +66,7 @@ const Articles = () => {
         <Button
           type="primary"
           shape="round"
-          className="bg-transparent text-seo-primary"
+          className="bg-transparent text-seo-primary hover:text-white"
           href="https://safemode.com.au/blog/"
         >
           See all articles

@@ -1,10 +1,16 @@
 import Button from "antd/lib/button";
 
-const BottomContent = ({ keyword }: { keyword: string | undefined }) => {
+const BottomContent = ({
+  keyword,
+  content25,
+}: {
+  keyword: string | undefined;
+  content25: string | undefined;
+}) => {
   return (
     <div className="text-center bg-seo-primary py-20 px-5 sm:px-5 md:px-5 lg:px-5">
       <h2 className="text-6xl text-white font-bold font-sans">
-        Custom content #25 | Need {keyword}?
+        {content25 ?? `Need ${keyword}?`}
       </h2>
       <div className="flex justify-center gap-10 pt-10">
         <Button
