@@ -56,7 +56,7 @@ const Services = () => {
       <Slider>
         {sliderItems.map((item, idx) => (
           <div
-            className="w-60 grid grid-cols-1 rounded-lg shadow-md p-4 h-60 my-5"
+            className="w-48 sm:w-60 grid grid-cols-1 rounded-lg shadow-md p-4 h-80 sm:h-60 my-5"
             key={idx}
           >
             <span className="text-5xl text-seo-primary">{item.icon}</span>

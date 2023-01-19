@@ -33,9 +33,9 @@ const images = [
 const Rates = () => {
   return (
     <div className="bg-gray-100/50">
-      <div className="max-w-6xl mx-auto flex flex-row justify-between items-center px-6 py-5 ">
-        <div className="text-lg font-bold">We&apos;re rated in:</div>
-        <div className="flex items-center justify-evenly w-4/5">
+      <div className="max-w-6xl mx-auto flex sm:flex-row flex-col justify-between items-center px-6 py-5 gap-3">
+        <div className="text-lg font-bold font-sans">We&apos;re rated in:</div>
+        <div className="flex items-center sm:justify-evenly sm:w-4/5 w-full gap-3">
           {images.map((item, idx) => (
             <div key={idx}>
               <Image src={item.src} alt={item.alt} width={80} height={80} />
