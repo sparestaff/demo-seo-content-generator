@@ -1,22 +1,22 @@
 import Link from "next/link";
 
-const ServiceAreas = () => {
+const ServiceAreas = ({ keyword }: { keyword: string | undefined }) => {
   const links = [
     {
-      body: "keyword location1",
-      link: "http://safemode.com.au/keyword/location1",
+      body: `${keyword} location1`,
+      link: `http://safemode.com.au/${keyword}/location1`,
     },
     {
-      body: "keyword location2",
-      link: "http://safemode.com.au/keyword/location2",
+      body: `${keyword} location2`,
+      link: `http://safemode.com.au/${keyword}/location2`,
     },
     {
-      body: "keyword location3",
-      link: "http://safemode.com.au/keyword/location3",
+      body: `${keyword} location3`,
+      link: `http://safemode.com.au/${keyword}/location3`,
     },
     {
-      body: "keyword location4",
-      link: "http://safemode.com.au/keyword/location4",
+      body: `${keyword} location4`,
+      link: `http://safemode.com.au/${keyword}/location4`,
     },
   ];
   return (
@@ -25,7 +25,7 @@ const ServiceAreas = () => {
         <h4 className="text-black text-center font-sans font-bold text-3xl py-5">
           Service areas
         </h4>
-        <p>Custom content #24 | Find keyword in your area</p>
+        <p>Custom content #24 | Find {keyword} in your area</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">
           {links.map((item, idx) => (
             <Link key={idx} href={item.link}>
