@@ -29,7 +29,7 @@ const ServiceAreas = ({
     <div className="bg-gray-100/50 text-center">
       <div className="max-w-6xl mx-auto pt-5 pb-20 mt-10 ">
         <h4 className="text-black text-center font-sans font-bold text-3xl py-5">
-          Service areas
+          Our {keyword} service areas
         </h4>
         <p>{content24 ?? `Find ${keyword} in your area`}</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">

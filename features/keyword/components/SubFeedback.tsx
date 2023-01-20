@@ -23,7 +23,9 @@ const SubFeedback = () => {
             className="grid grid-cols-1 gap-5 bg-white rounded shadow px-5 py-10"
             key={idx}
           >
-            <p className="text-lg font-bold font-sans">{item.reviewer}</p>
+            <p className="text-xl font-bold font-sans text-black">
+              {item.reviewer}
+            </p>
             <span className="text-2xl text-yellow-500">
               <ImQuotesLeft />
             </span>
