@@ -1,11 +1,10 @@
 import Image from "next/image";
-import { HERO_SECTION_IMAGE } from "utils/constants";
 import { ImQuotesLeft } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
 const MainFeedback = ({ content21 }: { content21: string | undefined }) => {
   return (
     <div className="max-w-6xl mx-auto mb-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <div className="flex flex-col-reverse md:flex-row gap-5 justify-center md:justify-between items-center bg-seo-primary rounded-lg px-5">
+      <div className="flex flex-col-reverse md:flex-row gap-5 justify-center md:justify-between items-center bg-seo-primary rounded-lg px-10">
         <div className="grid grid-cols-1 content-center gap-5 w-full sm:w-1/2">
           <span className="text-4xl text-yellow-500">
             <ImQuotesLeft />
@@ -31,9 +30,11 @@ const MainFeedback = ({ content21 }: { content21: string | undefined }) => {
         </div>
         <div>
           <Image
-            src={HERO_SECTION_IMAGE}
-            width={400}
-            height={400}
+            src={
+              "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674170965/seo-content-generator-mvp/customer-testimonial_lyodty.webp"
+            }
+            width={300}
+            height={300}
             priority
             alt="custom_upload_image_1"
           />
