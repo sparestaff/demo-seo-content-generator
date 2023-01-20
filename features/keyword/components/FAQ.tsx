@@ -236,8 +236,8 @@ const FAQ = ({ content22 }: { content22: string | undefined }) => {
       <p className="text-center py-10">
         {content22 ?? (
           <>
-            Custom content #22 | Your questions answered by our computer
-            experts. Can&apos;t find an answer?
+            Your questions answered by our computer experts. Can&apos;t find an
+            answer?
           </>
         )}
         <br />
