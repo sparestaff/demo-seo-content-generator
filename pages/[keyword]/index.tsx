@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+// components
 import BreadCrumbs from "features/keyword/components/BreadCrumbs";
 import HeroSection from "features/keyword/components/HeroSection";
 import Rates from "features/keyword/components/Rates";
@@ -17,81 +18,81 @@ import FAQ from "features/keyword/components/FAQ";
 import Articles from "features/keyword/components/Articles";
 import ServiceAreas from "features/keyword/components/ServiceAreas";
 import BottomContent from "features/keyword/components/BottomContent";
+// type
+import { CustomContent } from "types/CustomContent";
+// api
+import { getCustomContents } from "features/keyword/API/services";
 
-const KeywordPillarPage = () => {
+const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
   const router = useRouter();
   const keyword = router?.query?.keyword?.toString();
-  let content1,
-    content2,
-    content3,
-    content4,
-    content5,
-    content6,
-    content7,
-    content8,
-    content9,
-    content10,
-    content11,
-    content12,
-    content13,
-    content14,
-    content15,
-    content16,
-    content17,
-    content18,
-    content19,
-    content20,
-    content21,
-    content22,
-    content23,
-    content24,
-    content25;
 
   return (
     <>
-      <HeroSection keyword={keyword} content1={content1} content2={content2} />
+      <HeroSection
+        keyword={keyword}
+        content1={result?.content1}
+        content2={result?.content2}
+      />
       <Rates />
       <BreadCrumbs keyword={keyword} />
       <BusinessDescription
         keyword={keyword}
-        content3={content3}
-        content4={content4}
+        content3={result?.content3}
+        content4={result?.content4}
       />
       <Services keyword={keyword} />
       <BusinessDescription2
         keyword={keyword}
-        content5={content5}
-        content6={content6}
+        content5={result?.content5}
+        content6={result?.content6}
       />
       <ColumnContent1
         keyword={keyword}
-        content7={content7}
-        content8={content8}
-        content9={content9}
-        content10={content10}
-        content11={content11}
+        content7={result?.content7}
+        content8={result?.content8}
+        content9={result?.content9}
+        content10={result?.content10}
+        content11={result?.content11}
       />
       <BusinessDescription3
         keyword={keyword}
-        content12={content12}
-        content13={content13}
+        content12={result?.content12}
+        content13={result?.content13}
       />
-      <ColumnContent2 content14={content14} content15={content15} />
-      <ColumnContent3 content16={content16} content17={content17} />
+      <ColumnContent2
+        content14={result?.content14}
+        content15={result?.content15}
+      />
+      <ColumnContent3
+        content16={result?.content16}
+        content17={result?.content17}
+      />
       <ColumnContent4
         keyword={keyword}
-        content18={content18}
-        content19={content19}
+        content18={result?.content18}
+        content19={result?.content19}
       />
-      <BusinessDescription4 content20={content20} />
-      <MainFeedback content21={content21} />
+      <BusinessDescription4 content20={result?.content20} />
+      <MainFeedback content21={result?.content21} />
       <SubFeedback />
-      <FAQ content22={content22} />
-      <Articles content23={content23} />
-      <ServiceAreas keyword={keyword} content24={content24} />
-      <BottomContent keyword={keyword} content25={content25} />
+      <FAQ content22={result?.content22} />
+      <Articles content23={result?.content23} />
+      <ServiceAreas keyword={keyword} content24={result?.content24} />
+      <BottomContent keyword={keyword} content25={result?.content25} />
     </>
   );
 };
+
+export async function getServerSideProps(context: any) {
+  const keyword: string = context.query.keyword.toString();
+  const result = await getCustomContents(keyword);
+
+  return {
+    props: {
+      result,
+    },
+  };
+}
 
 export default KeywordPillarPage;
