@@ -25,7 +25,7 @@ import { getCustomContents } from "features/keyword/API/services";
 
 const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
   const router = useRouter();
-  const keyword = router?.query?.keyword?.toString();
+  const keyword = router?.query?.keyword?.toString().replace(/-/g, " ");
 
   return (
     <>
