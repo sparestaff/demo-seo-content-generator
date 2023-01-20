@@ -85,7 +85,7 @@ const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
 };
 
 export async function getServerSideProps(context: any) {
-  const keyword: string = context.query.keyword.toString();
+  const keyword: string = context.query.keyword.toString().replace(/-/g, " ");
   const result = await getCustomContents(keyword);
 
   return {
