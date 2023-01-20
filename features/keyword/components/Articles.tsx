@@ -38,8 +38,8 @@ const Articles = ({ content23 }: { content23: string | undefined }) => {
         Our top computer tips and tricks
       </h4>
       <p className="text-center">
-        Custom content #23 | Read our best tips and tricks on everything from
-        computer tuneup to how to DIY upgrade your own computer.
+        {content23 ??
+          "Read our best tips and tricks on everything from computer tuneup to how to DIY upgrade your own computer."}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 py-10">
         {articlesItems.map((item, idx) => (

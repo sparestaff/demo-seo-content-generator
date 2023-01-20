@@ -11,8 +11,8 @@ const NavBar = () => {
   const [visible, setVisible] = useState(false);
   return (
     <>
-      <div className="sticky top-0 shadow z-30">
-        <div className="max-w-6xl mx-auto flex items-center justify-between font-bold px-6 h-20 bg-white">
+      <div className="sticky top-0 shadow z-30 bg-white">
+        <div className="max-w-6xl mx-auto flex items-center justify-between font-bold px-6 h-20 ">
           <div>
             <Link href="https://safemode.com.au/">
               <Image
