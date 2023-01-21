@@ -243,9 +243,9 @@ const FAQ = ({ content22 }: { content22: string | undefined }) => {
         <br />
         Call us on: <Link href="tel:1800858382">1800 85 83 82</Link>
       </p>
-      <Collapse accordion>
+      <Collapse bordered={false}>
         {panelItems.map((item) => (
-          <Panel header={item.header} key={item.key}>
+          <Panel header={<h4>{item.header}</h4>} key={item.key} forceRender>
             {item.body}
           </Panel>
         ))}

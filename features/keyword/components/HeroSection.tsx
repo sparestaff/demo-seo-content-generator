@@ -15,9 +15,9 @@ const HeroSection = ({
   return (
     <div className="sm:flex sm:justify-between sm:items-center grid grid-cols-1 justify-items-center sm:max-w-6xl sm:mx-auto my-10 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col gap-5 text-center sm:text-left">
-        <h2 className="text-6xl text-black font-bold font-sans">
+        <h1 className="text-6xl text-black font-bold font-sans">
           {content1 ? parse(content1) : `Rated Best 3 ${keyword}`}
-        </h2>
+        </h1>
         <p className="font-bold text-xl leading-8">
           {content2 ? parse(content2) : "Award-winning, same-day"}
           <br />
