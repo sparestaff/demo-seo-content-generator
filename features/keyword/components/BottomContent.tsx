@@ -15,7 +15,7 @@ const BottomContent = ({
           <h2 className="text-6xl text-white font-bold font-sans">
             {content25 ?? `Need ${keyword}?`}
           </h2>
-          <div className="flex justify-center gap-10 pt-10">
+          <div className="flex justify-center gap-10 py-10">
             <Button
               type="primary"
               shape="round"
@@ -35,7 +35,7 @@ const BottomContent = ({
             </Button>
           </div>
         </div>
-        <div>
+        <div className="md:block hidden">
           <Image
             src="https://res.cloudinary.com/dn9dk0tls/image/upload/v1674172022/seo-content-generator-mvp/customers-reaching-for-computer-repairs_vam9x6.webp"
             alt="customers-reaching-for-computer-repairs"
