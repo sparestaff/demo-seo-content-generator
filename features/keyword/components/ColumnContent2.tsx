@@ -1,10 +1,15 @@
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
+import customParser from "utils/customParser";
 
 const ColumnContent2 = ({
+  keyword,
+  location,
   content14,
   content15,
 }: {
+  keyword: string | undefined;
+  location: string | undefined;
   content14: string | undefined;
   content15: string | undefined;
 }) => {
@@ -21,8 +26,12 @@ const ColumnContent2 = ({
         />
       </div>
       <div className="grid grid-cols-1 content-center gap-5 sm:gap-10  text-center w-full sm:w-1/2 py-5 ">
-        <h3 className="text-3xl text-black font-bold font-sans">{content14}</h3>
-        <div>{content15}</div>
+        <h3 className="text-3xl text-black font-bold font-sans">
+          {customParser({ customContent: content14, keyword, location })}
+        </h3>
+        <div>
+          {customParser({ customContent: content15, keyword, location })}
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 export type CustomContent = {
+  keyword: string;
   content1?: string;
   content2?: string;
   content3?: string;

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { HERO_SECTION_IMAGE } from "utils/constants";
 import { ImQuotesLeft } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
 

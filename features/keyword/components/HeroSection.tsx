@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Button from "antd/lib/button";
 import { HERO_SECTION_IMAGE } from "utils/constants";
-import parse from "html-react-parser";
+import customParser from "utils/customParser";
 
 const HeroSection = ({
   keyword,
+  location,
   content1,
   content2,
 }: {
   keyword: string | undefined;
+  location: string | undefined;
   content1: string | undefined;
   content2: string | undefined;
 }) => {
@@ -16,10 +18,14 @@ const HeroSection = ({
     <div className="sm:flex sm:justify-between sm:items-center grid grid-cols-1 justify-items-center sm:max-w-6xl sm:mx-auto my-10 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col gap-5 text-center sm:text-left">
         <h1 className="text-6xl text-black font-bold font-sans">
-          {content1 ? parse(content1) : `Rated Best 3 ${keyword}`}
+          {content1
+            ? customParser({ customContent: content1, keyword, location })
+            : `Rated Best 3 ${keyword}`}
         </h1>
         <p className="font-bold text-xl leading-8">
-          {content2 ? parse(content2) : "Award-winning, same-day"}
+          {content2
+            ? customParser({ customContent: content2, keyword, location })
+            : "Award-winning, same-day"}
           <br />
           {keyword} since 2004.
         </p>

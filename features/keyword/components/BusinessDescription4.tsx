@@ -1,8 +1,13 @@
 import Button from "antd/lib/button";
+import customParser from "utils/customParser";
 
 const BusinessDescription4 = ({
+  keyword,
+  location,
   content20,
 }: {
+  keyword: string | undefined;
+  location: string | undefined;
   content20: string | undefined;
 }) => {
   return (
@@ -11,7 +16,9 @@ const BusinessDescription4 = ({
         Don&apos;t take our word for it
       </h3>
       <p className="py-5 mx-auto">
-        {content20 ?? (
+        {content20 ? (
+          customParser({ customContent: content20, keyword, location })
+        ) : (
           <>
             Our customers have given us a{" "}
             <span className="text-yellow-500">&#x2605;</span> rating 4.4 (186)
