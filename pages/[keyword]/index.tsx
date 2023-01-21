@@ -19,7 +19,7 @@ import Articles from "features/keyword/components/Articles";
 import ServiceAreas from "features/keyword/components/ServiceAreas";
 import BottomContent from "features/keyword/components/BottomContent";
 // type
-import { CustomContent } from "types/customContent";
+import { CustomContent } from "types/CustomContent";
 // api
 import { getCustomContents } from "features/keyword/API/services";
 
