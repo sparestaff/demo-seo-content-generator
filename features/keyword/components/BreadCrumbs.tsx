@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 
 const BreadCrumbs = ({ keyword }: { keyword: string | undefined }) => {
   return (

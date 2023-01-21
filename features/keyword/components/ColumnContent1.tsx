@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
+import customParser from "utils/customParser";
 
 const ColumnContent1 = ({
   keyword,
+  location,
   content7,
   content8,
   content9,
@@ -11,6 +13,7 @@ const ColumnContent1 = ({
   content11,
 }: {
   keyword: string | undefined;
+  location: string | undefined;
   content7: string | undefined;
   content8: string | undefined;
   content9: string | undefined;
@@ -21,14 +24,18 @@ const ColumnContent1 = ({
     <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center text-center max-w-6xl mx-auto">
       <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
         <h3 className="text-3xl text-black font-bold font-sans">
-          {content7 ?? "How it works"}
+          {content7
+            ? customParser({ customContent: content7, keyword, location })
+            : "How it works"}
         </h3>
         <div className="flex sm:gap-10 gap-5 items-center">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             01.
           </div>
           <div>
-            {content8 ?? (
+            {content8 ? (
+              customParser({ customContent: content8, keyword, location })
+            ) : (
               <>
                 Use our easy{" "}
                 <Link href="https://safemode.com.au/book-appointment/">
@@ -44,7 +51,9 @@ const ColumnContent1 = ({
             02.
           </div>
           <div>
-            {content9 ?? (
+            {content9 ? (
+              customParser({ customContent: content9, keyword, location })
+            ) : (
               <>
                 Our {keyword} technicians give you a quote for repairs (
                 <span className="font-bold font-sans">FREE</span> quote) and
@@ -58,7 +67,9 @@ const ColumnContent1 = ({
             03.
           </div>
           <div>
-            {content10 ?? (
+            {content10 ? (
+              customParser({ customContent: content10, keyword, location })
+            ) : (
               <>
                 You decide if you&apos;d like to proceed with our quote
                 (obligation-free).
@@ -71,7 +82,9 @@ const ColumnContent1 = ({
             04.
           </div>
           <div>
-            {content11 ?? (
+            {content11 ? (
+              customParser({ customContent: content11, keyword, location })
+            ) : (
               <>
                 If the quote is approved, we&apos;ll fix your computer and
                 notify you when it&apos;s ready. Our work comes with{" "}

@@ -1,7 +1,17 @@
 import Image from "next/image";
 import { ImQuotesLeft } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
-const MainFeedback = ({ content21 }: { content21: string | undefined }) => {
+import customParser from "utils/customParser";
+
+const MainFeedback = ({
+  keyword,
+  location,
+  content21,
+}: {
+  keyword: string | undefined;
+  location: string | undefined;
+  content21: string | undefined;
+}) => {
   return (
     <div className="max-w-6xl mx-auto mb-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col-reverse md:flex-row gap-5 justify-center md:justify-between items-center bg-seo-primary rounded-lg px-10">
@@ -10,8 +20,9 @@ const MainFeedback = ({ content21 }: { content21: string | undefined }) => {
             <ImQuotesLeft />
           </span>
           <p className="text-white">
-            {content21 ??
-              `Hard-drive in my good 'ol faithful HP died,
+            {content21
+              ? customParser({ customContent: content21, keyword, location })
+              : `Hard-drive in my good 'ol faithful HP died,
             Safemode Computer Service (SCS) was recommended to me by another
             repair company that were unable to assist me. SCS were extremely
             helpful and able to schedule in immediately. They provided

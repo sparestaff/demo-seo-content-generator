@@ -1,12 +1,15 @@
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
+import customParser from "utils/customParser";
 
 const ColumnContent4 = ({
   keyword,
+  location,
   content18,
   content19,
 }: {
   keyword: string | undefined;
+  location: string | undefined;
   content18: string | undefined;
   content19: string | undefined;
 }) => {
@@ -25,10 +28,14 @@ const ColumnContent4 = ({
         <div className="grid grid-cols-1 content-center gap-5 md:gap-10 w-full md:w-1/2">
           <h3 className="text-3xl text-black font-bold font-sans text-center py-10">
             Why our {keyword} experts are different
-            {content18 ?? `Why our ${keyword} experts are different`}
+            {content18
+              ? customParser({ customContent: content18, keyword, location })
+              : `Why our ${keyword} experts are different`}
           </h3>
           <div className="text-center">
-            {content19 ?? (
+            {content19 ? (
+              customParser({ customContent: content19, keyword, location })
+            ) : (
               <>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard

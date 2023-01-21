@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Button from "antd/lib/button";
+import customParser from "utils/customParser";
 
 const BottomContent = ({
   keyword,
+  location,
   content25,
 }: {
   keyword: string | undefined;
+  location: string | undefined;
   content25: string | undefined;
 }) => {
   return (
@@ -13,7 +16,9 @@ const BottomContent = ({
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         <div>
           <h2 className="text-6xl text-white font-bold font-sans">
-            {content25 ?? `Need ${keyword}?`}
+            {content25
+              ? customParser({ customContent: content25, keyword, location })
+              : `Need ${keyword}?`}
           </h2>
           <div className="flex justify-center gap-10 py-10">
             <Button

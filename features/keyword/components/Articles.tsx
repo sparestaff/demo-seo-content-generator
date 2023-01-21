@@ -3,10 +3,19 @@ import Image from "next/image";
 import Button from "antd/lib/button";
 import Card from "antd/lib/card";
 import { LENOVO_IMAGE, DELL_IMAGE, APPLE_RESCUE_IMAGE } from "utils/constants";
+import customParser from "utils/customParser";
 
 const { Meta } = Card;
 
-const Articles = ({ content23 }: { content23: string | undefined }) => {
+const Articles = ({
+  keyword,
+  location,
+  content23,
+}: {
+  keyword: string | undefined;
+  location: string | undefined;
+  content23: string | undefined;
+}) => {
   const articlesItems = [
     {
       src: LENOVO_IMAGE,
@@ -38,8 +47,9 @@ const Articles = ({ content23 }: { content23: string | undefined }) => {
         Our top computer tips and tricks
       </h4>
       <p className="text-center">
-        {content23 ??
-          "Read our best tips and tricks on everything from computer tuneup to how to DIY upgrade your own computer."}
+        {content23
+          ? customParser({ customContent: content23, keyword, location })
+          : "Read our best tips and tricks on everything from computer tuneup to how to DIY upgrade your own computer."}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 py-10">
         {articlesItems.map((item, idx) => (

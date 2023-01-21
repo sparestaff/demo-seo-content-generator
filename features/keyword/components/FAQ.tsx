@@ -1,9 +1,19 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import Collapse from "antd/lib/collapse";
+import customParser from "utils/customParser";
+
 const { Panel } = Collapse;
 
-const FAQ = ({ content22 }: { content22: string | undefined }) => {
+const FAQ = ({
+  keyword,
+  location,
+  content22,
+}: {
+  keyword: string | undefined;
+  location: string | undefined;
+  content22: string | undefined;
+}) => {
   type PanelItem = {
     key: string;
     header: string;
@@ -234,7 +244,9 @@ const FAQ = ({ content22 }: { content22: string | undefined }) => {
         Frequently asked questions
       </h4>
       <p className="text-center py-10">
-        {content22 ?? (
+        {content22 ? (
+          customParser({ customContent: content22, keyword, location })
+        ) : (
           <>
             Your questions answered by our computer experts. Can&apos;t find an
             answer?

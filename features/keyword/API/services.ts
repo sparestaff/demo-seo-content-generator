@@ -1,4 +1,4 @@
-import { CustomContent } from "types/CustomContent";
+import { CustomContent } from "types/customContent";
 import { APIWithoutAuth } from "utils/api";
 
 export const getCustomContents = async (
