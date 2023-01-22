@@ -10,7 +10,7 @@ const HeroSection = ({
   content2,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content1: string | undefined;
   content2: string | undefined;
 }) => {

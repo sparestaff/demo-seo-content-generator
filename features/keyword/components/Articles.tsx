@@ -13,7 +13,7 @@ const Articles = ({
   content23,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content23: string | undefined;
 }) => {
   const articlesItems = [

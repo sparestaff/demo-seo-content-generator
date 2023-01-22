@@ -7,7 +7,7 @@ const BusinessDescription4 = ({
   content20,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content20: string | undefined;
 }) => {
   return (

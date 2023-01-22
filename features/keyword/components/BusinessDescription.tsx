@@ -8,7 +8,7 @@ const BusinessDescription = ({
   content4,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content3: string | undefined;
   content4: string | undefined;
 }) => {

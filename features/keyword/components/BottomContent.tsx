@@ -8,7 +8,7 @@ const BottomContent = ({
   content25,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content25: string | undefined;
 }) => {
   return (

@@ -11,7 +11,7 @@ const FAQ = ({
   content22,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content22: string | undefined;
 }) => {
   type PanelItem = {

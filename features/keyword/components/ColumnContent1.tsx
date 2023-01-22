@@ -13,7 +13,7 @@ const ColumnContent1 = ({
   content11,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content7: string | undefined;
   content8: string | undefined;
   content9: string | undefined;
