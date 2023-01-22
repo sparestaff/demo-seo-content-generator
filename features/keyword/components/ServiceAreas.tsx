@@ -7,7 +7,7 @@ const ServiceAreas = ({
   content24,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content24: string | undefined;
 }) => {
   const links = [

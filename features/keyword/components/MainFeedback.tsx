@@ -9,7 +9,7 @@ const MainFeedback = ({
   content21,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location?: string | undefined;
   content21: string | undefined;
 }) => {
   return (
