@@ -21,18 +21,24 @@ import BottomContent from "features/keyword/components/BottomContent";
 // type
 import { CustomContent } from "types/CustomContent";
 // api
-import { getCustomContents } from "features/keyword/API/services";
+import { getCustomContents, getLocations } from "features/keyword/API/services";
+import { Location } from "types/Location";
 
-const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
+const KeywordPillarPage = ({
+  result,
+  location,
+}: {
+  result: CustomContent;
+  location?: Location;
+}) => {
   const router = useRouter();
   const keyword = router?.query?.keyword?.toString().replace(/-/g, " ");
-  const location = router?.query?.location?.toString().replace(/-/g, " ");
 
   return (
     <>
       <HeroSection
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content1={result?.content1}
         content2={result?.content2}
       />
@@ -40,20 +46,20 @@ const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
       <BreadCrumbs keyword={keyword} />
       <BusinessDescription
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content3={result?.content3}
         content4={result?.content4}
       />
       <Services keyword={keyword} />
       <BusinessDescription2
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content5={result?.content5}
         content6={result?.content6}
       />
       <ColumnContent1
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content7={result?.content7}
         content8={result?.content8}
         content9={result?.content9}
@@ -62,47 +68,47 @@ const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
       />
       <BusinessDescription3
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content12={result?.content12}
         content13={result?.content13}
       />
       <ColumnContent2
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content14={result?.content14}
         content15={result?.content15}
       />
       <ColumnContent3
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content16={result?.content16}
         content17={result?.content17}
       />
       <ColumnContent4
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content18={result?.content18}
         content19={result?.content19}
       />
       <BusinessDescription4
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content20={result?.content20}
       />
       <MainFeedback
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content21={result?.content21}
       />
       <SubFeedback />
       <FAQ
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content22={result?.content22}
       />
       <Articles
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content23={result?.content23}
       />
       <ServiceAreas
@@ -112,7 +118,7 @@ const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
       />
       <BottomContent
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content25={result?.content25}
       />
     </>
@@ -121,11 +127,16 @@ const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
 
 export async function getServerSideProps(context: any) {
   const keyword: string = context.query.keyword.toString().replace(/-/g, " ");
-  const result = await getCustomContents(keyword);
+  const result = (await getCustomContents(keyword)) as CustomContent;
+  let location;
+  if (result?.location) {
+    location = (await getLocations(result?.location)) as Location;
+  }
 
   return {
     props: {
       result,
+      location,
     },
   };
 }

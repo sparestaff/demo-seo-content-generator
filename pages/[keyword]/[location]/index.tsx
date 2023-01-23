@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-// components
 import BreadCrumbs from "features/keyword/components/BreadCrumbs";
 import HeroSection from "features/keyword/components/HeroSection";
 import Rates from "features/keyword/components/Rates";
@@ -21,16 +19,17 @@ import BottomContent from "features/keyword/components/BottomContent";
 // type
 import { CustomContent } from "types/CustomContent";
 // api
-import { getCustomContents } from "features/keyword/API/services";
+import { getCustomContentsWithLocation } from "features/location/API/services";
 
 const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
-  const router = useRouter();
-  const keyword = router?.query?.keyword?.toString().replace(/-/g, " ");
+  const keyword = result?.keyword;
+  const location = result?.location;
 
   return (
     <>
       <HeroSection
         keyword={keyword}
+        location={location}
         content1={result?.content1}
         content2={result?.content2}
       />
@@ -88,7 +87,8 @@ const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
 
 export async function getServerSideProps(context: any) {
   const keyword: string = context.query.keyword.toString().replace(/-/g, " ");
-  const result = await getCustomContents(keyword);
+  const location: string = context.query.location.toString().replace(/-/g, " ");
+  const result = await getCustomContentsWithLocation(keyword, location);
 
   return {
     props: {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import customParser from "utils/customParser";
+import { Location } from "types/Location";
 
 const ServiceAreas = ({
   keyword,
@@ -7,27 +8,9 @@ const ServiceAreas = ({
   content24,
 }: {
   keyword: string | undefined;
-  location?: string | undefined;
+  location?: Location;
   content24: string | undefined;
 }) => {
-  const links = [
-    {
-      body: `${keyword} location1`,
-      link: `http://safemode.com.au/${keyword}/location1`,
-    },
-    {
-      body: `${keyword} location2`,
-      link: `http://safemode.com.au/${keyword}/location2`,
-    },
-    {
-      body: `${keyword} location3`,
-      link: `http://safemode.com.au/${keyword}/location3`,
-    },
-    {
-      body: `${keyword} location4`,
-      link: `http://safemode.com.au/${keyword}/location4`,
-    },
-  ];
   return (
     <div className="bg-gray-100/50 text-center">
       <div className="max-w-6xl mx-auto pt-5 pb-20 mt-10 ">
@@ -36,13 +19,16 @@ const ServiceAreas = ({
         </h4>
         <p>
           {content24
-            ? customParser({ customContent: content24, keyword, location })
+            ? customParser({ customContent: content24, keyword })
             : `Find ${keyword} in your area`}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">
-          {links.map((item, idx) => (
-            <Link key={idx} href={item.link}>
-              {item.body}
+          {location?.suburbs?.map((suburb, idx) => (
+            <Link
+              key={idx}
+              href={`https://services.safemode.com.au/${keyword}/${suburb}`}
+            >
+              {keyword} in <span className="capitalize">{suburb}</span>
             </Link>
           ))}
         </div>
