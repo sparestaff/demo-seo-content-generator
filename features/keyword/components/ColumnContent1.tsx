@@ -2,30 +2,31 @@ import Link from "next/link";
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
 import customParser from "utils/customParser";
+import { camelCaseAll } from "utils/functions";
 
 const ColumnContent1 = ({
   keyword,
   location,
-  content7,
-  content8,
-  content9,
-  content10,
-  content11,
+  content1,
+  content2,
+  content3,
+  content4,
+  content5,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content7: string | undefined;
-  content8: string | undefined;
-  content9: string | undefined;
-  content10: string | undefined;
-  content11: string | undefined;
+  content1: string | undefined;
+  content2: string | undefined;
+  content3: string | undefined;
+  content4: string | undefined;
+  content5: string | undefined;
 }) => {
   return (
     <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center text-center max-w-6xl mx-auto">
       <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
         <h3 className="text-3xl text-black font-bold font-sans">
-          {content7
-            ? customParser({ customContent: content7, keyword, location })
+          {content1
+            ? customParser({ customContent: content1, keyword, location })
             : "How it works"}
         </h3>
         <div className="flex sm:gap-10 gap-5 items-center">
@@ -33,8 +34,8 @@ const ColumnContent1 = ({
             01.
           </div>
           <div>
-            {content8 ? (
-              customParser({ customContent: content8, keyword, location })
+            {content2 ? (
+              customParser({ customContent: content2, keyword, location })
             ) : (
               <>
                 Use our easy{" "}
@@ -51,11 +52,12 @@ const ColumnContent1 = ({
             02.
           </div>
           <div>
-            {content9 ? (
-              customParser({ customContent: content9, keyword, location })
+            {content3 ? (
+              customParser({ customContent: content3, keyword, location })
             ) : (
               <>
-                Our {keyword} technicians give you a quote for repairs (
+                Our {location && camelCaseAll(location) + " "}
+                {keyword} technicians give you a quote for repairs (
                 <span className="font-bold font-sans">FREE</span> quote) and
                 estimated completion date.
               </>
@@ -67,8 +69,8 @@ const ColumnContent1 = ({
             03.
           </div>
           <div>
-            {content10 ? (
-              customParser({ customContent: content10, keyword, location })
+            {content4 ? (
+              customParser({ customContent: content4, keyword, location })
             ) : (
               <>
                 You decide if you&apos;d like to proceed with our quote
@@ -82,8 +84,8 @@ const ColumnContent1 = ({
             04.
           </div>
           <div>
-            {content11 ? (
-              customParser({ customContent: content11, keyword, location })
+            {content5 ? (
+              customParser({ customContent: content5, keyword, location })
             ) : (
               <>
                 If the quote is approved, we&apos;ll fix your computer and

@@ -1,17 +1,18 @@
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
 import customParser from "utils/customParser";
+import { camelCaseAll } from "utils/functions";
 
-const ColumnContent4 = ({
+const BusinessDescriptionWithLocation2 = ({
   keyword,
   location,
-  content1,
-  content2,
+  content5,
+  content6,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content1: string | undefined;
-  content2: string | undefined;
+  content5: string | undefined;
+  content6: string | undefined;
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
@@ -25,16 +26,18 @@ const ColumnContent4 = ({
             alt="custom_upload_image_1"
           />
         </div>
-        <div className="grid grid-cols-1 content-center gap-5 md:gap-10 w-full md:w-1/2">
+        <div className="grid grid-cols-1 content-center gap-5 md:gap-5 w-full md:w-1/2">
           <h3 className="text-3xl text-black font-bold font-sans text-center py-10">
             Why our {keyword} experts are different
-            {content1
-              ? customParser({ customContent: content1, keyword, location })
-              : `Why our ${keyword} experts are different`}
+            {content5
+              ? customParser({ customContent: content5, keyword, location })
+              : `Why our ${camelCaseAll(
+                  String(location)
+                )} ${keyword} experts are different`}
           </h3>
           <div className="text-center">
-            {content2 ? (
-              customParser({ customContent: content2, keyword, location })
+            {content6 ? (
+              customParser({ customContent: content6, keyword, location })
             ) : (
               <>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -58,4 +61,4 @@ const ColumnContent4 = ({
   );
 };
 
-export default ColumnContent4;
+export default BusinessDescriptionWithLocation2;

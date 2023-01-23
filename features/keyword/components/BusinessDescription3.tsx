@@ -1,29 +1,37 @@
 import Button from "antd/lib/button";
 import customParser from "utils/customParser";
+import { camelCaseAll } from "utils/functions";
 
 const BusinessDescription3 = ({
   keyword,
   location,
-  content12,
-  content13,
+  content1,
+  content2,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content12: string | undefined;
-  content13: string | undefined;
+  content1: string | undefined;
+  content2: string | undefined;
 }) => {
   return (
-    <div className="text-center py-20 max-w-6xl mx-auto">
+    <div className="text-center pt-10 pb-20 max-w-6xl mx-auto">
       <h3 className="text-3xl text-black font-bold font-sans">
-        {content12 ? (
-          customParser({ customContent: content12, keyword, location })
+        {content1 ? (
+          customParser({ customContent: content1, keyword, location })
         ) : (
-          <>We&apos;ve mastered {keyword}</>
+          <>
+            We&apos;ve mastered {keyword}
+            {location ? ` in ${camelCaseAll(location)}` : null}
+          </>
         )}
       </h3>
       <p className="py-5 w-4/5 mx-auto">
-        {content13
-          ? customParser({ customContent: content13, keyword, location })
+        {content2
+          ? customParser({ customContent: content2, keyword, location })
+          : location
+          ? `After thousands of completed ${keyword} services in ${camelCaseAll(
+              location
+            )} and 40,000+ services overall, done by our own in-house technicians, we're experienced with most computer and IT problems. If we are not the best people to assist you, we'll be happy to refer you to someone who can.`
           : "After 40,000 repairs completed, done by our own in-house technicians, we know computers inside out."}
       </p>
       <div>

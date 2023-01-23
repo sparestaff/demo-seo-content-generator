@@ -8,11 +8,11 @@ const { Panel } = Collapse;
 const FAQ = ({
   keyword,
   location,
-  content22,
+  content,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content22: string | undefined;
+  content: string | undefined;
 }) => {
   type PanelItem = {
     key: string;
@@ -244,8 +244,8 @@ const FAQ = ({
         Frequently asked questions
       </h4>
       <p className="text-center py-10">
-        {content22 ? (
-          customParser({ customContent: content22, keyword, location })
+        {content ? (
+          customParser({ customContent: content, keyword, location })
         ) : (
           <>
             Your questions answered by our computer experts. Can&apos;t find an

@@ -21,18 +21,24 @@ import BottomContent from "features/keyword/components/BottomContent";
 // type
 import { CustomContent } from "types/CustomContent";
 // api
-import { getCustomContents } from "features/keyword/API/services";
+import { getCustomContents, getLocations } from "features/keyword/API/services";
+import { Location } from "types/Location";
 
-const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
+const KeywordPillarPage = ({
+  result,
+  locations,
+}: {
+  result: CustomContent;
+  locations?: Location;
+}) => {
   const router = useRouter();
   const keyword = router?.query?.keyword?.toString().replace(/-/g, " ");
-  const location = router?.query?.location?.toString().replace(/-/g, " ");
 
   return (
     <>
       <HeroSection
         keyword={keyword}
-        location={location}
+        location={result?.location}
         content1={result?.content1}
         content2={result?.content2}
       />
@@ -40,80 +46,80 @@ const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
       <BreadCrumbs keyword={keyword} />
       <BusinessDescription
         keyword={keyword}
-        location={location}
-        content3={result?.content3}
-        content4={result?.content4}
+        location={result?.location}
+        content1={result?.content3}
+        content2={result?.content4}
       />
       <Services keyword={keyword} />
       <BusinessDescription2
         keyword={keyword}
-        location={location}
-        content5={result?.content5}
-        content6={result?.content6}
+        location={result?.location}
+        content1={result?.content5}
+        content2={result?.content6}
       />
       <ColumnContent1
         keyword={keyword}
-        location={location}
-        content7={result?.content7}
-        content8={result?.content8}
-        content9={result?.content9}
-        content10={result?.content10}
-        content11={result?.content11}
+        location={result?.location}
+        content1={result?.content7}
+        content2={result?.content8}
+        content3={result?.content9}
+        content4={result?.content10}
+        content5={result?.content11}
       />
       <BusinessDescription3
         keyword={keyword}
-        location={location}
-        content12={result?.content12}
-        content13={result?.content13}
+        location={result?.location}
+        content1={result?.content12}
+        content2={result?.content13}
       />
       <ColumnContent2
         keyword={keyword}
-        location={location}
-        content14={result?.content14}
-        content15={result?.content15}
+        location={result?.location}
+        content1={result?.content14}
+        content2={result?.content15}
       />
       <ColumnContent3
         keyword={keyword}
-        location={location}
-        content16={result?.content16}
-        content17={result?.content17}
+        location={result?.location}
+        content1={result?.content16}
+        content2={result?.content17}
       />
       <ColumnContent4
         keyword={keyword}
-        location={location}
-        content18={result?.content18}
-        content19={result?.content19}
+        location={result?.location}
+        content1={result?.content18}
+        content2={result?.content19}
       />
       <BusinessDescription4
         keyword={keyword}
-        location={location}
-        content20={result?.content20}
+        location={result?.location}
+        content={result?.content20}
       />
       <MainFeedback
         keyword={keyword}
-        location={location}
-        content21={result?.content21}
+        location={result?.location}
+        content={result?.content21}
       />
       <SubFeedback />
       <FAQ
         keyword={keyword}
-        location={location}
-        content22={result?.content22}
+        location={result?.location}
+        content={result?.content22}
       />
       <Articles
         keyword={keyword}
-        location={location}
-        content23={result?.content23}
+        location={result?.location}
+        content={result?.content23}
       />
       <ServiceAreas
         keyword={keyword}
-        location={location}
-        content24={result?.content24}
+        location={locations}
+        content={result?.content24}
       />
       <BottomContent
         keyword={keyword}
-        location={location}
-        content25={result?.content25}
+        location={result?.location}
+        content={result?.content25}
       />
     </>
   );
@@ -121,11 +127,16 @@ const KeywordPillarPage = ({ result }: { result: CustomContent }) => {
 
 export async function getServerSideProps(context: any) {
   const keyword: string = context.query.keyword.toString().replace(/-/g, " ");
-  const result = await getCustomContents(keyword);
+  const result = (await getCustomContents(keyword)) as CustomContent;
+  let location;
+  if (result?.location) {
+    location = (await getLocations(result?.location)) as Location;
+  }
 
   return {
     props: {
       result,
+      location,
     },
   };
 }

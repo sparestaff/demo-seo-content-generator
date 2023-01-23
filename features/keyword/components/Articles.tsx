@@ -10,11 +10,11 @@ const { Meta } = Card;
 const Articles = ({
   keyword,
   location,
-  content23,
+  content,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content23: string | undefined;
+  content: string | undefined;
 }) => {
   const articlesItems = [
     {
@@ -47,8 +47,8 @@ const Articles = ({
         Our top computer tips and tricks
       </h4>
       <p className="text-center">
-        {content23
-          ? customParser({ customContent: content23, keyword, location })
+        {content
+          ? customParser({ customContent: content, keyword, location })
           : "Read our best tips and tricks on everything from computer tuneup to how to DIY upgrade your own computer."}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 py-10">

@@ -1,18 +1,26 @@
+import { ReactNode } from "react";
+import Link from "next/link";
 import Slider from "components/elements/Slider";
 import { AiOutlineTeam, AiFillThunderbolt, AiFillApple } from "react-icons/ai";
 import { MdSettingsBackupRestore } from "react-icons/md";
 import { BiDollar } from "react-icons/bi";
 import { FaGlobeAmericas, FaShippingFast } from "react-icons/fa";
 
-import { ReactNode } from "react";
+import { camelCaseAll } from "utils/functions";
 
 type SliderItem = {
   icon: ReactNode;
   title: string;
-  desc: string;
+  desc: ReactNode;
 };
 
-const Services = ({ keyword }: { keyword: string | undefined }) => {
+const Services = ({
+  keyword,
+  location,
+}: {
+  keyword: string | undefined;
+  location?: string | undefined;
+}) => {
   const sliderItems: SliderItem[] = [
     {
       icon: <AiOutlineTeam />,
@@ -22,7 +30,7 @@ const Services = ({ keyword }: { keyword: string | undefined }) => {
     {
       icon: <AiFillThunderbolt />,
       title: "On-the-spot Free quote",
-      desc: "A Free, obligation-free quote is given while you wait. It’s up to you to decide if you want to proceed with our quote.",
+      desc: "A Free, obligation-free quote is given while you wait. It's up to you to decide if you want to proceed with our quote.",
     },
     {
       icon: <FaShippingFast />,
@@ -37,7 +45,7 @@ const Services = ({ keyword }: { keyword: string | undefined }) => {
     {
       icon: <MdSettingsBackupRestore />,
       title: "No fix No fee",
-      desc: "If we cannot fix your computer, we will fix it again for free or you’l receive a full refund.",
+      desc: "If we cannot fix your computer, we will fix it again for free or you'll receive a full refund.",
     },
     {
       icon: <BiDollar />,
@@ -47,12 +55,31 @@ const Services = ({ keyword }: { keyword: string | undefined }) => {
     {
       icon: <FaGlobeAmericas />,
       title: "A greener planet",
-      desc: "Repairs help reduce the e-waste problem. We also offer Free e-waste recycling.",
+      desc: (
+        <>
+          Repairs help reduce the e-waste problem. We also offer Free{" "}
+          <Link href="https://spcecycle.com.au" target="_blank">
+            e-waste recycling
+          </Link>
+          .
+        </>
+      ),
     },
   ];
 
   return (
     <div className="py-14 max-w-6xl mx-auto">
+      {location ? (
+        <>
+          <h3 className="text-3xl text-black font-bold font-sans text-center">
+            Why choose Safemode Computer Service
+          </h3>
+          <p className="text-center py-5">
+            What&lsquo;s included when you use our{" "}
+            {camelCaseAll(String(location))} {keyword} services
+          </p>
+        </>
+      ) : null}
       <Slider>
         {sliderItems.map((item, idx) => (
           <div

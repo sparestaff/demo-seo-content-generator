@@ -4,11 +4,11 @@ import customParser from "utils/customParser";
 const BusinessDescription4 = ({
   keyword,
   location,
-  content20,
+  content,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content20: string | undefined;
+  content: string | undefined;
 }) => {
   return (
     <div className="text-center py-20 max-w-6xl mx-auto px-5 md:px-5 lg:px-5 xl:px-0">
@@ -16,8 +16,8 @@ const BusinessDescription4 = ({
         Don&apos;t take our word for it
       </h3>
       <p className="py-5 mx-auto">
-        {content20 ? (
-          customParser({ customContent: content20, keyword, location })
+        {content ? (
+          customParser({ customContent: content, keyword, location })
         ) : (
           <>
             Our customers have given us a{" "}
