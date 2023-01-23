@@ -6,11 +6,11 @@ import customParser from "utils/customParser";
 const MainFeedback = ({
   keyword,
   location,
-  content21,
+  content,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content21: string | undefined;
+  content: string | undefined;
 }) => {
   return (
     <div className="max-w-6xl mx-auto mb-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
@@ -20,8 +20,8 @@ const MainFeedback = ({
             <ImQuotesLeft />
           </span>
           <p className="text-white">
-            {content21
-              ? customParser({ customContent: content21, keyword, location })
+            {content
+              ? customParser({ customContent: content, keyword, location })
               : `Hard-drive in my good 'ol faithful HP died,
             Safemode Computer Service (SCS) was recommended to me by another
             repair company that were unable to assist me. SCS were extremely

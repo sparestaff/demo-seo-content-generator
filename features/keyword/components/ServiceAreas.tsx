@@ -5,11 +5,11 @@ import { Location } from "types/Location";
 const ServiceAreas = ({
   keyword,
   location,
-  content24,
+  content,
 }: {
   keyword: string | undefined;
   location?: Location;
-  content24: string | undefined;
+  content: string | undefined;
 }) => {
   return (
     <div className="bg-gray-100/50 text-center">
@@ -18,8 +18,8 @@ const ServiceAreas = ({
           Our {keyword} service areas
         </h4>
         <p>
-          {content24
-            ? customParser({ customContent: content24, keyword })
+          {content
+            ? customParser({ customContent: content, keyword })
             : `Find ${keyword} in your area`}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">

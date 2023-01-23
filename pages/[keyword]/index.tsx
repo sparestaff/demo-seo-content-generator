@@ -26,10 +26,10 @@ import { Location } from "types/Location";
 
 const KeywordPillarPage = ({
   result,
-  location,
+  locations,
 }: {
   result: CustomContent;
-  location?: Location;
+  locations?: Location;
 }) => {
   const router = useRouter();
   const keyword = router?.query?.keyword?.toString().replace(/-/g, " ");
@@ -47,79 +47,79 @@ const KeywordPillarPage = ({
       <BusinessDescription
         keyword={keyword}
         location={result?.location}
-        content3={result?.content3}
-        content4={result?.content4}
+        content1={result?.content3}
+        content2={result?.content4}
       />
       <Services keyword={keyword} />
       <BusinessDescription2
         keyword={keyword}
         location={result?.location}
-        content5={result?.content5}
-        content6={result?.content6}
+        content1={result?.content5}
+        content2={result?.content6}
       />
       <ColumnContent1
         keyword={keyword}
         location={result?.location}
-        content7={result?.content7}
-        content8={result?.content8}
-        content9={result?.content9}
-        content10={result?.content10}
-        content11={result?.content11}
+        content1={result?.content7}
+        content2={result?.content8}
+        content3={result?.content9}
+        content4={result?.content10}
+        content5={result?.content11}
       />
       <BusinessDescription3
         keyword={keyword}
         location={result?.location}
-        content12={result?.content12}
-        content13={result?.content13}
+        content1={result?.content12}
+        content2={result?.content13}
       />
       <ColumnContent2
         keyword={keyword}
         location={result?.location}
-        content14={result?.content14}
-        content15={result?.content15}
+        content1={result?.content14}
+        content2={result?.content15}
       />
       <ColumnContent3
         keyword={keyword}
         location={result?.location}
-        content16={result?.content16}
-        content17={result?.content17}
+        content1={result?.content16}
+        content2={result?.content17}
       />
       <ColumnContent4
         keyword={keyword}
         location={result?.location}
-        content18={result?.content18}
-        content19={result?.content19}
+        content1={result?.content18}
+        content2={result?.content19}
       />
       <BusinessDescription4
         keyword={keyword}
         location={result?.location}
-        content20={result?.content20}
+        content={result?.content20}
       />
       <MainFeedback
         keyword={keyword}
         location={result?.location}
-        content21={result?.content21}
+        content={result?.content21}
       />
       <SubFeedback />
       <FAQ
         keyword={keyword}
         location={result?.location}
-        content22={result?.content22}
+        content={result?.content22}
       />
       <Articles
         keyword={keyword}
         location={result?.location}
-        content23={result?.content23}
+        content={result?.content23}
       />
       <ServiceAreas
         keyword={keyword}
-        location={location}
-        content24={result?.content24}
+        location={locations}
+        content={result?.content24}
       />
       <BottomContent
         keyword={keyword}
         location={result?.location}
-        content25={result?.content25}
+        content={result?.content25}
       />
     </>
   );
