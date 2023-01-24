@@ -21,7 +21,10 @@ import BottomContent from "features/keyword/components/BottomContent";
 // type
 import { CustomContent } from "types/CustomContent";
 // api
-import { getCustomContents, getLocations } from "features/keyword/API/services";
+import {
+  getCustomContents,
+  getLocationsByKeyword,
+} from "features/keyword/API/services";
 import { Location } from "types/Location";
 
 const KeywordPillarPage = ({
@@ -29,7 +32,7 @@ const KeywordPillarPage = ({
   locations,
 }: {
   result: CustomContent;
-  locations?: Location;
+  locations?: string[];
 }) => {
   const router = useRouter();
   const keyword = router?.query?.keyword?.toString().replace(/-/g, " ");
@@ -113,8 +116,8 @@ const KeywordPillarPage = ({
       />
       <ServiceAreas
         keyword={keyword}
-        location={locations}
         content={result?.content24}
+        locations={locations}
       />
       <BottomContent
         keyword={keyword}
@@ -128,15 +131,11 @@ const KeywordPillarPage = ({
 export async function getServerSideProps(context: any) {
   const keyword: string = context.query.keyword.toString().replace(/-/g, " ");
   const result = (await getCustomContents(keyword)) as CustomContent;
-  let location;
-  if (result?.location) {
-    location = (await getLocations(result?.location)) as Location;
-  }
-
+  const locations = await getLocationsByKeyword(keyword);
   return {
     props: {
       result,
-      location,
+      locations,
     },
   };
 }

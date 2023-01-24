@@ -37,3 +37,16 @@ export const getLocations = async (
     return location;
   }
 };
+
+export const getLocationsByKeyword = async (
+  keyword: string
+): Promise<Location | null> => {
+  try {
+    const { data: locations } = await APIWithoutAuth.get(
+      `/contents/locations/${keyword}`
+    );
+    return locations;
+  } catch (error) {
+    return null;
+  }
+};

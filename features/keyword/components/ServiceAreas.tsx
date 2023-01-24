@@ -1,14 +1,13 @@
 import Link from "next/link";
 import customParser from "utils/customParser";
-import { Location } from "types/Location";
 
 const ServiceAreas = ({
   keyword,
-  location,
+  locations,
   content,
 }: {
   keyword: string | undefined;
-  location?: Location;
+  locations?: string[];
   content: string | undefined;
 }) => {
   return (
@@ -23,12 +22,12 @@ const ServiceAreas = ({
             : `Find ${keyword} in your area`}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">
-          {location?.suburbs?.map((suburb, idx) => (
+          {locations?.map((location, idx) => (
             <Link
               key={idx}
-              href={`https://services.safemode.com.au/${keyword}/${suburb}`}
+              href={`https://services.safemode.com.au/${keyword}/${location}`}
             >
-              {keyword} in <span className="capitalize">{suburb}</span>
+              {keyword} in <span className="capitalize">{location}</span>
             </Link>
           ))}
         </div>
