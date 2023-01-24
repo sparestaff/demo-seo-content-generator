@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
 import customParser from "utils/customParser";
-import { camelCaseAll } from "utils/functions";
+import { camelCaseAll } from "utils/formatter";
 
 const ColumnContent1 = ({
   keyword,

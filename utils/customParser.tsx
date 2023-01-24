@@ -1,6 +1,6 @@
 import Link from "next/link";
 import parse, { DOMNode, domToReact } from "html-react-parser";
-import { capitalizeFirstLetter } from "utils/functions";
+import { capitalizeFirstLetter } from "utils/formatter";
 
 const customParser = ({
   customContent,

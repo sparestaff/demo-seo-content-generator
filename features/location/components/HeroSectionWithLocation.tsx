@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "antd/lib/button";
 import { HERO_SECTION_IMAGE } from "utils/constants";
-import { camelCaseAll } from "utils/functions";
+import { camelCaseAll } from "utils/formatter";
 import customParser from "utils/customParser";
 
 const HeroSectionWithLocation = ({
