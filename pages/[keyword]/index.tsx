@@ -34,7 +34,9 @@ const KeywordPillarPage = ({
   locations?: string[];
 }) => {
   const router = useRouter();
-  const keyword = router?.query?.keyword?.toString().replace(/-/g, " ");
+  const keyword = router?.query?.keyword
+    ?.toString()
+    .replace(/-/g, " ") as string;
 
   return (
     <>

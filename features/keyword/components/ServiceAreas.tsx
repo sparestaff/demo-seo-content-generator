@@ -1,12 +1,15 @@
 import Link from "next/link";
 import customParser from "utils/customParser";
+import { camelCaseAll } from "utils/formatter";
 
 const ServiceAreas = ({
   keyword,
+  location,
   locations,
   content,
 }: {
   keyword: string | undefined;
+  location?: string;
   locations?: string[];
   content: string | undefined;
 }) => {
@@ -19,6 +22,10 @@ const ServiceAreas = ({
         <p>
           {content
             ? customParser({ customContent: content, keyword })
+            : location
+            ? `We provide ${keyword} services to ${camelCaseAll(
+                location
+              )} and other areas`
             : `Find ${keyword} in your area`}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">

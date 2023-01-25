@@ -80,11 +80,12 @@ const KeywordPillarPage = ({
       <SubFeedback />
       <ColumnContentWithLocation4 keyword={keyword} location={location} />
       <FAQWithLocation keyword={keyword} />
-      <Articles keyword={keyword} content={result?.content23} />
+      <Articles keyword={keyword} content={result?.content11} />
       <ServiceAreas
         keyword={keyword}
+        location={location}
         locations={locations}
-        content={result?.content11}
+        content={result?.content12}
       />
       <BottomContent keyword={keyword} location={location} />
     </>
