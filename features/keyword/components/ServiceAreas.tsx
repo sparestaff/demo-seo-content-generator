@@ -9,7 +9,7 @@ const ServiceAreas = ({
   content,
 }: {
   keyword: string | undefined;
-  location: string;
+  location?: string;
   locations?: string[];
   content: string | undefined;
 }) => {
