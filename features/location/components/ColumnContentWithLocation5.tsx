@@ -10,7 +10,7 @@ const ColumnContentWithLocation4 = ({
   location: string;
 }) => {
   return (
-    <div className="max-w-6xl mx-auto py-10 sm:py-20">
+    <div className="max-w-6xl mx-auto py-10 sm:py-20 text-center md:text-left px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h3 className="text-3xl text-black font-bold font-sans text-center mb-10">
         About Safemode Computer Service
       </h3>

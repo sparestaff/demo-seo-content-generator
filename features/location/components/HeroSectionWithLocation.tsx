@@ -16,7 +16,7 @@ const HeroSectionWithLocation = ({
   content2: string | undefined;
 }) => {
   return (
-    <div className="sm:flex sm:justify-between sm:items-center grid grid-cols-1 justify-items-center sm:max-w-6xl sm:mx-auto my-10 sm:px-5 md:px-5 lg:px-5 xl:px-0">
+    <div className="sm:flex sm:justify-between sm:items-center grid grid-cols-1 gap-5 sm:gap-0 justify-items-center sm:max-w-6xl sm:mx-auto my-5 sm:my-1 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col gap-5 text-center sm:text-left">
         <h1 className="text-6xl text-black font-bold font-sans">
           {content1 ? (

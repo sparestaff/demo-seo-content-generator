@@ -8,7 +8,7 @@ const BreadCrumbs = ({
   location?: string | undefined;
 }) => {
   return (
-    <div className="text-center py-5">
+    <div className="text-center py-5 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       You are here: <Link href="https://safemode.com.au/">Home</Link> /{" "}
       {keyword}
       {location ? ` / ${camelCaseAll(location)}` : null}

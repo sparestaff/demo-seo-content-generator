@@ -14,7 +14,7 @@ const MainFeedback = ({
 }) => {
   return (
     <div className="max-w-6xl mx-auto mb-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <div className="flex flex-col-reverse md:flex-row gap-5 justify-center md:justify-between items-center bg-seo-primary rounded-lg px-10">
+      <div className="flex flex-col-reverse md:flex-row gap-5 justify-center md:justify-between items-center bg-seo-primary rounded-lg px-10 py-5">
         <div className="grid grid-cols-1 content-center gap-5 w-full sm:w-1/2">
           <span className="text-4xl text-yellow-500">
             <ImQuotesLeft />

@@ -70,7 +70,7 @@ const Services = ({
   ];
 
   return (
-    <div className="py-14 max-w-6xl mx-auto">
+    <div className="py-14 max-w-6xl mx-auto sm:px-5 md:px-5 lg:px-5 xl:px-0">
       {location ? (
         <>
           <h3 className="text-3xl text-black font-bold font-sans text-center">

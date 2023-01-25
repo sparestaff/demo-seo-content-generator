@@ -10,7 +10,7 @@ const ColumnContentWithLocation4 = ({
   location: string;
 }) => {
   return (
-    <div className="max-w-6xl mx-auto py-10 sm:py-20">
+    <div className="max-w-6xl mx-auto py-10 sm:py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h3 className="text-3xl text-black font-bold font-sans mb-10 text-center">
         All the support you need
       </h3>
