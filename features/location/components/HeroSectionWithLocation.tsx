@@ -11,7 +11,7 @@ const HeroSectionWithLocation = ({
   content2,
 }: {
   keyword: string | undefined;
-  location: string | undefined;
+  location: string;
   content1: string | undefined;
   content2: string | undefined;
 }) => {
@@ -32,8 +32,8 @@ const HeroSectionWithLocation = ({
             customParser({ customContent: content2, keyword, location })
           ) : (
             <>
-              Same-day {keyword} {camelCaseAll(String(location))}. Get a Free
-              quote on the spot.
+              Same-day {keyword} {camelCaseAll(location)}. Get a Free quote on
+              the spot.
             </>
           )}
           <br />

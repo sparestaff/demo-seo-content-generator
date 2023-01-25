@@ -25,7 +25,6 @@ import {
   getCustomContents,
   getLocationsByKeyword,
 } from "features/keyword/API/services";
-import { Location } from "types/Location";
 
 const KeywordPillarPage = ({
   result,

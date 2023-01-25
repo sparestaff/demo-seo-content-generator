@@ -9,7 +9,7 @@ const BottomContent = ({
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content: string | undefined;
+  content?: string | undefined;
 }) => {
   return (
     <div className="bg-seo-primary px-5 sm:px-5 md:px-5 lg:px-5">
@@ -18,7 +18,7 @@ const BottomContent = ({
           <h2 className="text-6xl text-white font-bold font-sans">
             {content
               ? customParser({ customContent: content, keyword, location })
-              : `Need ${keyword}?`}
+              : `Need ${keyword}${location ? ` in ${location}` : null}?`}
           </h2>
           <div className="flex justify-center gap-10 py-10">
             <Button
