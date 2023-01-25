@@ -18,14 +18,16 @@ const Services = ({
   keyword,
   location,
 }: {
-  keyword: string | undefined;
-  location?: string | undefined;
+  keyword: string;
+  location?: string;
 }) => {
   const sliderItems: SliderItem[] = [
     {
       icon: <AiOutlineTeam />,
       title: `Expert ${keyword}`,
-      desc: `Our ${keyword} technicians have over 15 years of experience with both Windows and Apple Mac.`,
+      desc: `Our ${keyword} ${
+        location ? camelCaseAll(location) : null
+      } technicians have over 15 years of experience with both Windows and Apple Mac.`,
     },
     {
       icon: <AiFillThunderbolt />,
@@ -75,8 +77,8 @@ const Services = ({
             Why choose Safemode Computer Service
           </h3>
           <p className="text-center py-5">
-            What&lsquo;s included when you use our{" "}
-            {camelCaseAll(String(location))} {keyword} services
+            What&lsquo;s included when you use our {camelCaseAll(location)}{" "}
+            {keyword} services
           </p>
         </>
       ) : null}
