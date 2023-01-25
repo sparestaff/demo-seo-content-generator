@@ -6,7 +6,7 @@ import { MdSettingsBackupRestore } from "react-icons/md";
 import { BiDollar } from "react-icons/bi";
 import { FaGlobeAmericas, FaShippingFast } from "react-icons/fa";
 
-import { camelCaseAll } from "utils/functions";
+import { camelCaseAll } from "utils/formatter";
 
 type SliderItem = {
   icon: ReactNode;

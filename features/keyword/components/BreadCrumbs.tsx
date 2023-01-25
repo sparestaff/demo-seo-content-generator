@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { camelCaseAll } from "utils/functions";
+import { camelCaseAll } from "utils/formatter";
 const BreadCrumbs = ({
   keyword,
   location,

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { HERO_SECTION_IMAGE } from "utils/constants";
 import customParser from "utils/customParser";
-import { camelCaseAll } from "utils/functions";
+import { camelCaseAll } from "utils/formatter";
 
 const ColumnContent1 = ({
   keyword,
@@ -15,19 +15,19 @@ const ColumnContent1 = ({
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content1: string | undefined;
-  content2: string | undefined;
-  content3: string | undefined;
-  content4: string | undefined;
-  content5: string | undefined;
+  content1?: string | undefined;
+  content2?: string | undefined;
+  content3?: string | undefined;
+  content4?: string | undefined;
+  content5?: string | undefined;
 }) => {
   return (
     <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center text-center max-w-6xl mx-auto">
       <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-        <h3 className="text-3xl text-black font-bold font-sans">
+        <h3 className="text-3xl text-black font-bold font-sans text-left">
           {content1
             ? customParser({ customContent: content1, keyword, location })
-            : "How it works"}
+            : "How it works?"}
         </h3>
         <div className="flex sm:gap-10 gap-5 items-center">
           <div className="text-seo-primary text-3xl font-bold font-sans">

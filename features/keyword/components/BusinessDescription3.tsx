@@ -1,6 +1,6 @@
 import Button from "antd/lib/button";
 import customParser from "utils/customParser";
-import { camelCaseAll } from "utils/functions";
+import { camelCaseAll } from "utils/formatter";
 
 const BusinessDescription3 = ({
   keyword,

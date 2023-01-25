@@ -10,7 +10,7 @@ const MainFeedback = ({
 }: {
   keyword: string | undefined;
   location?: string | undefined;
-  content: string | undefined;
+  content?: string | undefined;
 }) => {
   return (
     <div className="max-w-6xl mx-auto mb-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">

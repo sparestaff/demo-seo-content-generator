@@ -22,14 +22,19 @@ const ServiceAreas = ({
             : `Find ${keyword} in your area`}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">
-          {locations?.map((location, idx) => (
-            <Link
-              key={idx}
-              href={`https://services.safemode.com.au/${keyword}/${location}`}
-            >
-              {keyword} in <span className="capitalize">{location}</span>
-            </Link>
-          ))}
+          {locations?.length
+            ? locations?.map((location, idx) => (
+                <Link
+                  key={idx}
+                  href={`https://services.safemode.com.au/${keyword}/${location.replace(
+                    / /g,
+                    "-"
+                  )}`}
+                >
+                  {keyword} in <span className="capitalize">{location}</span>
+                </Link>
+              ))
+            : null}
         </div>
       </div>
     </div>
