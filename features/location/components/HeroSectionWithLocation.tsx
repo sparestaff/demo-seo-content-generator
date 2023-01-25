@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "antd/lib/button";
-import { HERO_SECTION_IMAGE } from "utils/constants";
+import { HERO_SECTION_LOCATION_IMAGE } from "utils/constants";
 import { camelCaseAll } from "utils/formatter";
 import customParser from "utils/customParser";
 
@@ -52,7 +52,7 @@ const HeroSectionWithLocation = ({
       </div>
       <div>
         <Image
-          src={HERO_SECTION_IMAGE}
+          src={HERO_SECTION_LOCATION_IMAGE}
           alt="computer_repair"
           width={450}
           height={400}

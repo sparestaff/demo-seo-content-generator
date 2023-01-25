@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { HERO_SECTION_IMAGE } from "utils/constants";
+import { STATIC_IMAGE_1 } from "utils/constants";
 import { camelCaseAll } from "utils/formatter";
 
 const ColumnContentWithLocation1 = ({
@@ -11,9 +11,9 @@ const ColumnContentWithLocation1 = ({
   location: string;
 }) => {
   return (
-    <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center text-center max-w-6xl mx-auto">
+    <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center  max-w-6xl mx-auto">
       <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-        <h3 className="text-3xl text-black font-bold font-sans text-left">
+        <h3 className="text-3xl text-black font-bold font-sans text-center md:text-left">
           How it works?
         </h3>
         <div className="flex sm:gap-10 gap-5 items-center">
@@ -62,9 +62,9 @@ const ColumnContentWithLocation1 = ({
           </div>
         </div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Image
-          src={HERO_SECTION_IMAGE}
+          src={STATIC_IMAGE_1}
           width={400}
           height={400}
           priority

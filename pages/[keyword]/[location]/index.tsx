@@ -2,12 +2,13 @@ import HeroSectionWithLocation from "features/location/components/HeroSectionWit
 import BusinessDescriptionWithLocation from "features/location/components/BusinessDescriptionWithLocation";
 import BusinessDescriptionWithLocation2 from "features/location/components/BusinessDescriptionWithLocation2";
 import BusinessDescriptionWithLocation3 from "features/location/components/BusinessDescriptionWithLocation3";
+import BusinessDescriptionWithLocation4 from "features/location/components/BusinessDescriptionWithLocation4";
 import ColumnContentWithLocation1 from "features/location/components/ColumnContentWithLocation1";
 import ColumnContentWithLocation2 from "features/location/components/ColumnContentWithLocation2";
 import ColumnContentWithLocation3 from "features/location/components/ColumnContentWithLocation3";
 import ColumnContentWithLocation4 from "features/location/components/ColumnContentWithLocation4";
+import ColumnContentWithLocation5 from "features/location/components/ColumnContentWithLocation5";
 import FAQWithLocation from "features/location/components/FAQWithLocation";
-
 import BreadCrumbs from "features/keyword/components/BreadCrumbs";
 import Rates from "features/keyword/components/Rates";
 import Services from "features/keyword/components/Services";
@@ -65,6 +66,7 @@ const KeywordPillarPage = ({
       <ColumnContentWithLocation1 keyword={keyword} location={location} />
       <ColumnContentWithLocation2 keyword={keyword} location={location} />
       <ColumnContentWithLocation3 keyword={keyword} location={location} />
+      <ColumnContentWithLocation4 keyword={keyword} location={location} />
       <ColumnContent2
         keyword={keyword}
         location={location}
@@ -76,9 +78,10 @@ const KeywordPillarPage = ({
         content1={result?.content9}
         content2={result?.content10}
       />
+      <BusinessDescriptionWithLocation4 keyword={keyword} />
       <MainFeedback keyword={keyword} />
       <SubFeedback />
-      <ColumnContentWithLocation4 keyword={keyword} location={location} />
+      <ColumnContentWithLocation5 keyword={keyword} location={location} />
       <FAQWithLocation keyword={keyword} />
       <Articles keyword={keyword} content={result?.content11} />
       <ServiceAreas
