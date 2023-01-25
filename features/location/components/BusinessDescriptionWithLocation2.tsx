@@ -1,27 +1,29 @@
 import Image from "next/image";
-import { HERO_SECTION_IMAGE } from "utils/constants";
 import customParser from "utils/customParser";
 import { camelCaseAll } from "utils/formatter";
+import { DEFAULT_IMAGE_1 } from "utils/constants";
 
 const BusinessDescriptionWithLocation2 = ({
   keyword,
   location,
   content5,
   content6,
+  image,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
   content5: string | undefined;
   content6: string | undefined;
+  image?: string;
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10">
         <div>
           <Image
-            src={HERO_SECTION_IMAGE}
-            width={400}
-            height={400}
+            src={image || DEFAULT_IMAGE_1}
+            width={500}
+            height={500}
             priority
             alt="custom_upload_image_1"
           />

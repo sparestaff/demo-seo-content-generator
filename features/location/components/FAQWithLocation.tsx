@@ -219,7 +219,7 @@ const FAQWithLocation = ({
   ];
 
   return (
-    <div className="py-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5">
+    <div className="py-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h4 className="text-black text-center font-sans font-bold text-3xl">
         Frequently asked questions
       </h4>

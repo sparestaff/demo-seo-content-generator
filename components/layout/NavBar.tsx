@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <>
       <div className="sticky top-0 shadow z-30 bg-white">
-        <div className="max-w-6xl mx-auto flex items-center justify-between font-bold px-6 h-20 ">
+        <div className="max-w-6xl mx-auto flex items-center justify-between font-bold h-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
           <div>
             <Link href="https://safemode.com.au/">
               <Image

@@ -12,13 +12,13 @@ const BottomContent = ({
   content?: string | undefined;
 }) => {
   return (
-    <div className="bg-seo-primary px-5 sm:px-5 md:px-5 lg:px-5">
-      <div className="flex items-center justify-between max-w-6xl mx-auto">
+    <div className="bg-seo-primary">
+      <div className="flex items-center justify-between max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0 pt-5">
         <div>
           <h2 className="text-6xl text-white font-bold font-sans">
             {content
               ? customParser({ customContent: content, keyword, location })
-              : `Need ${keyword}${location ? ` in ${location}` : null}?`}
+              : `Need ${keyword}${location ? ` in ${location}` : ""}?`}
           </h2>
           <div className="flex justify-center gap-10 py-10">
             <Button
