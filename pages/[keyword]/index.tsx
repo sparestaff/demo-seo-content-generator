@@ -42,7 +42,6 @@ const KeywordPillarPage = ({
     <>
       <HeroSection
         keyword={keyword}
-        location={result?.location}
         content1={result?.content1}
         content2={result?.content2}
       />
@@ -50,20 +49,17 @@ const KeywordPillarPage = ({
       <BreadCrumbs keyword={keyword} />
       <BusinessDescription
         keyword={keyword}
-        location={result?.location}
         content1={result?.content3}
         content2={result?.content4}
       />
       <Services keyword={keyword} />
       <BusinessDescription2
         keyword={keyword}
-        location={result?.location}
         content1={result?.content5}
         content2={result?.content6}
       />
       <ColumnContent1
         keyword={keyword}
-        location={result?.location}
         content1={result?.content7}
         content2={result?.content8}
         content3={result?.content9}
@@ -72,59 +68,35 @@ const KeywordPillarPage = ({
       />
       <BusinessDescription3
         keyword={keyword}
-        location={result?.location}
         content1={result?.content12}
         content2={result?.content13}
       />
       <ColumnContent2
         keyword={keyword}
-        location={result?.location}
         content1={result?.content14}
         content2={result?.content15}
       />
       <ColumnContent3
         keyword={keyword}
-        location={result?.location}
         content1={result?.content16}
         content2={result?.content17}
       />
       <ColumnContent4
         keyword={keyword}
-        location={result?.location}
         content1={result?.content18}
         content2={result?.content19}
       />
-      <BusinessDescription4
-        keyword={keyword}
-        location={result?.location}
-        content={result?.content20}
-      />
-      <MainFeedback
-        keyword={keyword}
-        location={result?.location}
-        content={result?.content21}
-      />
+      <BusinessDescription4 keyword={keyword} content={result?.content20} />
+      <MainFeedback keyword={keyword} content={result?.content21} />
       <SubFeedback />
-      <FAQ
-        keyword={keyword}
-        location={result?.location}
-        content={result?.content22}
-      />
-      <Articles
-        keyword={keyword}
-        location={result?.location}
-        content={result?.content23}
-      />
+      <FAQ keyword={keyword} content={result?.content22} />
+      <Articles keyword={keyword} content={result?.content23} />
       <ServiceAreas
         keyword={keyword}
         content={result?.content24}
         locations={locations}
       />
-      <BottomContent
-        keyword={keyword}
-        location={result?.location}
-        content={result?.content25}
-      />
+      <BottomContent keyword={keyword} content={result?.content25} />
     </>
   );
 };
