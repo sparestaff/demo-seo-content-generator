@@ -91,6 +91,7 @@ const KeywordPillarPage = ({
         keyword={keyword}
         content1={result?.content18}
         content2={result?.content19}
+        image={result?.image5}
       />
       <BusinessDescription4 keyword={keyword} content={result?.content20} />
       <MainFeedback keyword={keyword} content={result?.content21} />
