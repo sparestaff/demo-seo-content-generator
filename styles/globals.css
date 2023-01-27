@@ -297,18 +297,6 @@ div.gmnoprint > div {
   border-radius: 6px !important;
 }
 
-#applicant-menu .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
-  color: #484848 !important;
-  border-bottom: 2px solid #f15927 !important;
-}
-
 button#walkInInterviews_enable.switch.ant-switch-checked {
   background-color: rgba(59, 130, 246);
 }
