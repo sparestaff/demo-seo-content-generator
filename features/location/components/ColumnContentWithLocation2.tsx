@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { DEFAULT_IMAGE_2 } from "utils/constants";
+import { Img } from "types/CustomContent";
+import { DEFAULT_LOCATION_IMAGE_3 } from "utils/constants";
+import { camelCaseAll } from "utils/formatter";
 
 const ColumnContentWithLocation2 = ({
   keyword,
@@ -8,27 +10,31 @@ const ColumnContentWithLocation2 = ({
 }: {
   keyword: string;
   location: string;
-  image?: string;
+  image?: Img;
 }) => {
   return (
     <div className="flex sm:justify-between sm:items-center sm:flex-row flex-col max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="hidden md:block">
         <Image
-          src={image || DEFAULT_IMAGE_2}
+          src={image?.src || DEFAULT_LOCATION_IMAGE_3}
+          alt={
+            image?.alt ||
+            `Woman browsing price for ${keyword} in ${camelCaseAll(location)}`
+          }
           width={400}
           height={400}
           priority
-          alt="custom_upload_image_1"
         />
       </div>
       <div className="grid grid-cols-1 content-center gap-5 sm:gap-10  w-full sm:w-1/2 py-5 ">
         <h3 className="text-3xl text-black font-bold font-sans text-center md:text-left">
-          How much does it cost for {keyword} in {location}?
+          How much does it cost for {keyword} in {camelCaseAll(location)}?
         </h3>
         <div>
           The price varies depending what&apos;s required for your {keyword},
           make and model of your computer. We can also tailor a quote for each
-          customer in {location} according to individual needs. <br />
+          customer in {camelCaseAll(location)} according to individual needs.{" "}
+          <br />
           <br />
           Generally if your computer has software issue (i.e. virus), it may
           cost $100-$200. If your computer has hardware issue (i.e. broken

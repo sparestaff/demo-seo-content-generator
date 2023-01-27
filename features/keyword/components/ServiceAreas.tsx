@@ -33,10 +33,7 @@ const ServiceAreas = ({
             ? locations?.map((location, idx) => (
                 <Link
                   key={idx}
-                  href={`https://services.safemode.com.au/${keyword}/${location.replace(
-                    / /g,
-                    "-"
-                  )}`}
+                  href={`/${keyword}/${location.replace(/ /g, "-")}`}
                 >
                   {keyword} in <span className="capitalize">{location}</span>
                 </Link>

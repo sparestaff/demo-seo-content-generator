@@ -44,6 +44,7 @@ const KeywordPillarPage = ({
         keyword={keyword}
         content1={result?.content1}
         content2={result?.content2}
+        image={result?.image1}
       />
       <Rates />
       <BreadCrumbs keyword={keyword} />
@@ -65,6 +66,7 @@ const KeywordPillarPage = ({
         content3={result?.content9}
         content4={result?.content10}
         content5={result?.content11}
+        image={result?.image2}
       />
       <BusinessDescription3
         keyword={keyword}
@@ -75,11 +77,13 @@ const KeywordPillarPage = ({
         keyword={keyword}
         content1={result?.content14}
         content2={result?.content15}
+        image={result?.image3}
       />
       <ColumnContent3
         keyword={keyword}
         content1={result?.content16}
         content2={result?.content17}
+        image={result?.image4}
       />
       <ColumnContent4
         keyword={keyword}

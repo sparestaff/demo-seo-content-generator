@@ -1,19 +1,22 @@
 import Image from "next/image";
 import Button from "antd/lib/button";
-import { HERO_SECTION_LOCATION_IMAGE } from "utils/constants";
+import { DEFAULT_LOCATION_IMAGE_1 } from "utils/constants";
 import { camelCaseAll } from "utils/formatter";
 import customParser from "utils/customParser";
+import { Img } from "types/CustomContent";
 
 const HeroSectionWithLocation = ({
   keyword,
   location,
   content1,
   content2,
+  image,
 }: {
-  keyword: string | undefined;
+  keyword: string;
   location: string;
   content1: string | undefined;
   content2: string | undefined;
+  image?: Img;
 }) => {
   return (
     <div className="sm:flex sm:justify-between sm:items-center grid grid-cols-1 gap-5 sm:gap-0 justify-items-center sm:max-w-6xl sm:mx-auto my-5 sm:my-1 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
@@ -52,8 +55,11 @@ const HeroSectionWithLocation = ({
       </div>
       <div>
         <Image
-          src={HERO_SECTION_LOCATION_IMAGE}
-          alt="computer_repair"
+          src={image?.src || DEFAULT_LOCATION_IMAGE_1}
+          alt={
+            image?.alt ||
+            `Same day ${camelCaseAll(location)} ${camelCaseAll(keyword)}`
+          }
           width={450}
           height={400}
           priority

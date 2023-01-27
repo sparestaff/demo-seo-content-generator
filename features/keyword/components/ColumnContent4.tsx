@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { HERO_SECTION_IMAGE } from "utils/constants";
+import { Img } from "types/CustomContent";
+import { DEFAULT_KEYWORD_IMAGE_5 } from "utils/constants";
 import customParser from "utils/customParser";
 
 const ColumnContent4 = ({
@@ -7,22 +8,27 @@ const ColumnContent4 = ({
   location,
   content1,
   content2,
+  image,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
   content1: string | undefined;
   content2: string | undefined;
+  image?: Img;
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10">
         <div>
           <Image
-            src={HERO_SECTION_IMAGE}
+            src={image?.src || DEFAULT_KEYWORD_IMAGE_5}
+            alt={
+              image?.alt ||
+              "Why Safemode Computer Service experts are different"
+            }
             width={400}
             height={400}
             priority
-            alt="custom_upload_image_1"
           />
         </div>
         <div className="grid grid-cols-1 content-center gap-5 md:gap-10 w-full md:w-1/2">

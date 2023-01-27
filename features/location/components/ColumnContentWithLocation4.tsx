@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Button from "antd/lib/button";
 import { camelCaseAll } from "utils/formatter";
 
 const ColumnContentWithLocation4 = ({
@@ -20,13 +18,14 @@ const ColumnContentWithLocation4 = ({
             For all your {camelCaseAll(location)} {keyword} needs
           </h4>
           <p>
-            By providing {keyword} at both customer&apos;s home / office and our
-            workshop, our computer technicians are experienced with {keyword}{" "}
-            plus many other computer IT support for home and small businesses:
-            email support such as Office 365, Google Workspace email support;
-            office networking setup; system downgrade and upgrade; data backup
-            and security; business printer setup and configuration and many
-            more. Just ask and we&apos;ll be happy to assist you.
+            By providing {keyword} at both customer&apos;s home / office in{" "}
+            {camelCaseAll(location)} and in our workshop, our computer
+            technicians are experienced with {keyword} plus many other computer
+            IT support for home and small businesses: email support such as
+            Office 365, Google Workspace email support; office networking setup;
+            system downgrade and upgrade; data backup and security; business
+            printer setup and configuration and many more. Just ask and
+            we&apos;ll be happy to assist you.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-5 w-full sm:w-1/2 py-5 ">
@@ -37,10 +36,12 @@ const ColumnContentWithLocation4 = ({
             Providing {keyword} doesn&apos;t end after money is transacted. Most
             customers have questions that need answers after getting their
             computers serviced. We understand that pre and after-sales support
-            is an integral part of our business. Thus, our friendly staff is
-            happy to assist you further for free of charge should you have any
-            questions after we&apos;ve provided the services. This can be done
-            over the phone, via email, over the counter, or remote
+            is an integral part of our business. Thus, our{" "}
+            {camelCaseAll(location)} friendly technicians are happy to assist
+            you further{" "}
+            <span className="font-sans font-bold">free of charge</span> should
+            you have any questions after we&apos;ve provided the services. This
+            can be done over the phone, via email, over the counter, or remote
             troubleshooting. If we&apos;re not the best person to assist you,
             we&apos;ll refer you to someone who can.
           </p>

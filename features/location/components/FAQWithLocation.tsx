@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import Collapse from "antd/lib/collapse";
 import customParser from "utils/customParser";
+import { camelCaseAll } from "utils/formatter";
 
 const { Panel } = Collapse;
 
@@ -10,7 +11,7 @@ const FAQWithLocation = ({
   location,
 }: {
   keyword: string | undefined;
-  location?: string | undefined;
+  location: string;
 }) => {
   type PanelItem = {
     key: string;
@@ -224,8 +225,8 @@ const FAQWithLocation = ({
         Frequently asked questions
       </h4>
       <p className="text-center py-10">
-        Your questions answered by our computer experts. Can&apos;t find an
-        answer?
+        Your questions answered by our computer {camelCaseAll(location)}{" "}
+        {keyword} experts. Can&apos;t find an answer?
         <br />
         Call us on: <Link href="tel:1800858382">1800 85 83 82</Link>
       </p>

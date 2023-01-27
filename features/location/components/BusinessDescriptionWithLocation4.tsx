@@ -1,11 +1,19 @@
 import Link from "next/link";
 import Button from "antd/lib/button";
+import { camelCaseAll } from "utils/formatter";
 
-const BusinessDescriptionWithLocation4 = ({ keyword }: { keyword: string }) => {
+const BusinessDescriptionWithLocation4 = ({
+  keyword,
+  location,
+}: {
+  keyword: string;
+  location: string;
+}) => {
   return (
     <div className="text-center pb-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h3 className="text-3xl text-black font-bold font-sans">
-        Customers highly recommend Safemode for {keyword}
+        Customers highly recommend Safemode for {camelCaseAll(location)}{" "}
+        {keyword}
       </h3>
       <p className="py-5 mx-auto">
         We&apos;ve worked hard to receive a{" "}

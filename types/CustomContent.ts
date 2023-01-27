@@ -26,4 +26,15 @@ export type CustomContent = {
   content23?: string;
   content24?: string;
   content25?: string;
+  image1?: Img;
+  image2?: Img;
+  image3?: Img;
+  image4?: Img;
+  image5?: Img;
+  image6?: Img;
+};
+
+export type Img = {
+  src: string;
+  alt?: string;
 };
