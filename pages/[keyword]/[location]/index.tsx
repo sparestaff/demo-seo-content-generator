@@ -14,7 +14,6 @@ import FAQWithLocation from "features/location/components/FAQWithLocation";
 import BreadCrumbs from "features/keyword/components/BreadCrumbs";
 import Rates from "features/keyword/components/Rates";
 import Services from "features/keyword/components/Services";
-import ColumnContent3 from "features/keyword/components/ColumnContent3";
 import MainFeedback from "features/keyword/components/MainFeedback";
 import SubFeedback from "features/keyword/components/SubFeedback";
 import Articles from "features/keyword/components/Articles";
