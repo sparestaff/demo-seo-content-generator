@@ -12,7 +12,6 @@ import "../styles/custom-antd.css";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header />
       <ContactBanner />
       <NavBar />
       <Component {...pageProps} />

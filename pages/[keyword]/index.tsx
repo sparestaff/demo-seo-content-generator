@@ -18,6 +18,7 @@ import FAQ from "features/keyword/components/FAQ";
 import Articles from "features/keyword/components/Articles";
 import ServiceAreas from "features/keyword/components/ServiceAreas";
 import BottomContent from "features/keyword/components/BottomContent";
+import Header from "components/layout/Header";
 // type
 import { CustomContent } from "types/CustomContent";
 // api
@@ -40,6 +41,7 @@ const KeywordPillarPage = ({
 
   return (
     <>
+      <Header keyword={keyword} />
       <HeroSection
         keyword={keyword}
         content1={result?.content1}
