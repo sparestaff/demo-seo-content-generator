@@ -25,6 +25,7 @@ import { CustomContent } from "types/CustomContent";
 import { getCustomContentsWithLocation } from "features/location/API/services";
 import { getLocationsByKeyword } from "features/keyword/API/services";
 import { useRouter } from "next/router";
+import Header from "components/layout/Header";
 
 const KeywordPillarPage = ({
   result,
@@ -41,6 +42,7 @@ const KeywordPillarPage = ({
 
   return (
     <>
+      <Header keyword={keyword} location={location} />
       <HeroSectionWithLocation
         keyword={keyword}
         location={location}
