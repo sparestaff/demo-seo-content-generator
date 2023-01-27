@@ -36,8 +36,12 @@ const Services = ({
     },
     {
       icon: <FaShippingFast />,
-      title: "Same-day repairs",
-      desc: "We provide same-day services. Most repairs are completed on the same-day.",
+      title: `Same-day ${keyword}${
+        location ? " for " + camelCaseAll(String(location)) : ""
+      }`,
+      desc: `We provide same-day ${keyword}${
+        location ? " for " + camelCaseAll(String(location)) + " area" : ""
+      }. Most repairs are completed on the same-day.`,
     },
     {
       icon: <AiFillApple />,
@@ -52,7 +56,9 @@ const Services = ({
     {
       icon: <BiDollar />,
       title: "Price beat guarantee",
-      desc: "Got a quote from another Sydney computer repairs shop? We will beat it by 5%.",
+      desc: `Got a quote from another ${
+        location ? camelCaseAll(String(location)) + " " : ""
+      }${keyword} shop? We will beat it by 5%.`,
     },
     {
       icon: <FaGlobeAmericas />,

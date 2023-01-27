@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { HERO_SECTION_IMAGE } from "utils/constants";
+import { Img } from "types/CustomContent";
+import { DEFAULT_KEYWORD_IMAGE_4 } from "utils/constants";
 import customParser from "utils/customParser";
 
 const ColumnContent3 = ({
@@ -7,11 +8,13 @@ const ColumnContent3 = ({
   location,
   content1,
   content2,
+  image,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
   content1: string | undefined;
   content2: string | undefined;
+  image?: Img;
 }) => {
   if (!content1) return null;
   return (
@@ -26,11 +29,13 @@ const ColumnContent3 = ({
       </div>
       <div>
         <Image
-          src={HERO_SECTION_IMAGE}
+          src={image?.src || DEFAULT_KEYWORD_IMAGE_4}
+          alt={
+            image?.alt || "A computer technician providing support to customers"
+          }
           width={400}
           height={400}
           priority
-          alt="custom_upload_image_1"
         />
       </div>
     </div>

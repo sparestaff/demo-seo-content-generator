@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { STATIC_IMAGE_1 } from "utils/constants";
+import { DEFAULT_LOCATION_IMAGE_2 } from "utils/constants";
 import { camelCaseAll } from "utils/formatter";
 
 const ColumnContentWithLocation1 = ({
@@ -64,11 +64,13 @@ const ColumnContentWithLocation1 = ({
       </div>
       <div className="hidden md:block">
         <Image
-          src={STATIC_IMAGE_1}
+          src={DEFAULT_LOCATION_IMAGE_2}
           width={400}
           height={400}
           priority
-          alt="custom_upload_image_1"
+          alt={`How to use our ${keyword} services in ${camelCaseAll(
+            location
+          )}`}
         />
       </div>
     </div>

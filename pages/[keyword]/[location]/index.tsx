@@ -8,6 +8,8 @@ import ColumnContentWithLocation2 from "features/location/components/ColumnConte
 import ColumnContentWithLocation3 from "features/location/components/ColumnContentWithLocation3";
 import ColumnContentWithLocation4 from "features/location/components/ColumnContentWithLocation4";
 import ColumnContentWithLocation5 from "features/location/components/ColumnContentWithLocation5";
+import ColumnContentWithLocation6 from "features/location/components/ColumnContentWithLocation6";
+import ColumnContentWithLocation7 from "features/location/components/ColumnContentWithLocation7";
 import FAQWithLocation from "features/location/components/FAQWithLocation";
 import BreadCrumbs from "features/keyword/components/BreadCrumbs";
 import Rates from "features/keyword/components/Rates";
@@ -24,7 +26,6 @@ import { CustomContent } from "types/CustomContent";
 import { getCustomContentsWithLocation } from "features/location/API/services";
 import { getLocationsByKeyword } from "features/keyword/API/services";
 import { useRouter } from "next/router";
-import ColumnContent2 from "features/keyword/components/ColumnContent2";
 
 const KeywordPillarPage = ({
   result,
@@ -46,6 +47,7 @@ const KeywordPillarPage = ({
         location={location}
         content1={result?.content1}
         content2={result?.content2}
+        image={result?.image1}
       />
       <Rates />
       <BreadCrumbs keyword={keyword} location={location} />
@@ -61,28 +63,40 @@ const KeywordPillarPage = ({
         location={location}
         content5={result?.content5}
         content6={result?.content6}
+        image={result?.image2}
       />
       <BusinessDescriptionWithLocation3 keyword={keyword} location={location} />
       <ColumnContentWithLocation1 keyword={keyword} location={location} />
-      <ColumnContentWithLocation2 keyword={keyword} location={location} />
-      <ColumnContentWithLocation3 keyword={keyword} location={location} />
+      <ColumnContentWithLocation2
+        keyword={keyword}
+        location={location}
+        image={result?.image3}
+      />
+      <ColumnContentWithLocation3
+        keyword={keyword}
+        location={location}
+        image={result?.image4}
+      />
       <ColumnContentWithLocation4 keyword={keyword} location={location} />
-      <ColumnContent2
+      <ColumnContentWithLocation5
         keyword={keyword}
         location={location}
         content1={result?.content7}
         content2={result?.content8}
+        image={result?.image5}
       />
-      <ColumnContent3
+      <ColumnContentWithLocation6
         keyword={keyword}
+        location={location}
         content1={result?.content9}
         content2={result?.content10}
+        image={result?.image6}
       />
-      <BusinessDescriptionWithLocation4 keyword={keyword} />
+      <BusinessDescriptionWithLocation4 keyword={keyword} location={location} />
       <MainFeedback keyword={keyword} />
       <SubFeedback />
-      <ColumnContentWithLocation5 keyword={keyword} location={location} />
-      <FAQWithLocation keyword={keyword} />
+      <ColumnContentWithLocation7 keyword={keyword} location={location} />
+      <FAQWithLocation keyword={keyword} location={location} />
       <Articles keyword={keyword} content={result?.content11} />
       <ServiceAreas
         keyword={keyword}
