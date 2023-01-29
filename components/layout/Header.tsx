@@ -17,24 +17,24 @@ const Header = ({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta
         name="title"
-        content={`Same-day ${keyword && keyword} ${
-          location && camelCaseAll(location)
+        content={`Same-day ${keyword && keyword}${
+          location ? " " + camelCaseAll(location) : ""
         }. Rated Best 3 in ${currentYear} - Safemode`}
       />
       <meta
         property="og:title"
-        content={`${keyword} ${location && camelCaseAll(location)}`}
+        content={`${keyword}${location ? " " + camelCaseAll(location) : ""}`}
       />
       <meta
         name="description"
-        content={`Safemode is rated Best 3 from 2016 to ${currentYear} for ${keyword} ${
-          location && camelCaseAll(location)
+        content={`Safemode is rated Best 3 from 2016 to ${currentYear} for ${keyword}${
+          location ? " " + camelCaseAll(location) : ""
         }. PC, laptop, Apple Mac, data recovery, water damage repairs. Call Now for Free quote.`}
       />
       <meta
         property="og:description"
-        content={`Safemode is rated Best 3 from 2016 to ${currentYear} for ${keyword} ${
-          location && camelCaseAll(location)
+        content={`Safemode is rated Best 3 from 2016 to ${currentYear} for ${keyword}${
+          location ? " " + camelCaseAll(location) : ""
         }. PC, laptop, Apple Mac, data recovery, water damage repairs. Call Now for Free quote.`}
       />
       <link
