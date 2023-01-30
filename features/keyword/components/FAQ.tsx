@@ -14,7 +14,7 @@ const Faq = ({
   keyword: string | undefined;
   location?: string | undefined;
   content: string | undefined;
-  faqs: FAQ[];
+  faqs: FAQ[] | undefined;
 }) => {
   return (
     <div className="py-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5">

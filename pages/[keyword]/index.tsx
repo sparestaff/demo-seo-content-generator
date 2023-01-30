@@ -14,7 +14,7 @@ import ColumnContent4 from "features/keyword/components/ColumnContent4";
 import BusinessDescription4 from "features/keyword/components/BusinessDescription4";
 import MainFeedback from "features/keyword/components/MainFeedback";
 import SubFeedback from "features/keyword/components/SubFeedback";
-// import Faq from "features/keyword/components/Faq";
+import Faq from "features/keyword/components/Faq";
 import Articles from "features/keyword/components/Articles";
 import ServiceAreas from "features/keyword/components/ServiceAreas";
 import BottomContent from "features/keyword/components/BottomContent";
@@ -100,7 +100,7 @@ const KeywordPillarPage = ({
       <BusinessDescription4 keyword={keyword} content={result?.content20} />
       <MainFeedback keyword={keyword} content={result?.content21} />
       <SubFeedback />
-      {/* <Faq keyword={keyword} content={result?.content22} faqs={faqs} /> */}
+      <Faq keyword={keyword} content={result?.content22} faqs={faqs} />
       <Articles keyword={keyword} content={result?.content23} />
       <ServiceAreas
         keyword={keyword}
