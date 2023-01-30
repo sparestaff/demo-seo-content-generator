@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Img } from "types/CustomContent";
 import { DEFAULT_LOCATION_IMAGE_6 } from "utils/constants";
 import customParser from "utils/customParser";
 
@@ -14,7 +13,7 @@ const ColumnContent6 = ({
   location?: string | undefined;
   content1: string | undefined;
   content2: string | undefined;
-  image?: Img;
+  image?: string;
 }) => {
   if (!content1) return null;
   return (
@@ -29,8 +28,8 @@ const ColumnContent6 = ({
       </div>
       <div>
         <Image
-          src={image?.src || DEFAULT_LOCATION_IMAGE_6}
-          alt={image?.alt || "A computer technician installing network cables"}
+          src={image || DEFAULT_LOCATION_IMAGE_6}
+          alt={"A computer technician installing network cables"}
           width={400}
           height={400}
           priority

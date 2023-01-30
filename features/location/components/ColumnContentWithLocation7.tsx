@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Img } from "types/CustomContent";
 import { camelCaseAll } from "utils/formatter";
 
 const ColumnContentWithLocation6 = ({

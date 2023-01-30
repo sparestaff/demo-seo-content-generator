@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Img } from "types/CustomContent";
 import { DEFAULT_LOCATION_IMAGE_4 } from "utils/constants";
 const ColumnContentWithLocation3 = ({
   keyword,
@@ -8,7 +7,7 @@ const ColumnContentWithLocation3 = ({
 }: {
   keyword: string;
   location: string;
-  image?: Img;
+  image?: string;
 }) => {
   return (
     <div className="flex flex-col-reverse sm:flex-row	text-center sm:justify-between sm:items-center max-w-6xl mx-auto md:pb-10 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
@@ -27,8 +26,8 @@ const ColumnContentWithLocation3 = ({
       </div>
       <div className="hidden md:block">
         <Image
-          src={image?.src || DEFAULT_LOCATION_IMAGE_4}
-          alt={image?.alt || "People waiting for their computers to be fixed"}
+          src={image || DEFAULT_LOCATION_IMAGE_4}
+          alt={"People waiting for their computers to be fixed"}
           width={400}
           height={400}
           priority

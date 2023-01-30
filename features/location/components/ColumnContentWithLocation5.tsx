@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Img } from "types/CustomContent";
 import { DEFAULT_KEYWORD_IMAGE_3 } from "utils/constants";
 import customParser from "utils/customParser";
 
@@ -14,15 +13,15 @@ const ColumnContentWithLocation5 = ({
   location?: string | undefined;
   content1: string | undefined;
   content2: string | undefined;
-  image?: Img;
+  image?: string;
 }) => {
   if (!content1) return null;
   return (
     <div className="flex sm:justify-between sm:items-center sm:flex-row flex-col text-center max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div>
         <Image
-          src={image?.src || DEFAULT_KEYWORD_IMAGE_3}
-          alt={image?.alt || "A computer technician fixing computers"}
+          src={image || DEFAULT_KEYWORD_IMAGE_3}
+          alt={"A computer technician fixing computers"}
           width={400}
           height={400}
           priority

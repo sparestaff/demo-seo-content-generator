@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Img } from "types/CustomContent";
 import { DEFAULT_LOCATION_IMAGE_3 } from "utils/constants";
 import { camelCaseAll } from "utils/formatter";
 
@@ -10,17 +9,16 @@ const ColumnContentWithLocation2 = ({
 }: {
   keyword: string;
   location: string;
-  image?: Img;
+  image?: string;
 }) => {
   return (
     <div className="flex sm:justify-between sm:items-center sm:flex-row flex-col max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="hidden md:block">
         <Image
-          src={image?.src || DEFAULT_LOCATION_IMAGE_3}
-          alt={
-            image?.alt ||
-            `Woman browsing price for ${keyword} in ${camelCaseAll(location)}`
-          }
+          src={image || DEFAULT_LOCATION_IMAGE_3}
+          alt={`Woman browsing price for ${keyword} in ${camelCaseAll(
+            location
+          )}`}
           width={400}
           height={400}
           priority

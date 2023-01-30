@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Img } from "types/CustomContent";
 import { DEFAULT_KEYWORD_IMAGE_4 } from "utils/constants";
 import customParser from "utils/customParser";
 
@@ -14,7 +13,7 @@ const ColumnContent3 = ({
   location?: string | undefined;
   content1: string | undefined;
   content2: string | undefined;
-  image?: Img;
+  image?: string;
 }) => {
   if (!content1) return null;
   return (
@@ -29,10 +28,8 @@ const ColumnContent3 = ({
       </div>
       <div>
         <Image
-          src={image?.src || DEFAULT_KEYWORD_IMAGE_4}
-          alt={
-            image?.alt || "A computer technician providing support to customers"
-          }
+          src={image || DEFAULT_KEYWORD_IMAGE_4}
+          alt={"A computer technician providing support to customers"}
           width={400}
           height={400}
           priority

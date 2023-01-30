@@ -3,7 +3,6 @@ import Image from "next/image";
 import { DEFAULT_KEYWORD_IMAGE_2 } from "utils/constants";
 import customParser from "utils/customParser";
 import { camelCaseAll } from "utils/formatter";
-import { Img } from "types/CustomContent";
 
 const ColumnContent1 = ({
   keyword,
@@ -22,7 +21,7 @@ const ColumnContent1 = ({
   content3?: string | undefined;
   content4?: string | undefined;
   content5?: string | undefined;
-  image?: Img;
+  image?: string;
 }) => {
   return (
     <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center max-w-6xl mx-auto">
@@ -104,8 +103,8 @@ const ColumnContent1 = ({
       </div>
       <div>
         <Image
-          src={image?.src || DEFAULT_KEYWORD_IMAGE_2}
-          alt={image?.alt || `How to use our ${keyword} services`}
+          src={image || DEFAULT_KEYWORD_IMAGE_2}
+          alt={`How to use our ${keyword} services`}
           width={400}
           height={400}
           priority

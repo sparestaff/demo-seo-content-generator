@@ -2,7 +2,6 @@ import Image from "next/image";
 import Button from "antd/lib/button";
 import { DEFAULT_KEYWORD_IMAGE_1 } from "utils/constants";
 import customParser from "utils/customParser";
-import { Img } from "types/CustomContent";
 
 const HeroSection = ({
   keyword,
@@ -14,7 +13,7 @@ const HeroSection = ({
   location?: string;
   content1: string | undefined;
   content2: string | undefined;
-  image?: Img;
+  image?: string;
 }) => {
   return (
     <div className="bg-orange-50">
@@ -45,8 +44,8 @@ const HeroSection = ({
         </div>
         <div>
           <Image
-            src={image?.src || DEFAULT_KEYWORD_IMAGE_1}
-            alt={image?.alt || `Same day ${keyword} IT services`}
+            src={image || DEFAULT_KEYWORD_IMAGE_1}
+            alt={`Same day ${keyword} IT services`}
             width={450}
             height={400}
             priority
