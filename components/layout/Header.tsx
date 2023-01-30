@@ -12,7 +12,9 @@ const Header = ({
   const currentYear = new Date().getFullYear();
   return (
     <Head>
-      <title>SEO Content Generator</title>
+      <title>{`Same-day ${keyword && keyword}${
+        location ? " " + camelCaseAll(location) : ""
+      }. Rated Best 3 in ${currentYear} - Safemode`}</title>
       <meta name="description" content="Developed by Safemode" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta
