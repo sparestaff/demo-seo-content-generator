@@ -14,7 +14,7 @@ import ColumnContent4 from "features/keyword/components/ColumnContent4";
 import BusinessDescription4 from "features/keyword/components/BusinessDescription4";
 import MainFeedback from "features/keyword/components/MainFeedback";
 import SubFeedback from "features/keyword/components/SubFeedback";
-import Faq from "features/keyword/components/Faq";
+import Faq from "features/keyword/components/FAQ";
 import Articles from "features/keyword/components/Articles";
 import ServiceAreas from "features/keyword/components/ServiceAreas";
 import BottomContent from "features/keyword/components/BottomContent";
