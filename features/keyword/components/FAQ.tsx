@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ReactNode } from "react";
 import Collapse from "antd/lib/collapse";
 import customParser from "utils/customParser";
 import { FAQ } from "types/FAQ";
