@@ -25,20 +25,24 @@ import { CustomContent } from "types/CustomContent";
 import { getCustomContentsWithLocation } from "features/location/API/services";
 import {
   getLocationsByKeyword,
-  getRadomFAQs,
+  getRandomFAQs,
+  getRandomReviews,
 } from "features/keyword/API/services";
 import { useRouter } from "next/router";
 import Header from "components/layout/Header";
 import { FAQ } from "types/FAQ";
+import { Review } from "types/Review";
 
 const KeywordPillarPage = ({
   result,
   locations,
   faqs,
+  reviews,
 }: {
   result: CustomContent;
   locations: string[];
   faqs: FAQ[];
+  reviews: Review[];
 }) => {
   const router = useRouter();
   const keyword = router.query.keyword?.toString().replace(/-/g, " ") as string;
@@ -101,7 +105,7 @@ const KeywordPillarPage = ({
       />
       <BusinessDescriptionWithLocation4 keyword={keyword} location={location} />
       <MainFeedback keyword={keyword} />
-      <SubFeedback />
+      <SubFeedback reviews={reviews} />
       <ColumnContentWithLocation7 keyword={keyword} location={location} />
       <FAQWithLocation keyword={keyword} location={location} faqs={faqs} />
       <Articles keyword={keyword} content={result?.content11} />
@@ -122,16 +126,18 @@ export async function getServerSideProps(context: any) {
     .toString()
     .replace(/-/g, " ");
 
-  const [result, locations, faqs] = await Promise.all([
+  const [result, locations, faqs, reviews] = await Promise.all([
     getCustomContentsWithLocation(keyword, locationQuery),
     getLocationsByKeyword(keyword),
-    getRadomFAQs(),
+    getRandomFAQs(),
+    getRandomReviews(),
   ]);
   return {
     props: {
       result,
       locations,
       faqs,
+      reviews,
     },
   };
 }

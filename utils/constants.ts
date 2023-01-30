@@ -18,7 +18,7 @@ export const DELL_IMAGE =
 export const APPLE_RESCUE_IMAGE =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674000662/seo-content-generator-mvp/apple-laptop-rescue_h3hzaw.webp";
 export const DEFAULT_KEYWORD_IMAGE_1 =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674771322/seo-content-generator-mvp/same-day-computer-repairs-it-services-32-800x781_yn7ct1.webp";
+  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1675043329/seo-content-generator-mvp/same-day-computer-repairs-it-services-32-800x781_yn7ct1_m99flu.webp";
 export const DEFAULT_KEYWORD_IMAGE_2 =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674776894/seo-content-generator-mvp/how-to-use-our-computer-repair-services-800x800_a7nzce.webp";
 export const DEFAULT_KEYWORD_IMAGE_3 =
