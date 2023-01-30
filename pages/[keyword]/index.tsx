@@ -27,7 +27,7 @@ import {
   getLocationsByKeyword,
   getRadomFAQs,
 } from "features/keyword/API/services";
-import type { FAQ } from "types/FAQ";
+import { FAQ } from "types/FAQ";
 
 const KeywordPillarPage = ({
   result,
