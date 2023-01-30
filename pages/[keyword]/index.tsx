@@ -14,7 +14,7 @@ import ColumnContent4 from "features/keyword/components/ColumnContent4";
 import BusinessDescription4 from "features/keyword/components/BusinessDescription4";
 import MainFeedback from "features/keyword/components/MainFeedback";
 import SubFeedback from "features/keyword/components/SubFeedback";
-import FAQ from "features/keyword/components/FAQ";
+import Faq from "features/keyword/components/Faq";
 import Articles from "features/keyword/components/Articles";
 import ServiceAreas from "features/keyword/components/ServiceAreas";
 import BottomContent from "features/keyword/components/BottomContent";
@@ -25,14 +25,18 @@ import { CustomContent } from "types/CustomContent";
 import {
   getCustomContents,
   getLocationsByKeyword,
+  getRadomFAQs,
 } from "features/keyword/API/services";
+import type { FAQ } from "types/FAQ";
 
 const KeywordPillarPage = ({
   result,
   locations,
+  faqs,
 }: {
   result: CustomContent;
   locations?: string[];
+  faqs: FAQ[];
 }) => {
   const router = useRouter();
   const keyword = router?.query?.keyword
@@ -96,7 +100,7 @@ const KeywordPillarPage = ({
       <BusinessDescription4 keyword={keyword} content={result?.content20} />
       <MainFeedback keyword={keyword} content={result?.content21} />
       <SubFeedback />
-      <FAQ keyword={keyword} content={result?.content22} />
+      <Faq keyword={keyword} content={result?.content22} faqs={faqs} />
       <Articles keyword={keyword} content={result?.content23} />
       <ServiceAreas
         keyword={keyword}
@@ -110,12 +114,16 @@ const KeywordPillarPage = ({
 
 export async function getServerSideProps(context: any) {
   const keyword: string = context.query.keyword.toString().replace(/-/g, " ");
-  const result = (await getCustomContents(keyword)) as CustomContent;
-  const locations = await getLocationsByKeyword(keyword);
+  const [result, locations, faqs] = await Promise.all([
+    getCustomContents(keyword),
+    getLocationsByKeyword(keyword),
+    getRadomFAQs(),
+  ]);
   return {
     props: {
       result,
       locations,
+      faqs,
     },
   };
 }

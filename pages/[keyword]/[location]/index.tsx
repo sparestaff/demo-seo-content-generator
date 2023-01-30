@@ -23,16 +23,22 @@ import BottomContent from "features/keyword/components/BottomContent";
 import { CustomContent } from "types/CustomContent";
 // api
 import { getCustomContentsWithLocation } from "features/location/API/services";
-import { getLocationsByKeyword } from "features/keyword/API/services";
+import {
+  getLocationsByKeyword,
+  getRadomFAQs,
+} from "features/keyword/API/services";
 import { useRouter } from "next/router";
 import Header from "components/layout/Header";
+import { FAQ } from "types/FAQ";
 
 const KeywordPillarPage = ({
   result,
   locations,
+  faqs,
 }: {
   result: CustomContent;
   locations: string[];
+  faqs: FAQ[];
 }) => {
   const router = useRouter();
   const keyword = router.query.keyword?.toString().replace(/-/g, " ") as string;
@@ -97,7 +103,7 @@ const KeywordPillarPage = ({
       <MainFeedback keyword={keyword} />
       <SubFeedback />
       <ColumnContentWithLocation7 keyword={keyword} location={location} />
-      <FAQWithLocation keyword={keyword} location={location} />
+      <FAQWithLocation keyword={keyword} location={location} faqs={faqs} />
       <Articles keyword={keyword} content={result?.content11} />
       <ServiceAreas
         keyword={keyword}
@@ -116,13 +122,16 @@ export async function getServerSideProps(context: any) {
     .toString()
     .replace(/-/g, " ");
 
-  const result = await getCustomContentsWithLocation(keyword, locationQuery);
-  const locations = await getLocationsByKeyword(keyword);
-
+  const [result, locations, faqs] = await Promise.all([
+    getCustomContentsWithLocation(keyword, locationQuery),
+    getLocationsByKeyword(keyword),
+    getRadomFAQs(),
+  ]);
   return {
     props: {
       result,
       locations,
+      faqs,
     },
   };
 }
