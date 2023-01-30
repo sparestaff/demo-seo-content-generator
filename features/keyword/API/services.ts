@@ -1,6 +1,7 @@
 import { CustomContent } from "types/CustomContent";
 import { Location } from "types/Location";
 import { FAQ } from "types/FAQ";
+import { Review } from "types/Review";
 import { APIWithoutAuth } from "utils/api";
 
 export const getCustomContents = async (
@@ -52,9 +53,18 @@ export const getLocationsByKeyword = async (
   }
 };
 
-export const getRadomFAQs = async (): Promise<FAQ[]> => {
+export const getRandomFAQs = async (): Promise<FAQ[]> => {
   try {
     const { data } = await APIWithoutAuth.get("/faqs");
+    return data;
+  } catch (error) {
+    return [];
+  }
+};
+
+export const getRandomReviews = async (): Promise<Review[]> => {
+  try {
+    const { data } = await APIWithoutAuth.get("/reviews");
     return data;
   } catch (error) {
     return [];
