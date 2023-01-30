@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Img } from "types/CustomContent";
 import { DEFAULT_KEYWORD_IMAGE_5 } from "utils/constants";
 import customParser from "utils/customParser";
 
@@ -14,18 +13,15 @@ const ColumnContent4 = ({
   location?: string | undefined;
   content1: string | undefined;
   content2: string | undefined;
-  image?: Img;
+  image?: string;
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10">
         <div>
           <Image
-            src={image?.src || DEFAULT_KEYWORD_IMAGE_5}
-            alt={
-              image?.alt ||
-              "Why Safemode Computer Service experts are different"
-            }
+            src={image || DEFAULT_KEYWORD_IMAGE_5}
+            alt={"Why Safemode Computer Service experts are different"}
             width={400}
             height={400}
             priority

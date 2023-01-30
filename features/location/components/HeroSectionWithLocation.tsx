@@ -3,7 +3,6 @@ import Button from "antd/lib/button";
 import { DEFAULT_LOCATION_IMAGE_1 } from "utils/constants";
 import { camelCaseAll } from "utils/formatter";
 import customParser from "utils/customParser";
-import { Img } from "types/CustomContent";
 
 const HeroSectionWithLocation = ({
   keyword,
@@ -16,7 +15,7 @@ const HeroSectionWithLocation = ({
   location: string;
   content1: string | undefined;
   content2: string | undefined;
-  image?: Img;
+  image?: string;
 }) => {
   return (
     <div className="bg-orange-50">
@@ -56,11 +55,8 @@ const HeroSectionWithLocation = ({
         </div>
         <div>
           <Image
-            src={image?.src || DEFAULT_LOCATION_IMAGE_1}
-            alt={
-              image?.alt ||
-              `Same day ${camelCaseAll(location)} ${camelCaseAll(keyword)}`
-            }
+            src={image || DEFAULT_LOCATION_IMAGE_1}
+            alt={`Same day ${camelCaseAll(location)} ${camelCaseAll(keyword)}`}
             width={450}
             height={400}
             priority

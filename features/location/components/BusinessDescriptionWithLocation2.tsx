@@ -2,7 +2,6 @@ import Image from "next/image";
 import customParser from "utils/customParser";
 import { camelCaseAll } from "utils/formatter";
 import { DEFAULT_KEYWORD_IMAGE_2 } from "utils/constants";
-import { Img } from "types/CustomContent";
 
 const BusinessDescriptionWithLocation2 = ({
   keyword,
@@ -15,18 +14,15 @@ const BusinessDescriptionWithLocation2 = ({
   location?: string | undefined;
   content5: string | undefined;
   content6: string | undefined;
-  image?: Img;
+  image?: string;
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10">
         <div>
           <Image
-            src={image?.src || DEFAULT_KEYWORD_IMAGE_2}
-            alt={
-              image?.alt ||
-              "Why Safemode Computer Service experts are different"
-            }
+            src={image || DEFAULT_KEYWORD_IMAGE_2}
+            alt="Why Safemode Computer Service experts are different"
             width={500}
             height={500}
             priority
