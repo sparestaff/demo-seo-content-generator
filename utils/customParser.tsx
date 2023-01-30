@@ -39,6 +39,18 @@ const customParser = ({
         );
       }
 
+      if (name === "li") {
+        return <li className="py-2.5">{domToReact(children, options)}</li>;
+      }
+
+      if (name === "ul") {
+        return (
+          <ul className="px-10 my-5" style={{ listStyleType: "disc" }}>
+            {domToReact(children, options)}
+          </ul>
+        );
+      }
+
       if (name === "br") {
         return <br />;
       }
