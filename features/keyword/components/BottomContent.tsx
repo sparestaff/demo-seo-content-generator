@@ -15,7 +15,7 @@ const BottomContent = ({
     <div className="bg-seo-primary">
       <div className="flex items-center justify-between max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0 pt-5">
         <div>
-          <h2 className="text-6xl text-white font-bold font-sans">
+          <h2 className="text-3xl lg:text-5xl text-white font-bold font-sans">
             {content
               ? customParser({ customContent: content, keyword, location })
               : `Need ${keyword}${location ? ` in ${location}` : ""}?`}

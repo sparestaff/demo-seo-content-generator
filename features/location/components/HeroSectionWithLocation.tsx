@@ -48,7 +48,7 @@ const HeroSectionWithLocation = ({
               type="primary"
               size="large"
               shape="round"
-              className="h-14 text-xl items-center"
+              className="h-14 text-xl mt-1.5"
               href="https://safemode.com.au/quote/"
             >
               Get a Quick Quote
