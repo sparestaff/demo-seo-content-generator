@@ -31,7 +31,7 @@ const BusinessDescription2 = ({
             >
               Best 3{" "}
             </Link>
-            something centres, from 2016 to 2022! Since 2004, our computer
+            {keyword} centres, from 2016 to 2022! Since 2004, our computer
             technicians have fixed 40,000+ problems on PC computers, laptops,
             Apple Mac for home and small businesses that covered everything from
             removing viruses, to water damage laptop repairs. We are proficient

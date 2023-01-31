@@ -26,7 +26,7 @@ const Services = ({
       icon: <AiOutlineTeam />,
       title: `Expert ${keyword}`,
       desc: `Our ${keyword} ${
-        location ? camelCaseAll(location) : null
+        location ? camelCaseAll(location) : ""
       } technicians have over 15 years of experience with both Windows and Apple Mac.`,
     },
     {
