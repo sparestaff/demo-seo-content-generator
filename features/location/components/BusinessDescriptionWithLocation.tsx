@@ -28,7 +28,12 @@ const BusinessDescription = ({
             )}. That's why 9.4/10 customers recommend Safemode Computer Service to their friends and family.`}
       </p>
       <div>
-        <Button type="primary" size="large" shape="round">
+        <Button
+          type="primary"
+          size="large"
+          shape="round"
+          href="https://safemode.com.au/quote/"
+        >
           Get a Quick Quote
         </Button>
       </div>
