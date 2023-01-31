@@ -18,7 +18,7 @@ const SubFeedbackChild = ({ review }: { review: Review }) => {
     setShowMore: (showMore: boolean) => void;
   }) => {
     if (content.length <= wordLimit) {
-      return <p className="whitespace-pre-line h-24">{content}</p>;
+      return <p className="whitespace-pre-line sm:h-28 xl:h-24">{content}</p>;
     }
     return (
       <p className="whitespace-pre-line h-auto">
@@ -34,7 +34,7 @@ const SubFeedbackChild = ({ review }: { review: Review }) => {
   };
   return (
     <div
-      className="w-full grid grid-cols-1 sm:gap-5 rounded-lg shadow-md p-4 my-5"
+      className="w-full grid grid-cols-1 gap-5 rounded-lg shadow-md p-4 my-5"
       key={review._id}
     >
       <p className="text-xl font-bold font-sans text-black text-center md:text-left">
