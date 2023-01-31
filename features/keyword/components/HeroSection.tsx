@@ -28,9 +28,8 @@ const HeroSection = ({
           <p className="font-bold text-xl leading-8">
             {content2
               ? customParser({ customContent: content2, keyword })
-              : "Award-winning, same-day"}
+              : `Award-winning, same-day ${keyword} since 2004.`}
             <br />
-            {keyword} since 2004.
           </p>
           <div>
             <Button
