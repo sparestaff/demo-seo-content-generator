@@ -43,6 +43,7 @@ const BusinessDescriptionWithLocation4 = ({
           size="large"
           shape="round"
           href="https://safemode.com.au/quote/"
+          className="items-center"
         >
           Get a Quick Quote
         </Button>
