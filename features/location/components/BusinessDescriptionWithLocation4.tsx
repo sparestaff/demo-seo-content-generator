@@ -38,7 +38,12 @@ const BusinessDescriptionWithLocation4 = ({
         </Link>
       </p>
       <div>
-        <Button type="primary" size="large" shape="round">
+        <Button
+          type="primary"
+          size="large"
+          shape="round"
+          href="https://safemode.com.au/quote/"
+        >
           Get a Quick Quote
         </Button>
       </div>

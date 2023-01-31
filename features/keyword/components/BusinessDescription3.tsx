@@ -35,7 +35,12 @@ const BusinessDescription3 = ({
           : "After 40,000 repairs completed, done by our own in-house technicians, we know computers inside out."}
       </p>
       <div>
-        <Button type="primary" size="large" shape="round">
+        <Button
+          type="primary"
+          size="large"
+          shape="round"
+          href="https://safemode.com.au/quote/"
+        >
           Get a Quick Quote
         </Button>
       </div>
