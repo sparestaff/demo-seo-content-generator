@@ -39,7 +39,7 @@ const HeroSection = ({
               className="h-14 text-xl"
               href="https://safemode.com.au/quote/"
             >
-              <span className="mt-1.5">Get a Quick Quote</span>
+              <span className="mt-1.5 font-sans">Get a Quick Quote</span>
             </Button>
           </div>
         </div>
