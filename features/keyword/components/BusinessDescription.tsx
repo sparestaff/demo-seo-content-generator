@@ -34,9 +34,9 @@ const BusinessDescription = ({
           size="large"
           shape="round"
           href="https://safemode.com.au/quote/"
-          className="items-center"
+          className="items-center font-sans"
         >
-          Get a Quick Quote
+          <span className="font-sans">Get a Quick Quote</span>
         </Button>
       </div>
     </div>
