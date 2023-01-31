@@ -88,7 +88,7 @@ const Services = ({
           </p>
         </>
       ) : null}
-      <Slider>
+      <Slider sm={2} md={2} lg={3} xl={4}>
         {sliderItems.map((item, idx) => (
           <div
             className="w-48 sm:w-60 grid grid-cols-1 rounded-lg shadow-md p-4 h-80 sm:h-60 my-5"
