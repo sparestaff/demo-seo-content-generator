@@ -101,7 +101,12 @@ const KeywordPillarPage = ({
         content2={result?.content19}
         image={result?.image5}
       />
-      <BusinessDescription4 keyword={keyword} content={result?.content20} />
+      <BusinessDescription4
+        keyword={keyword}
+        content={result?.content20}
+        total={reviewsData?.total}
+        average={reviewsData.average}
+      />
       <MainFeedback keyword={keyword} content={result?.content21} />
       <SubFeedback reviews={reviewsData.reviews} />
       <Faq keyword={keyword} content={result?.content22} faqs={faqs} />
