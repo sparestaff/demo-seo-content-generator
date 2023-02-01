@@ -10,7 +10,7 @@ const BusinessDescriptionWithLocation3 = ({
 }) => {
   return (
     <div className="text-center pt-10 pb-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <h3 className="text-3xl text-black font-bold font-sans">
+      <h3 className="text-2xl md:text-3xl text-black font-bold font-sans">
         We&apos;ve mastered {keyword}
         in {camelCaseAll(location)}
       </h3>
