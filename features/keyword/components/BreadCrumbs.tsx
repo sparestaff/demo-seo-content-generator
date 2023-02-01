@@ -5,20 +5,27 @@ const BreadCrumbs = ({
   location,
   region,
 }: {
-  keyword: string | undefined;
+  keyword: string;
   location?: string | undefined;
   region?: string;
 }) => {
   return (
     <div className="text-center mt-5 mb-10 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       You are here: <Link href="https://safemode.com.au/">Home</Link> /{" "}
-      {keyword}
-      {region ? ` / ${camelCaseAll(region)}` : null}
-      {region === location
-        ? null
-        : location
-        ? ` / ${capitalizeFirstLetter(location)}`
-        : null}
+      <Link href={`/${keyword}`}>{capitalizeFirstLetter(keyword)} </Link>
+      {region && location && region.toLowerCase() != location.toLowerCase() ? (
+        <>
+          /{" "}
+          <Link href={`/${keyword}/${region.replace(/ /g, "-")}`}>
+            {camelCaseAll(String(region))}
+          </Link>
+          <span> / {capitalizeFirstLetter(location)}</span>
+        </>
+      ) : region ? (
+        ` / ${camelCaseAll(String(region))}`
+      ) : location ? (
+        ` / ${capitalizeFirstLetter(String(location))}`
+      ) : null}
     </div>
   );
 };
