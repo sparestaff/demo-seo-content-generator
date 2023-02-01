@@ -1,6 +1,6 @@
 import Link from "next/link";
 import parse, { DOMNode, domToReact } from "html-react-parser";
-import { capitalizeFirstLetter } from "utils/formatter";
+import { camelCaseAll } from "utils/formatter";
 
 const customParser = ({
   customContent,
@@ -67,7 +67,7 @@ const customParser = ({
       if (name === "upperkeyword") {
         return (
           <>
-            {capitalizeFirstLetter(keyword as string)}
+            {camelCaseAll(keyword as string)}
             {domToReact(children, options)}
           </>
         );

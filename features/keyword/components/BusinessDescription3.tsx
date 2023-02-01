@@ -20,8 +20,8 @@ const BusinessDescription3 = ({
           customParser({ customContent: content1, keyword, location })
         ) : (
           <>
-            We&apos;ve mastered {keyword}
-            {location ? ` in ${camelCaseAll(location)}` : null}
+            We&apos;ve mastered {keyword}{" "}
+            {location ? `in ${camelCaseAll(location)}` : null}
           </>
         )}
       </h3>

@@ -6,7 +6,7 @@ import { MdSettingsBackupRestore } from "react-icons/md";
 import { BiDollar } from "react-icons/bi";
 import { FaGlobeAmericas, FaShippingFast } from "react-icons/fa";
 
-import { camelCaseAll, capitalizeFirstLetter } from "utils/formatter";
+import { camelCaseAll } from "utils/formatter";
 
 type SliderItem = {
   icon: ReactNode;
@@ -26,7 +26,7 @@ const Services = ({
       icon: <AiOutlineTeam />,
       title: `Expert ${keyword}`,
       desc: `Our ${
-        location ? capitalizeFirstLetter(location) + " " : ""
+        location ? camelCaseAll(location) + " " : ""
       }${keyword}  technicians have over 15 years of experience with both Windows and Apple Mac.`,
     },
     {
@@ -37,12 +37,10 @@ const Services = ({
     {
       icon: <FaShippingFast />,
       title: `Same-day ${keyword}${
-        location ? " for " + capitalizeFirstLetter(String(location)) : ""
+        location ? " for " + camelCaseAll(String(location)) : ""
       }`,
       desc: `We provide same-day ${keyword}${
-        location
-          ? " for " + capitalizeFirstLetter(String(location)) + " area"
-          : ""
+        location ? " for " + camelCaseAll(String(location)) + " area" : ""
       }. Most repairs are completed on the same-day.`,
     },
     {
@@ -59,7 +57,7 @@ const Services = ({
       icon: <BiDollar />,
       title: "Price beat guarantee",
       desc: `Got a quote from another ${
-        location ? capitalizeFirstLetter(String(location)) + " " : ""
+        location ? camelCaseAll(String(location)) + " " : ""
       }${keyword} shop? We will beat it by 5%.`,
     },
     {
@@ -85,8 +83,8 @@ const Services = ({
             Why choose Safemode Computer Service
           </h3>
           <p className="text-center py-5">
-            What&lsquo;s included when you use our{" "}
-            {capitalizeFirstLetter(location)} {keyword} services
+            What&lsquo;s included when you use our {camelCaseAll(location)}{" "}
+            {keyword} services
           </p>
         </>
       ) : null}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import customParser from "utils/customParser";
-import { camelCaseAll, capitalizeFirstLetter } from "utils/formatter";
+import { camelCaseAll } from "utils/formatter";
 import { DEFAULT_KEYWORD_IMAGE_5 } from "utils/constants";
 
 const BusinessDescriptionWithLocation2 = ({
@@ -51,11 +51,11 @@ const BusinessDescriptionWithLocation2 = ({
                 <br />
                 We&apos;ve worked diligently to build efficient in-house testing
                 systems, a network of trusted suppliers near{" "}
-                {capitalizeFirstLetter(location)}, and {keyword} processes for
-                maximum results and customer satisfaction. Through years of
-                practice, persistence in maintaining excellence in workmanship,
-                we&apos;ve fine-tuned our services to ensure our customers leave
-                happy knowing their computers are in good hands.
+                {camelCaseAll(location)}, and {keyword} processes for maximum
+                results and customer satisfaction. Through years of practice,
+                persistence in maintaining excellence in workmanship, we&apos;ve
+                fine-tuned our services to ensure our customers leave happy
+                knowing their computers are in good hands.
               </>
             )}
           </div>

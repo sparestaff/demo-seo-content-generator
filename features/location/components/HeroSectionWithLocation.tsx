@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "antd/lib/button";
 import { DEFAULT_LOCATION_IMAGE_1 } from "utils/constants";
-import { camelCaseAll, capitalizeFirstLetter } from "utils/formatter";
+import { camelCaseAll } from "utils/formatter";
 import customParser from "utils/customParser";
 
 const HeroSectionWithLocation = ({
@@ -26,8 +26,7 @@ const HeroSectionWithLocation = ({
               customParser({ customContent: content1, keyword, location })
             ) : (
               <>
-                {capitalizeFirstLetter(keyword)}{" "}
-                {capitalizeFirstLetter(location)}
+                {camelCaseAll(keyword)} {camelCaseAll(location)}
               </>
             )}
           </h1>
@@ -36,12 +35,13 @@ const HeroSectionWithLocation = ({
               customParser({ customContent: content2, keyword, location })
             ) : (
               <>
-                Same-day {capitalizeFirstLetter(keyword)}{" "}
-                {capitalizeFirstLetter(location)}. Get a Free quote on the spot.
+                Same-day {camelCaseAll(keyword)} {camelCaseAll(location)}. Get a
+                Free quote on the spot.
+                <br />
+                {keyword} since 2004.
               </>
             )}
             <br />
-            {keyword} since 2004.
           </p>
           <div>
             <Button
