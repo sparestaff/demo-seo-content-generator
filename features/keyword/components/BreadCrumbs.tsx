@@ -14,7 +14,11 @@ const BreadCrumbs = ({
       You are here: <Link href="https://safemode.com.au/">Home</Link> /{" "}
       {keyword}
       {region ? ` / ${camelCaseAll(region)}` : null}
-      {location ? ` / ${capitalizeFirstLetter(location)}` : null}
+      {region === location
+        ? null
+        : location
+        ? ` / ${capitalizeFirstLetter(location)}`
+        : null}
     </div>
   );
 };
