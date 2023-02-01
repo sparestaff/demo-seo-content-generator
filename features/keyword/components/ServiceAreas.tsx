@@ -1,16 +1,19 @@
 import Link from "next/link";
+import { Location } from "types/Location";
 import customParser from "utils/customParser";
-import { camelCaseAll } from "utils/formatter";
+import { camelCaseAll, capitalizeFirstLetter } from "utils/formatter";
 
 const ServiceAreas = ({
   keyword,
   location,
-  locations,
+  locationData,
+  regions,
   content,
 }: {
   keyword: string | undefined;
   location?: string;
-  locations?: string[];
+  locationData?: Location;
+  regions?: { region: string }[];
   content: string | undefined;
 }) => {
   return (
@@ -29,13 +32,22 @@ const ServiceAreas = ({
             : `Find ${keyword} in your area`}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">
-          {locations?.length
-            ? locations?.map((location, idx) => (
+          {regions?.length &&
+            regions.map((item, idx) => (
+              <Link
+                key={idx}
+                href={`/${keyword}/${item.region.replace(/ /g, "-")}`}
+              >
+                {keyword} {camelCaseAll(item.region)}
+              </Link>
+            ))}
+          {locationData?.suburbs?.length
+            ? locationData?.suburbs?.map((location, idx) => (
                 <Link
                   key={idx}
                   href={`/${keyword}/${location.replace(/ /g, "-")}`}
                 >
-                  {keyword} in <span className="capitalize">{location}</span>
+                  {keyword} {capitalizeFirstLetter(location)}
                 </Link>
               ))
             : null}
