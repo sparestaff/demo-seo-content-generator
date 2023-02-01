@@ -32,15 +32,16 @@ const ServiceAreas = ({
             : `Find ${keyword} in your area`}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">
-          {regions?.length &&
-            regions.map((item, idx) => (
-              <Link
-                key={idx}
-                href={`/${keyword}/${item.region.replace(/ /g, "-")}`}
-              >
-                {keyword} {camelCaseAll(item.region)}
-              </Link>
-            ))}
+          {regions?.length
+            ? regions.map((item, idx) => (
+                <Link
+                  key={idx}
+                  href={`/${keyword}/${item.region.replace(/ /g, "-")}`}
+                >
+                  {keyword} {camelCaseAll(item.region)}
+                </Link>
+              ))
+            : null}
           {locationData?.suburbs?.length
             ? locationData?.suburbs?.map((location, idx) => (
                 <Link
