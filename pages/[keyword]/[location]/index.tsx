@@ -62,7 +62,11 @@ const KeywordPillarPage = ({
         image={result?.image1}
       />
       <Rates />
-      <BreadCrumbs keyword={keyword} location={location} />
+      <BreadCrumbs
+        keyword={keyword}
+        location={location}
+        region={locationData?.region}
+      />
       <BusinessDescriptionWithLocation
         keyword={keyword}
         location={location}
