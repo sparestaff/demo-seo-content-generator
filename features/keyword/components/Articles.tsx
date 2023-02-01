@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Slider from "components/elements/Slider";
 import Button from "antd/lib/button";
 import Card from "antd/lib/card";
 import { LENOVO_IMAGE, DELL_IMAGE, APPLE_RESCUE_IMAGE } from "utils/constants";
@@ -51,26 +52,28 @@ const Articles = ({
           ? customParser({ customContent: content, keyword, location })
           : "Read our best tips and tricks on everything from computer tuneup to how to DIY upgrade your own computer."}
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 py-10">
-        {articlesItems.map((item, idx) => (
-          <Card
-            key={idx}
-            hoverable
-            className="cursor-pointer"
-            cover={
-              <Image src={item.src} width={200} height={200} alt={item.alt} />
-            }
-          >
-            <Meta
-              title={
-                <Link href={item.link} className="font-sans">
-                  {item.desc}
-                </Link>
+      <div className="py-10">
+        <Slider sm={1} md={2} lg={3} xl={3}>
+          {articlesItems.map((item, idx) => (
+            <Card
+              key={idx}
+              hoverable
+              className="cursor-pointer h-80 mb-5"
+              cover={
+                <Image src={item.src} width={200} height={200} alt={item.alt} />
               }
-              description={item.desc}
-            />
-          </Card>
-        ))}
+            >
+              <Meta
+                title={
+                  <Link href={item.link} className="font-sans">
+                    {item.desc}
+                  </Link>
+                }
+                description={item.desc}
+              />
+            </Card>
+          ))}
+        </Slider>
       </div>
       <div className="flex justify-center">
         <Button

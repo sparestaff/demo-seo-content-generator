@@ -17,7 +17,7 @@ const ColumnContent4 = ({
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10">
+      <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10 gap-5 md:gap-0">
         <div>
           <Image
             src={image || DEFAULT_KEYWORD_IMAGE_5}

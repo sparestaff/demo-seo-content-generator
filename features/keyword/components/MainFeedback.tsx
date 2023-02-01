@@ -39,7 +39,7 @@ const MainFeedback = ({
             <AiFillStar />
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <Image
             src={
               "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674170965/seo-content-generator-mvp/customer-testimonial_lyodty.webp"

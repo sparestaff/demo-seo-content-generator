@@ -24,14 +24,14 @@ const ColumnContent1 = ({
   image?: string;
 }) => {
   return (
-    <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
+    <div className="md:flex md:justify-between md:items-center grid grid-cols-1 gap-5 md:gap-0 justify-items-center max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
+      <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full">
         <h3 className="text-3xl text-black font-bold font-sans text-center md:text-left">
           {content1
             ? customParser({ customContent: content1, keyword, location })
             : "How it works?"}
         </h3>
-        <div className="flex sm:gap-10 gap-5 items-center">
+        <div className="flex sm:gap-10 gap-5">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             01.
           </div>
@@ -49,7 +49,7 @@ const ColumnContent1 = ({
             )}
           </div>
         </div>
-        <div className="flex sm:gap-10 gap-5 items-center">
+        <div className="flex sm:gap-10 gap-5">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             02.
           </div>
@@ -66,7 +66,7 @@ const ColumnContent1 = ({
             )}
           </div>
         </div>
-        <div className="flex sm:gap-10 gap-5 items-center">
+        <div className="flex sm:gap-10 gap-5">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             03.
           </div>
@@ -81,7 +81,7 @@ const ColumnContent1 = ({
             )}
           </div>
         </div>
-        <div className="flex gap-10 items-center">
+        <div className="flex sm:gap-10 gap-5">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             04.
           </div>
@@ -101,7 +101,7 @@ const ColumnContent1 = ({
           </div>
         </div>
       </div>
-      <div>
+      <div className="order-first md:order-none">
         <Image
           src={image || DEFAULT_KEYWORD_IMAGE_2}
           alt={`How to use our ${keyword} services`}
