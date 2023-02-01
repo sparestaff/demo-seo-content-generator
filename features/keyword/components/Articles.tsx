@@ -44,7 +44,7 @@ const Articles = ({
 
   return (
     <div className="max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <h4 className="text-black text-center font-sans font-bold text-3xl py-5">
+      <h4 className="text-black text-center font-sans font-bold text-2xl md:text-3xl py-5">
         Our top computer tips and tricks
       </h4>
       <p className="text-center">

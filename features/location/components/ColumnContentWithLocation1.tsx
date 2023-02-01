@@ -13,10 +13,10 @@ const ColumnContentWithLocation1 = ({
   return (
     <div className="md:flex md:justify-between md:items-center grid grid-cols-1 justify-items-center  max-w-6xl mx-auto">
       <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-        <h3 className="text-3xl text-black font-bold font-sans text-center md:text-left">
+        <h3 className="text-2xl md:text-3xl text-black font-bold font-sans text-center md:text-left">
           How it works?
         </h3>
-        <div className="flex sm:gap-10 gap-5 items-center">
+        <div className="flex sm:gap-10 gap-5 ">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             01.
           </div>
@@ -28,7 +28,7 @@ const ColumnContentWithLocation1 = ({
             to schedule an appointment. Walk-in is also accepted.
           </div>
         </div>
-        <div className="flex sm:gap-10 gap-5 items-center">
+        <div className="flex sm:gap-10 gap-5 ">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             02.
           </div>
@@ -39,7 +39,7 @@ const ColumnContentWithLocation1 = ({
             estimated completion date.
           </div>
         </div>
-        <div className="flex sm:gap-10 gap-5 items-center">
+        <div className="flex sm:gap-10 gap-5 ">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             03.
           </div>
@@ -48,7 +48,7 @@ const ColumnContentWithLocation1 = ({
             (obligation-free).
           </div>
         </div>
-        <div className="flex gap-10 items-center">
+        <div className="flex sm:gap-10 gap-5">
           <div className="text-seo-primary text-3xl font-bold font-sans">
             04.
           </div>

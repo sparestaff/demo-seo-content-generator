@@ -25,10 +25,10 @@ const ColumnContentWithLocation2 = ({
         />
       </div>
       <div className="grid grid-cols-1 content-center gap-5 sm:gap-10  w-full sm:w-1/2 py-5 ">
-        <h3 className="text-3xl text-black font-bold font-sans text-center md:text-left">
+        <h3 className="text-2xl md:text-3xl text-black font-bold font-sans text-center md:text-left">
           How much does it cost for {keyword} in {camelCaseAll(location)}?
         </h3>
-        <div>
+        <div className="text-center md:text-left">
           The price varies depending what&apos;s required for your {keyword},
           make and model of your computer. We can also tailor a quote for each
           customer in {camelCaseAll(location)} according to individual needs.{" "}
