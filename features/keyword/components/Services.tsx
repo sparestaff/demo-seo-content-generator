@@ -90,10 +90,10 @@ const Services = ({
           </p>
         </>
       ) : null}
-      <Slider sm={2} md={2} lg={3} xl={4}>
+      <Slider sm={1} md={2} lg={3} xl={4}>
         {sliderItems.map((item, idx) => (
           <div
-            className="w-48 sm:w-60 grid grid-cols-1 rounded-lg shadow-md p-4 h-80 sm:h-60 my-5"
+            className="w-full md:w-60 grid grid-cols-1 rounded-lg shadow-md p-4 h-atuo sm:h-80 lg:h-60 my-5"
             key={idx}
           >
             <span className="text-5xl text-seo-primary">{item.icon}</span>
