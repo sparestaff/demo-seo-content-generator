@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Location } from "types/Location";
 import customParser from "utils/customParser";
-import { camelCaseAll, capitalizeFirstLetter } from "utils/formatter";
+import { camelCaseAll } from "utils/formatter";
 
 const ServiceAreas = ({
   keyword,
@@ -48,7 +48,7 @@ const ServiceAreas = ({
                   key={idx}
                   href={`/${keyword}/${location.replace(/ /g, "-")}`}
                 >
-                  {keyword} {capitalizeFirstLetter(location)}
+                  {keyword} {camelCaseAll(location)}
                 </Link>
               ))
             : null}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "antd/lib/button";
 import customParser from "utils/customParser";
 
@@ -26,8 +27,18 @@ const BusinessDescription4 = ({
           <>
             Our customers have given us a{" "}
             <span className="text-yellow-500">&#x2605;</span> rating{" "}
-            {average?.toFixed(1)} ({total}) rating on Google reviews and 4.9/5
-            on True Local
+            {average?.toFixed(1)} ({total}) rating on{" "}
+            <Link href="https://www.google.com/search?q=safemode+computer+service">
+              Google reviews
+            </Link>
+            on{" "}
+            <Link
+              href={
+                "https://www.truelocal.com.au/business/safemode-computer-service/enmore"
+              }
+            >
+              True Local
+            </Link>
           </>
         )}
       </p>
