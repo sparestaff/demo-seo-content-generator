@@ -33,23 +33,19 @@ export const getLocations = async (
   location: string
 ): Promise<Location | string> => {
   try {
-    const { data } = await APIWithoutAuth.get(`/locations/${location}`);
+    const { data } = await APIWithoutAuth.get(`/locations/suburbs/${location}`);
     return data;
   } catch (error) {
     return location;
   }
 };
 
-export const getLocationsByKeyword = async (
-  keyword: string
-): Promise<Location | null> => {
+export const getRegions = async (): Promise<Location | string[]> => {
   try {
-    const { data: locations } = await APIWithoutAuth.get(
-      `/contents/locations/${keyword}`
-    );
-    return locations;
+    const { data } = await APIWithoutAuth.get(`/locations/regions`);
+    return data;
   } catch (error) {
-    return null;
+    return [];
   }
 };
 

@@ -24,7 +24,7 @@ import { CustomContent } from "types/CustomContent";
 // api
 import {
   getCustomContents,
-  getLocationsByKeyword,
+  getRegions,
   getRandomFAQs,
   getRandomReviews,
 } from "features/keyword/API/services";
@@ -33,12 +33,12 @@ import { Review } from "types/Review";
 
 const KeywordPillarPage = ({
   result,
-  locations,
+  regions,
   faqs,
   reviewsData,
 }: {
   result: CustomContent;
-  locations?: string[];
+  regions: { region: string }[];
   faqs: FAQ[];
   reviewsData: { total: number; average: number; reviews: Review[] };
 }) => {
@@ -114,7 +114,7 @@ const KeywordPillarPage = ({
       <ServiceAreas
         keyword={keyword}
         content={result?.content24}
-        locations={locations}
+        regions={regions}
       />
       <BottomContent keyword={keyword} content={result?.content25} />
     </>
@@ -123,16 +123,16 @@ const KeywordPillarPage = ({
 
 export async function getServerSideProps(context: any) {
   const keyword: string = context.query.keyword.toString().replace(/-/g, " ");
-  const [result, locations, faqs, reviewsData] = await Promise.all([
+  const [result, regions, faqs, reviewsData] = await Promise.all([
     getCustomContents(keyword),
-    getLocationsByKeyword(keyword),
+    getRegions(),
     getRandomFAQs(),
     getRandomReviews(),
   ]);
   return {
     props: {
       result,
-      locations,
+      regions,
       faqs,
       reviewsData,
     },
