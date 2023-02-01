@@ -28,28 +28,30 @@ const ColumnContent4 = ({
           />
         </div>
         <div className="grid grid-cols-1 content-center gap-5 md:gap-10 w-full md:w-1/2">
-          <h3 className="text-2xl md:text-3xl text-black font-bold font-sans text-center">
+          <h3 className="text-2xl md:text-3xl text-black font-bold font-sans text-center md:text-left">
             {content1
               ? customParser({ customContent: content1, keyword, location })
               : `Why our ${keyword} experts are different`}
           </h3>
-          <div className="text-center">
+          <div className="text-center md:text-left">
             {content2 ? (
               customParser({ customContent: content2, keyword, location })
             ) : (
               <>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen book.
+                Excellent {keyword} knowledge takes a lot more than good tools.{" "}
+                <span className="font-sans font-bold">
+                  Experience, good human judgment, and
+                  customer-company-employee-supplier relationships
+                </span>{" "}
+                make the difference.
                 <br />
                 <br />
-                It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                We&apos;ve worked diligently to build efficient in-house testing
+                systems, a network of trusted suppliers, and {keyword} processes
+                for maximum results and customer satisfaction. Through years of
+                practice, persistence in maintaining excellence in workmanship,
+                we&apos;ve fine-tuned our services to ensure our customers leave
+                happy knowing their computers are in good hands.
               </>
             )}
           </div>
