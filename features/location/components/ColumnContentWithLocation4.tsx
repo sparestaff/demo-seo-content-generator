@@ -9,15 +9,15 @@ const ColumnContentWithLocation4 = ({
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-10 sm:py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <h3 className="text-2xl md:text-3xl text-black font-bold font-sans md:mb-10 text-center">
+      <h3 className="text-2xl md:text-3xl text-black font-bold font-sans md:mb-10 md:text-center text-left">
         All the support you need
       </h3>
       <div className="flex sm:justify-between sm:flex-row flex-col sm:gap-20">
         <div className="grid grid-cols-1 w-full sm:w-1/2 py-5">
-          <h4 className="text-black font-sans font-bold text-xl md:text-2xl text-center md:text-left mb-3 sm:mb-0">
+          <h4 className="text-black font-sans font-bold text-xl md:text-2xl mb-3 sm:mb-0">
             For all your {camelCaseAll(location)} {keyword} needs
           </h4>
-          <p className="text-center md:text-left">
+          <p>
             By providing {keyword} at both customer&apos;s home / office in{" "}
             {camelCaseAll(location)} and in our workshop, our computer
             technicians are experienced with {keyword} plus many other computer
@@ -29,10 +29,10 @@ const ColumnContentWithLocation4 = ({
           </p>
         </div>
         <div className="grid grid-cols-1 gap-5 w-full sm:w-1/2 py-5">
-          <h4 className="text-black font-sans font-bold text-xl md:text-2xl text-center md:text-left">
+          <h4 className="text-black font-sans font-bold text-xl md:text-2xl">
             Pre and after-sales support
           </h4>
-          <p className="text-center md:text-left">
+          <p>
             Providing {keyword} doesn&apos;t end after money is transacted. Most
             customers have questions that need answers after getting their
             computers serviced. We understand that pre and after-sales support

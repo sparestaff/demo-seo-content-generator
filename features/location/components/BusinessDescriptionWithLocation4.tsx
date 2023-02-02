@@ -6,12 +6,10 @@ const BusinessDescriptionWithLocation4 = ({
   keyword,
   location,
   total,
-  average,
 }: {
   keyword: string;
   location: string;
   total: number;
-  average: number;
 }) => {
   return (
     <div className="text-center pb-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
@@ -21,8 +19,8 @@ const BusinessDescriptionWithLocation4 = ({
       </h3>
       <p className="py-5">
         We&apos;ve worked hard to receive a{" "}
-        <span className="text-yellow-500">&#x2605;</span> rating{" "}
-        {average?.toFixed(1)} / 5 ({total}) rating on{" "}
+        <span className="text-yellow-500">&#x2605;</span> rating 4.4 / 5 (
+        {total}) rating on{" "}
         <Link
           href="https://www.google.com/search?q=safemode+computer+service"
           target={"_blank"}

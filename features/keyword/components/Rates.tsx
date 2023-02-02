@@ -10,23 +10,28 @@ import {
 const images = [
   {
     src: BEST_COMPUTER_ONE,
-    alt: "best-computer-1",
+    alt: "top 3 computer repairs shop sydney award 2019",
+    title: "Top 3 computer repairs shop sydney award 2019",
   },
   {
     src: BEST_COMPUTER_TWO,
-    alt: "best-computer-2",
+    alt: "top 3 computer repairs shop sydney award 2020",
+    title: "Top 3 computer repairs shop sydney award 2020",
   },
   {
     src: BEST_COMPUTER_THREE,
-    alt: "best-computer-3",
+    alt: "top 3 computer repairs shop sydney award 2020 2021",
+    title: "Top 3 computer repairs shop sydney award 2020 2021",
   },
   {
     src: BEST_COMPUTER_FOUR,
-    alt: "best-computer-4",
+    alt: "top 3 computer repairs shop sydney award 2020",
+    title: "Top 3 computer repairs shop sydney award 2020",
   },
   {
     src: BEST_COMPUTER_FIVE,
-    alt: "best-computer-5",
+    alt: "best computer repairs shop sydney award 2022",
+    title: "Best computer repairs shop sydney award 2022",
   },
 ];
 
@@ -38,7 +43,13 @@ const Rates = () => {
         <div className="flex items-center flex-wrap justify-center sm:flex-nowrap	sm:justify-evenly sm:w-4/5 w-full sm:gap-3">
           {images.map((item, idx) => (
             <div key={idx}>
-              <Image src={item.src} alt={item.alt} width={115} height={115} />
+              <Image
+                src={item.src}
+                alt={item.alt}
+                title={item.title}
+                width={115}
+                height={115}
+              />
             </div>
           ))}
         </div>

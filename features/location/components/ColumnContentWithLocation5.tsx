@@ -27,8 +27,8 @@ const ColumnContentWithLocation5 = ({
           priority
         />
       </div>
-      <div className="grid grid-cols-1 content-center gap-5 sm:gap-10  text-center sm:text-left w-full sm:w-1/2 py-5 ">
-        <h3 className="text-3xl text-black font-bold font-sans">
+      <div className="grid grid-cols-1 content-center gap-5 sm:gap-10 text-left w-full sm:w-1/2 py-5 ">
+        <h3 className="text-2xl md:text-3xl text-black font-bold font-sans">
           {customParser({ customContent: content1, keyword, location })}
         </h3>
         <div>
