@@ -18,7 +18,7 @@ const Slider = ({
 }) => {
   const { isSm, isMd, isLg, isXl } = useWindowSize();
   const settings = {
-    dots: true,
+    dots: isSm ? false : true,
     arrows: isXl ? true : false,
     autoplay: true,
     infinite: true,
