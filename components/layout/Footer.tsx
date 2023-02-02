@@ -7,27 +7,27 @@ const Footer = () => {
       links: [
         {
           body: "Computer Repairs",
-          url: "#",
+          url: "https://safemode.com.au/computer-repairs/",
         },
         {
           body: "Apple Mac Repairs",
-          url: "#",
+          url: "https://safemode.com.au/apple-repairs/",
         },
         {
           body: "Virus Spyware Removal",
-          url: "#",
+          url: "https://safemode.com.au/virus-spyware-removal/",
         },
         {
           body: "Internet Network Setup",
-          url: "#",
+          url: "https://safemode.com.au/internet-network-setup/",
         },
         {
           body: "Data Recovery",
-          url: "#",
+          url: "https://safemode.com.au/data-recovery/",
         },
         {
           body: "Computer Tuneup Upgrades",
-          url: "#",
+          url: "https://safemode.com.au/computer-tuneup-upgrades/",
         },
       ],
     },
@@ -36,28 +36,32 @@ const Footer = () => {
       links: [
         {
           body: "IT Support and Monitoring",
-          url: "#",
+          url: "https://safemode.com.au/business-it-support/",
         },
         {
           body: "Server Installation & Support",
-          url: "#",
+          url: "https://safemode.com.au/server-setup/",
         },
         {
           body: "Business-class Email Setup",
-          url: "#",
+          url: "https://safemode.com.au/business-email/",
         },
         {
           body: "Web Hosting Services",
-          url: "#",
+          url: "https://safemode.com.au/web-hosting/",
+        },
+        {
+          body: "Business IT Support Plans",
+          url: "https://safemode.com.au/business-it-support-plans/",
         },
       ],
     },
     {
-      title: "SUPPORT PLANS",
+      title: "SAAS WEB APP",
       links: [
         {
-          body: "Business IT Support Plans",
-          url: "#",
+          body: "SEO Marketing Web App",
+          url: "https://safemode.com.au/web-app/",
         },
       ],
     },
@@ -66,31 +70,31 @@ const Footer = () => {
       links: [
         {
           body: "Book appointment",
-          url: "#",
+          url: "https://safemode.com.au/book-appointment/",
         },
         {
           body: "Pricing and Info",
-          url: "#",
+          url: "https://safemode.com.au/pricing-and-info/",
         },
         {
           body: "Contact us",
-          url: "#",
+          url: "https://safemode.com.au/contact/",
         },
         {
           body: "Frequently Asked Questions",
-          url: "#",
+          url: "https://safemode.com.au/faq/",
         },
         {
           body: "Our Tech Blog",
-          url: "#",
+          url: "https://safemode.com.au/blog/",
         },
         {
           body: "Terms of use",
-          url: "#",
+          url: "https://safemode.com.au/terms/",
         },
         {
           body: "Privacy Policy",
-          url: "#",
+          url: "https://safemode.com.au/privacy/",
         },
       ],
     },
