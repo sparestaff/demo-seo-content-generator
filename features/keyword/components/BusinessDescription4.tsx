@@ -7,13 +7,11 @@ const BusinessDescription4 = ({
   location,
   content,
   total,
-  average,
 }: {
   keyword: string | undefined;
   location?: string | undefined;
   content: string | undefined;
   total?: number;
-  average?: number;
 }) => {
   return (
     <div className="text-center py-20 max-w-6xl mx-auto px-5 md:px-5 lg:px-5 xl:px-0">
@@ -26,11 +24,11 @@ const BusinessDescription4 = ({
         ) : (
           <>
             Our customers have given us a{" "}
-            <span className="text-yellow-500">&#x2605;</span> rating{" "}
-            {average?.toFixed(1)} ({total}) rating on{" "}
+            <span className="text-yellow-500">&#x2605;</span> rating {4.4} (
+            {total}) rating on{" "}
             <Link href="https://www.google.com/search?q=safemode+computer+service">
-              Google reviews
-            </Link>
+              Google reviews and 4.9/5
+            </Link>{" "}
             on{" "}
             <Link
               href={

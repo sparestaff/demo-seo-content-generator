@@ -2,15 +2,15 @@
 export const SAFEMODE_LOGO =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673864129/seo-content-generator-mvp/safemode-logo.webp";
 export const BEST_COMPUTER_ONE =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673870859/seo-content-generator-mvp/bestcomputer-1_zpo4ih.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2019.webp";
 export const BEST_COMPUTER_TWO =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673870920/seo-content-generator-mvp/bestcomputer-2_zfu90u.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2020.webp";
 export const BEST_COMPUTER_THREE =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673870925/seo-content-generator-mvp/bestcomputer-3_dvuvol.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2021.webp";
 export const BEST_COMPUTER_FOUR =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673870929/seo-content-generator-mvp/bestcomputer-4_he4hir.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2022.webp";
 export const BEST_COMPUTER_FIVE =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673870931/seo-content-generator-mvp/bestcomputer-5_l1opsp.webp";
+  "https://safemode.com.au/wp-content/uploads/2022/11/Best-Sydney-Computer-Repair-Award-2022.webp";
 export const LENOVO_IMAGE =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673998383/seo-content-generator-mvp/Lenovo-X1-Thinkpad_bki4ee.webp";
 export const DELL_IMAGE =

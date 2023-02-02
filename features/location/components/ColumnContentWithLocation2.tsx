@@ -13,7 +13,7 @@ const ColumnContentWithLocation2 = ({
 }) => {
   return (
     <div className="flex sm:justify-between sm:items-center sm:flex-row flex-col max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <div className="hidden md:block">
+      <div>
         <Image
           src={image || DEFAULT_LOCATION_IMAGE_3}
           alt={`Woman browsing price for ${keyword} in ${camelCaseAll(

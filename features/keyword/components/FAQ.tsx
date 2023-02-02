@@ -7,12 +7,10 @@ const { Panel } = Collapse;
 
 const Faq = ({
   keyword,
-  location,
   content,
   faqs,
 }: {
   keyword: string | undefined;
-  location?: string | undefined;
   content: string | undefined;
   faqs: FAQ[] | undefined;
 }) => {
@@ -23,10 +21,10 @@ const Faq = ({
       </h4>
       <p className="text-center py-10">
         {content ? (
-          customParser({ customContent: content, keyword, location })
+          customParser({ customContent: content, keyword })
         ) : (
           <>
-            Your questions answered by our computer experts. Can&apos;t find an
+            Your questions answered by our {keyword} experts. Can&apos;t find an
             answer?
           </>
         )}

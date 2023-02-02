@@ -24,7 +24,7 @@ const ColumnContentWithLocation3 = ({
           postage) to arrive.
         </div>
       </div>
-      <div className="hidden md:block">
+      <div>
         <Image
           src={image || DEFAULT_LOCATION_IMAGE_4}
           alt={"People waiting for their computers to be fixed"}

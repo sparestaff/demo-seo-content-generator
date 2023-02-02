@@ -22,8 +22,8 @@ const ColumnContent4 = ({
           <Image
             src={image || DEFAULT_KEYWORD_IMAGE_5}
             alt={"Why Safemode Computer Service experts are different"}
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             priority
           />
         </div>

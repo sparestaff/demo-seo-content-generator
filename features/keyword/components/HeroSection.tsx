@@ -18,9 +18,9 @@ const HeroSection = ({
 }) => {
   return (
     <div className="bg-orange-50">
-      <div className="sm:flex sm:justify-between sm:items-center grid grid-cols-1 justify-items-center sm:max-w-6xl sm:mx-auto py-10 sm:py-0 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0 ">
+      <div className="grid sm:grid-cols-2 grid-cols-1 justify-items-center  sm:max-w-6xl sm:mx-auto py-10 sm:py-0 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0 ">
         <div className="flex flex-col gap-5 text-center sm:text-left py-16">
-          <h1 className="text-4xl lg:text-6xl text-black font-bold font-sans">
+          <h1 className="text-4xl lg:text-5xl text-black font-bold font-sans">
             {content1
               ? customParser({ customContent: content1, keyword })
               : `Rated Best 3 ${camelCaseAll(keyword)}`}

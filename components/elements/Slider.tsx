@@ -20,12 +20,12 @@ const Slider = ({
   const settings = {
     dots: true,
     arrows: isSm ? false : true,
-    infinite: true,
     autoplay: true,
+    infinite: true,
     speed: 500,
     autoplaySpeed: 3000,
     slidesToShow: isSm ? sm : isMd ? md : isLg ? lg : xl,
-    slidesToScroll: 1,
+    slidesToScroll: isSm ? sm : isMd ? md : isLg ? lg : xl,
   };
   return <ReactrSlider {...settings}>{children}</ReactrSlider>;
 };
