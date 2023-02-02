@@ -153,7 +153,7 @@ const NavBar = () => {
       <div className="sticky top-0 shadow z-30 bg-white">
         <div className="max-w-6xl mx-auto flex justify-between items-center h-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
           <div>
-            <Link href="/">
+            <Link href="http://safemode.com.au/">
               <Image
                 src={SAFEMODE_LOGO}
                 alt="safemode-logo"
