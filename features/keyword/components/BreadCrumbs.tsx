@@ -12,11 +12,15 @@ const BreadCrumbs = ({
   return (
     <div className="text-center mt-5 mb-10 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       You are here: <Link href="https://safemode.com.au/">Home</Link> /{" "}
-      <Link href={`/${keyword}`}>{camelCaseAll(keyword)} </Link>
+      <Link href={`/${keyword.replace(/ /g, "-")}`}>
+        {camelCaseAll(keyword)}{" "}
+      </Link>
       {region && location && region.toLowerCase() != location.toLowerCase() ? (
         <>
           /{" "}
-          <Link href={`/${keyword}/${region.replace(/ /g, "-")}`}>
+          <Link
+            href={`/${keyword.replace(/ /g, "-")}/${region.replace(/ /g, "-")}`}
+          >
             {camelCaseAll(String(region))}
           </Link>
           <span> / {camelCaseAll(location)}</span>
