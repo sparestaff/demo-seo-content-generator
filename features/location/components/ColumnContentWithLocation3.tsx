@@ -12,7 +12,7 @@ const ColumnContentWithLocation3 = ({
   return (
     <div className="flex flex-col-reverse sm:flex-row	text-center sm:justify-between sm:items-center max-w-6xl mx-auto md:pb-10 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="grid grid-cols-1 content-center gap-5 py-5 sm:gap-10 w-full sm:w-1/2 text-center md:text-left">
-        <h3 className="text-2xl md:text-3xl text-black font-bold ">
+        <h3 className="text-3xl text-black font-bold ">
           How long does it take?
         </h3>
         <div>

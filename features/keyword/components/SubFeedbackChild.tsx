@@ -50,11 +50,9 @@ const SubFeedbackChild = ({ review }: { review: Review }) => {
         setShowMore,
       })}
       <div className="flex gap-1 text-yellow-500 text-2xl">
-        <AiFillStar />
-        <AiFillStar />
-        <AiFillStar />
-        <AiFillStar />
-        <AiFillStar />
+        {Array.from(Array(review?.stars || 5), (_, i) => (
+          <AiFillStar key={i} />
+        ))}
       </div>
     </div>
   );

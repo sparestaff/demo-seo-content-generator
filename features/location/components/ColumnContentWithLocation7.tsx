@@ -10,7 +10,7 @@ const ColumnContentWithLocation6 = ({
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-10 md:py-15 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <h3 className="text-2xl md:text-3xl text-black font-bold  text-center mb-5 md:mb-10">
+      <h3 className="text-3xl text-black font-bold  text-center mb-5 md:mb-10">
         About Safemode Computer Service
       </h3>
       <div className="flex sm:justify-between sm:flex-row flex-col sm:gap-20">

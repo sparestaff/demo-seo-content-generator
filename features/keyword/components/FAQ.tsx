@@ -16,7 +16,7 @@ const Faq = ({
 }) => {
   return (
     <div className="py-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5">
-      <h4 className="text-black text-center  font-bold text-2xl md:text-3xl">
+      <h4 className="text-black text-center font-bold text-2xl md:text-3xl">
         Frequently asked questions
       </h4>
       <p className="text-center py-10">

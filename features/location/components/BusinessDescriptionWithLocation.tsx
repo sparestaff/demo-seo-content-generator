@@ -15,7 +15,7 @@ const BusinessDescription = ({
 }) => {
   return (
     <div className="text-center max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <h3 className="text-2xl md:text-3xl text-black font-bold ">
+      <h3 className="text-3xl text-black font-bold ">
         {content3
           ? customParser({ customContent: content3, keyword, location })
           : `Quality ${camelCaseAll(String(location))} ${keyword} since 2004`}
