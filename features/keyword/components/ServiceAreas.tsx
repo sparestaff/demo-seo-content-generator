@@ -36,7 +36,10 @@ const ServiceAreas = ({
             ? regions.map((item, idx) => (
                 <Link
                   key={idx}
-                  href={`/${keyword}/${item.region.replace(/ /g, "-")}`}
+                  href={`/${keyword?.replace(/ /g, "-")}/${item.region.replace(
+                    / /g,
+                    "-"
+                  )}`}
                 >
                   {keyword} {camelCaseAll(item.region)}
                 </Link>
@@ -46,7 +49,10 @@ const ServiceAreas = ({
             ? locationData?.suburbs?.map((location, idx) => (
                 <Link
                   key={idx}
-                  href={`/${keyword}/${location.replace(/ /g, "-")}`}
+                  href={`/${keyword?.replace(/ /g, "-")}/${location.replace(
+                    / /g,
+                    "-"
+                  )}`}
                 >
                   {keyword} {camelCaseAll(location)}
                 </Link>
