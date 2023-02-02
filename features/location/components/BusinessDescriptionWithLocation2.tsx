@@ -36,7 +36,7 @@ const BusinessDescriptionWithLocation2 = ({
                   String(location)
                 )} ${keyword} experts are different`}
           </h3>
-          <div className="text-center md:text-left">
+          <div>
             {content6 ? (
               customParser({ customContent: content6, keyword, location })
             ) : (
