@@ -33,7 +33,7 @@ const ColumnContent4 = ({
               ? customParser({ customContent: content1, keyword, location })
               : `Why our ${keyword} experts are different`}
           </h3>
-          <div className="text-center md:text-left">
+          <div>
             {content2 ? (
               customParser({ customContent: content2, keyword, location })
             ) : (
