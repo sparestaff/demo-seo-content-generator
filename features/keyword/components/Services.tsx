@@ -79,7 +79,7 @@ const Services = ({
     <div className="py-14 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       {location ? (
         <>
-          <h3 className="text-2xl md:text-3xl text-black font-bold font-sans text-center">
+          <h3 className="text-2xl md:text-3xl text-black font-bold  text-center">
             Why choose Safemode Computer Service
           </h3>
           <p className="text-center py-5">
@@ -95,7 +95,7 @@ const Services = ({
             key={idx}
           >
             <span className="text-5xl text-seo-primary">{item.icon}</span>
-            <h4 className="text-black text-lg font-bold font-sans pt-2 pb-1">
+            <h4 className="text-black text-lg font-bold  pt-2 pb-1">
               {item.title}
             </h4>
             <p>{item.desc}</p>

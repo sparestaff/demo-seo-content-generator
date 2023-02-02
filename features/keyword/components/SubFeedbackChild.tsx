@@ -37,7 +37,7 @@ const SubFeedbackChild = ({ review }: { review: Review }) => {
       className="w-full grid grid-cols-1 gap-5 rounded-lg shadow-md p-4 my-5"
       key={review._id}
     >
-      <p className="text-xl font-bold font-sans text-black text-center md:text-left">
+      <p className="text-xl font-bold  text-black text-center md:text-left">
         {review.reviewer}
       </p>
       <span className="text-2xl text-yellow-500">

@@ -33,9 +33,7 @@ const customParser = ({
 
       if (name === "b") {
         return (
-          <span className="font-bold font-sans">
-            {domToReact(children, options)}
-          </span>
+          <span className="font-bold ">{domToReact(children, options)}</span>
         );
       }
 

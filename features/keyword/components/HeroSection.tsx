@@ -20,7 +20,7 @@ const HeroSection = ({
     <div className="bg-orange-50">
       <div className="grid sm:grid-cols-2 grid-cols-1 justify-items-center  sm:max-w-6xl sm:mx-auto py-10 sm:py-0 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0 ">
         <div className="flex flex-col gap-5 text-center sm:text-left py-16">
-          <h1 className="text-4xl lg:text-5xl text-black font-bold font-sans">
+          <h1 className="text-4xl lg:text-5xl text-black font-bold">
             {content1
               ? customParser({ customContent: content1, keyword })
               : `Rated Best 3 ${camelCaseAll(keyword)}`}
@@ -39,7 +39,7 @@ const HeroSection = ({
               className="h-14 text-xl"
               href="https://safemode.com.au/quote/"
             >
-              <span className="mt-1.5 font-sans">Get a Quick Quote</span>
+              <span className="mt-1.5 ">Get a Quick Quote</span>
             </Button>
           </div>
         </div>
