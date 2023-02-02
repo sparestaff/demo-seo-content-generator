@@ -38,12 +38,12 @@ const KeywordPillarPage = ({
   result,
   locationData,
   faqs,
-  reviews,
+  reviewData,
 }: {
   result: CustomContent;
   locationData: Location;
   faqs: FAQ[];
-  reviews: Review[];
+  reviewData: { reviews: Review[]; total: number };
 }) => {
   const router = useRouter();
   const keyword = router.query.keyword?.toString().replace(/-/g, " ") as string;
@@ -111,10 +111,10 @@ const KeywordPillarPage = ({
       <BusinessDescriptionWithLocation4
         keyword={keyword}
         location={location}
-        total={reviews?.length}
+        total={reviewData?.total}
       />
       <MainFeedback keyword={keyword} />
-      <SubFeedback reviews={reviews} />
+      <SubFeedback reviews={reviewData?.reviews} />
       <ColumnContentWithLocation7 keyword={keyword} location={location} />
       <FAQWithLocation keyword={keyword} location={location} faqs={faqs} />
       <Articles keyword={keyword} content={result?.content11} />
@@ -135,7 +135,7 @@ export async function getServerSideProps(context: any) {
     .toString()
     .replace(/-/g, " ");
 
-  const [result, locationData, faqs, reviews] = await Promise.all([
+  const [result, locationData, faqs, reviewData] = await Promise.all([
     getCustomContentsWithLocation(keyword, locationQuery),
     getLocations(locationQuery),
     getRandomFAQs(),
@@ -146,7 +146,7 @@ export async function getServerSideProps(context: any) {
       result,
       locationData,
       faqs,
-      reviews,
+      reviewData,
     },
   };
 }
