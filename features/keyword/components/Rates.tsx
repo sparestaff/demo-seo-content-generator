@@ -20,13 +20,13 @@ const images = [
   },
   {
     src: BEST_COMPUTER_THREE,
-    alt: "top 3 computer repairs shop sydney award 2020 2021",
-    title: "Top 3 computer repairs shop sydney award 2020 2021",
+    alt: "top 3 computer repairs shop sydney award 2021",
+    title: "Top 3 computer repairs shop sydney award 2021",
   },
   {
     src: BEST_COMPUTER_FOUR,
-    alt: "top 3 computer repairs shop sydney award 2020",
-    title: "Top 3 computer repairs shop sydney award 2020",
+    alt: "top 3 computer repairs shop sydney award 2022",
+    title: "Top 3 computer repairs shop sydney award 2022",
   },
   {
     src: BEST_COMPUTER_FIVE,

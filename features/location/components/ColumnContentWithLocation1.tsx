@@ -13,7 +13,7 @@ const ColumnContentWithLocation1 = ({
   return (
     <div className="md:flex md:justify-between md:items-center grid grid-cols-1 gap-5 md:gap-0 justify-items-center max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full">
-        <h3 className="text-2xl md:text-3xl text-black font-bold  text-center md:text-left">
+        <h3 className="text-3xl text-black font-bold  text-center md:text-left">
           How it works?
         </h3>
         <div className="flex sm:gap-10 gap-5">

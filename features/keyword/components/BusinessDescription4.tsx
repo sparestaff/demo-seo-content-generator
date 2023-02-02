@@ -15,7 +15,7 @@ const BusinessDescription4 = ({
 }) => {
   return (
     <div className="text-center py-20 max-w-6xl mx-auto px-5 md:px-5 lg:px-5 xl:px-0">
-      <h3 className="text-2xl md:text-3xl text-black font-bold ">
+      <h3 className="text-3xl text-black font-bold ">
         Don&apos;t take our word for it
       </h3>
       <p className="py-5 mx-auto">
@@ -27,9 +27,9 @@ const BusinessDescription4 = ({
             <span className="text-yellow-500">&#x2605;</span> rating {4.4} (
             {total}) rating on{" "}
             <Link href="https://www.google.com/search?q=safemode+computer+service">
-              Google reviews and 4.9/5
+              Google reviews
             </Link>{" "}
-            on{" "}
+            and 4.9/5 on{" "}
             <Link
               href={
                 "https://www.truelocal.com.au/business/safemode-computer-service/enmore"

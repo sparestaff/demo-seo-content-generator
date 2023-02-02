@@ -32,6 +32,7 @@ const BottomContent = ({
               shape="round"
               size="large"
               className="bg-white text-seo-primary"
+              href="https://safemode.com.au/quote/"
             >
               Get quotes
             </Button>
