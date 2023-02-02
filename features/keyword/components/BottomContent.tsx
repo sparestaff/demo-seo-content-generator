@@ -19,7 +19,7 @@ const BottomContent = ({
         max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0 pt-10 md:pt-5"
       >
         <div>
-          <h2 className="text-4xl md:text-5xl text-white font-bold font-sans text-center">
+          <h2 className="text-4xl md:text-5xl text-white font-bold  text-center">
             {content
               ? customParser({ customContent: content, keyword, location })
               : `Need ${keyword}${

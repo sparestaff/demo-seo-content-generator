@@ -15,7 +15,7 @@ const BusinessDescription = ({
 }) => {
   return (
     <div className="text-center max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <h3 className="text-2xl md:text-3xl text-black font-bold font-sans">
+      <h3 className="text-2xl md:text-3xl text-black font-bold ">
         {content3
           ? customParser({ customContent: content3, keyword, location })
           : `Quality ${camelCaseAll(String(location))} ${keyword} since 2004`}
@@ -35,7 +35,7 @@ const BusinessDescription = ({
           href="https://safemode.com.au/quote/"
           className="items-center"
         >
-          <span className="font-sans">Get a Quick Quote</span>
+          <span className="">Get a Quick Quote</span>
         </Button>
       </div>
     </div>

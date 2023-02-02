@@ -26,15 +26,13 @@ const ColumnContent1 = ({
   return (
     <div className="md:flex md:justify-between md:items-center grid grid-cols-1 gap-5 md:gap-0 justify-items-center max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="grid grid-cols-1 content-center sm:gap-10 gap-5 md:w-1/2 w-full">
-        <h3 className="text-2xl md:text-3xl text-black font-bold font-sans text-center md:text-left">
+        <h3 className="text-2xl md:text-3xl text-black font-bold  text-center md:text-left">
           {content1
             ? customParser({ customContent: content1, keyword, location })
             : "How it works?"}
         </h3>
         <div className="flex sm:gap-10 gap-5">
-          <div className="text-seo-primary text-3xl font-bold font-sans">
-            01.
-          </div>
+          <div className="text-seo-primary text-3xl font-bold ">01.</div>
           <div>
             {content2 ? (
               customParser({ customContent: content2, keyword, location })
@@ -50,9 +48,7 @@ const ColumnContent1 = ({
           </div>
         </div>
         <div className="flex sm:gap-10 gap-5">
-          <div className="text-seo-primary text-3xl font-bold font-sans">
-            02.
-          </div>
+          <div className="text-seo-primary text-3xl font-bold ">02.</div>
           <div>
             {content3 ? (
               customParser({ customContent: content3, keyword, location })
@@ -60,16 +56,14 @@ const ColumnContent1 = ({
               <>
                 Our {location && camelCaseAll(location) + " "}
                 {keyword} technicians give you a quote for repairs (
-                <span className="font-bold font-sans">FREE</span> quote) and
-                estimated completion date.
+                <span className="font-bold ">FREE</span> quote) and estimated
+                completion date.
               </>
             )}
           </div>
         </div>
         <div className="flex sm:gap-10 gap-5">
-          <div className="text-seo-primary text-3xl font-bold font-sans">
-            03.
-          </div>
+          <div className="text-seo-primary text-3xl font-bold ">03.</div>
           <div>
             {content4 ? (
               customParser({ customContent: content4, keyword, location })
@@ -82,9 +76,7 @@ const ColumnContent1 = ({
           </div>
         </div>
         <div className="flex sm:gap-10 gap-5">
-          <div className="text-seo-primary text-3xl font-bold font-sans">
-            04.
-          </div>
+          <div className="text-seo-primary text-3xl font-bold ">04.</div>
           <div>
             {content5 ? (
               customParser({ customContent: content5, keyword, location })

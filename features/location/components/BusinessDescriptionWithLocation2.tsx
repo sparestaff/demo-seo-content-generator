@@ -29,7 +29,7 @@ const BusinessDescriptionWithLocation2 = ({
           />
         </div>
         <div className="grid grid-cols-1 content-center gap-5 md:gap-5 w-full md:w-1/2">
-          <h3 className="text-2xl md:text-3xl text-black font-bold font-sans pt-10">
+          <h3 className="text-2xl md:text-3xl text-black font-bold  pt-10">
             {content5
               ? customParser({ customContent: content5, keyword, location })
               : `Why our ${camelCaseAll(
@@ -42,7 +42,7 @@ const BusinessDescriptionWithLocation2 = ({
             ) : (
               <>
                 Excellent {keyword} knowledge takes a lot more than good tools.{" "}
-                <span className="font-sans font-bold">
+                <span className=" font-bold">
                   Experience, good human judgment, and
                   customer-company-employee-supplier relationships
                 </span>{" "}
