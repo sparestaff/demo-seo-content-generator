@@ -18,6 +18,14 @@ const Footer = () => {
           url: "/virus-spyware-removal/",
         },
         {
+          body: "Computer Speed-up & Upgrades",
+          url: "https://safemode.com.au/computer-speed-up/",
+        },
+        {
+          body: "Internet Network Setup",
+          url: "https://safemode.com.au/internet-network-setup/",
+        },
+        {
           body: "Data Recovery",
           url: "/data-recovery/",
         },
