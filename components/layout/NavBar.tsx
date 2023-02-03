@@ -180,7 +180,7 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="w-3/4 lg:block hidden">
-            <Menu mode="horizontal" items={items} />
+            <Menu mode="horizontal" items={items} forceSubMenuRender />
           </div>
           <div className="lg:hidden block">
             <MenuOutlined
