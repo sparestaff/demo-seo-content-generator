@@ -32,7 +32,7 @@ const ColumnContent1 = ({
             : "How it works?"}
         </h3>
         <div className="flex sm:gap-10 gap-5">
-          <div className="text-seo-primary text-3xl font-bold tracking-widest md:tracking-normal">
+          <div className="text-seo-primary text-3xl font-bold tracking-widest">
             01.
           </div>
           <div>

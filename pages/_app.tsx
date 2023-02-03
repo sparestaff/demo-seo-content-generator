@@ -10,19 +10,18 @@ import "../styles/globals.css";
 import "../styles/custom-antd.css";
 
 const poppins = Poppins({
+  weight: "400",
   subsets: ["latin"],
-  display: "fallback",
-  weight: "100",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <main className={poppins.className}>
       <ContactBanner />
       <NavBar />
       <Component {...pageProps} />
       <Footer />
       <FloatButton.BackTop duration={0} />
-    </>
+    </main>
   );
 }
