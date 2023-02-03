@@ -10,9 +10,9 @@ const ColumnContentWithLocation3 = ({
   image?: string;
 }) => {
   return (
-    <div className="flex flex-col-reverse sm:flex-row	text-center sm:justify-between sm:items-center max-w-6xl mx-auto md:pb-10 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <div className="grid grid-cols-1 content-center gap-5 py-5 sm:gap-10 w-full sm:w-1/2 text-center md:text-left">
-        <h3 className="text-3xl text-black font-bold ">
+    <div className="flex flex-col-reverse sm:flex-row	sm:justify-between sm:items-center max-w-6xl mx-auto md:pb-10 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
+      <div className="grid grid-cols-1 content-center gap-5 py-5 sm:gap-10 w-full sm:w-1/2">
+        <h3 className="text-3xl text-black font-bold text-center md:text-left">
           How long does it take?
         </h3>
         <div>

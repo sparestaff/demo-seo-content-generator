@@ -26,7 +26,7 @@ const ColumnContentWithLocation1 = ({
             to schedule an appointment. Walk-in is also accepted.
           </div>
         </div>
-        <div className="flex sm:gap-10 gap-5 ">
+        <div className="flex sm:gap-10 gap-5">
           <div className="text-seo-primary text-3xl font-bold ">02.</div>
           <div>
             Our {camelCaseAll(location) + " "}

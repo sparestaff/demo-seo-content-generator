@@ -28,7 +28,7 @@ const ColumnContentWithLocation2 = ({
         <h3 className="text-3xl text-black font-bold  text-center md:text-left">
           How much does it cost for {keyword} in {camelCaseAll(location)}?
         </h3>
-        <div className="text-center md:text-left">
+        <div>
           The price varies depending what&apos;s required for your {keyword},
           make and model of your computer. We can also tailor a quote for each
           customer in {camelCaseAll(location)} according to individual needs.{" "}
