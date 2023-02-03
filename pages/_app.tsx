@@ -14,6 +14,7 @@ const poppins = Poppins({
   display: "swap",
   variable: "--font-poppins",
   subsets: ["latin"],
+  preload: true,
 });
 
 export default function App({ Component, pageProps }: AppProps) {
