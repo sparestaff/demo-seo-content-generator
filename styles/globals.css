@@ -8,6 +8,12 @@ html {
   height: -webkit-fill-available;
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-display: swap;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -44,11 +50,6 @@ a[disabled] {
   color: rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
   pointer-events: none;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
 }
 
 .primary-font-color {
