@@ -17,7 +17,7 @@ const NavBar = () => {
       label: (
         <Button
           type="primary"
-          href="https://services.safemode.com.au/book-appointment/"
+          href="https://safemode.com.au/book-appointment/"
           className="text-white"
         >
           Book appointment
@@ -44,6 +44,22 @@ const NavBar = () => {
           key: "Virus Spyware Removal",
           label: (
             <Link href="/virus-spyware-removal/">Virus Spyware Removal</Link>
+          ),
+        },
+        {
+          key: "Computer Speed-up & Upgrades",
+          label: (
+            <Link href="https://safemode.com.au/computer-speed-up/">
+              Computer Speed-up & Upgrades
+            </Link>
+          ),
+        },
+        {
+          key: "Internet Network Setup",
+          label: (
+            <Link href="https://safemode.com.au/internet-network-setup/">
+              Internet Network Setup
+            </Link>
           ),
         },
         {
@@ -94,6 +110,12 @@ const NavBar = () => {
       key: "About Us",
       label: "About Us",
       children: [
+        {
+          key: "About Us",
+          label: (
+            <Link href={"https://safemode.com.au/about-us"}>About us</Link>
+          ),
+        },
         {
           key: "Our Guarantees",
           label: (
