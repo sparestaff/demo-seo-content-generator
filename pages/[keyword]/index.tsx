@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
 // components
-import BreadCrumbs from "features/keyword/components/BreadCrumbs";
+import BreadCrumbs from "components/elements/BreadCrumbs";
 import HeroSection from "features/keyword/components/HeroSection";
-import Rates from "features/keyword/components/Rates";
+import Rates from "components/elements/Rates";
 import BusinessDescription from "features/keyword/components/BusinessDescription";
-import Services from "features/keyword/components/Services";
+import Services from "components/elements/Services";
 import BusinessDescription2 from "features/keyword/components/BusinessDescription2";
 import BusinessDescription3 from "features/keyword/components/BusinessDescription3";
 import ColumnContent1 from "features/keyword/components/ColumnContent1";
@@ -12,12 +12,12 @@ import ColumnContent2 from "features/keyword/components/ColumnContent2";
 import ColumnContent3 from "features/keyword/components/ColumnContent3";
 import ColumnContent4 from "features/keyword/components/ColumnContent4";
 import BusinessDescription4 from "features/keyword/components/BusinessDescription4";
-import MainFeedback from "features/keyword/components/MainFeedback";
-import SubFeedback from "features/keyword/components/SubFeedback";
-import Faq from "features/keyword/components/FAQ";
-import Articles from "features/keyword/components/Articles";
-import ServiceAreas from "features/keyword/components/ServiceAreas";
-import BottomContent from "features/keyword/components/BottomContent";
+import MainFeedback from "components/elements/MainFeedback";
+import SubFeedback from "components/elements/SubFeedback";
+import Faq from "components/elements/FAQ";
+import Articles from "components/elements/Articles";
+import ServiceAreas from "components/elements/ServiceAreas";
+import BottomContent from "components/elements/BottomContent";
 import Header from "components/layout/Header";
 // type
 import { CustomContent } from "types/CustomContent";

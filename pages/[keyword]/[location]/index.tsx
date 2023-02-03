@@ -10,15 +10,15 @@ import ColumnContentWithLocation4 from "features/location/components/ColumnConte
 import ColumnContentWithLocation5 from "features/location/components/ColumnContentWithLocation5";
 import ColumnContentWithLocation6 from "features/location/components/ColumnContentWithLocation6";
 import ColumnContentWithLocation7 from "features/location/components/ColumnContentWithLocation7";
-import FAQWithLocation from "features/location/components/FAQWithLocation";
-import BreadCrumbs from "features/keyword/components/BreadCrumbs";
-import Rates from "features/keyword/components/Rates";
-import Services from "features/keyword/components/Services";
-import MainFeedback from "features/keyword/components/MainFeedback";
-import SubFeedback from "features/keyword/components/SubFeedback";
-import Articles from "features/keyword/components/Articles";
-import ServiceAreas from "features/keyword/components/ServiceAreas";
-import BottomContent from "features/keyword/components/BottomContent";
+import Faq from "components/elements/FAQ";
+import BreadCrumbs from "components/elements/BreadCrumbs";
+import Rates from "components/elements/Rates";
+import Services from "components/elements/Services";
+import MainFeedback from "components/elements/MainFeedback";
+import SubFeedback from "components/elements/SubFeedback";
+import Articles from "components/elements/Articles";
+import ServiceAreas from "components/elements/ServiceAreas";
+import BottomContent from "components/elements/BottomContent";
 // type
 import { CustomContent } from "types/CustomContent";
 // api
@@ -30,7 +30,7 @@ import {
 } from "features/keyword/API/services";
 import { useRouter } from "next/router";
 import Header from "components/layout/Header";
-import { FAQ } from "types/FAQ";
+import type { FAQ } from "types/FAQ";
 import { Review } from "types/Review";
 import { Location } from "types/Location";
 
@@ -112,7 +112,7 @@ const KeywordPillarPage = ({
       <MainFeedback keyword={keyword} />
       <SubFeedback reviews={reviews} />
       <ColumnContentWithLocation7 keyword={keyword} location={location} />
-      <FAQWithLocation keyword={keyword} location={location} faqs={faqs} />
+      <Faq keyword={keyword} location={location} faqs={faqs} />
       <Articles keyword={keyword} content={result?.content11} />
       <ServiceAreas
         keyword={keyword}

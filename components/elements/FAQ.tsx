@@ -6,23 +6,32 @@ import { FAQ } from "types/FAQ";
 
 const { Panel } = Collapse;
 
-const FAQWithLocation = ({
+const Faq = ({
   keyword,
   location,
+  content,
   faqs,
 }: {
   keyword: string | undefined;
-  location: string;
-  faqs: FAQ[];
+  content?: string;
+  location?: string;
+  faqs: FAQ[] | undefined;
 }) => {
   return (
-    <div className="py-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
+    <div className="py-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-5">
       <h4 className="text-black text-center font-bold text-3xl">
         Frequently asked questions
       </h4>
       <p className="text-center py-10">
-        Your questions answered by our {camelCaseAll(location)} {keyword}{" "}
-        experts. Can&apos;t find an answer?
+        {content ? (
+          customParser({ customContent: content, keyword })
+        ) : (
+          <>
+            Your questions answered by our
+            {location ? " " + camelCaseAll(String(location)) : ""} {keyword}{" "}
+            experts. Can&apos;t find an answer?
+          </>
+        )}
         <br />
         Call us on: <Link href="tel:1800858382">1800 85 83 82</Link>
       </p>
@@ -39,4 +48,4 @@ const FAQWithLocation = ({
   );
 };
 
-export default FAQWithLocation;
+export default Faq;
