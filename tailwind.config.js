@@ -19,7 +19,9 @@ module.exports = {
     },
   },
   theme: {
-    fontFamily: ["var(--font-poppins)"],
+    fontFamily: {
+      poppins: ["var(--font-poppins)"],
+    },
     fontWeight: {
       hairline: 100,
       "extra-light": 100,
