@@ -12,12 +12,12 @@ import ColumnContentWithLocation6 from "features/location/components/ColumnConte
 import ColumnContentWithLocation7 from "features/location/components/ColumnContentWithLocation7";
 import Faq from "components/elements/FAQ";
 import BreadCrumbs from "components/elements/BreadCrumbs";
-import Rates from "features/keyword/components/Rates";
-import Services from "features/keyword/components/Services";
-import MainFeedback from "features/keyword/components/MainFeedback";
-import SubFeedback from "features/keyword/components/SubFeedback";
+import Rates from "components/elements/Rates";
+import Services from "components/elements/Services";
+import MainFeedback from "components/elements/MainFeedback";
+import SubFeedback from "components/elements/SubFeedback";
 import Articles from "components/elements/Articles";
-import ServiceAreas from "features/keyword/components/ServiceAreas";
+import ServiceAreas from "components/elements/ServiceAreas";
 import BottomContent from "components/elements/BottomContent";
 // type
 import { CustomContent } from "types/CustomContent";
