@@ -7,27 +7,27 @@ const Footer = () => {
       links: [
         {
           body: "Computer Repairs",
-          url: "https://safemode.com.au/computer-repairs/",
+          url: "https://services.safemode.com.au/computer-repairs/",
         },
         {
           body: "Apple Mac Repairs",
-          url: "https://safemode.com.au/apple-repairs/",
+          url: "https://services.safemode.com.au/apple-repairs/",
         },
         {
           body: "Virus Spyware Removal",
-          url: "https://safemode.com.au/virus-spyware-removal/",
+          url: "https://services.safemode.com.au/virus-spyware-removal/",
         },
         {
           body: "Internet Network Setup",
-          url: "https://safemode.com.au/internet-network-setup/",
+          url: "https://services.safemode.com.au/internet-network-setup/",
         },
         {
           body: "Data Recovery",
-          url: "https://safemode.com.au/data-recovery/",
+          url: "https://services.safemode.com.au/data-recovery/",
         },
         {
           body: "Computer Tuneup Upgrades",
-          url: "https://safemode.com.au/computer-speed-up/",
+          url: "https://services.safemode.com.au/computer-speed-up/",
         },
       ],
     },
@@ -36,23 +36,23 @@ const Footer = () => {
       links: [
         {
           body: "IT Support and Monitoring",
-          url: "https://safemode.com.au/business-it-support/",
+          url: "https://services.safemode.com.au/business-it-support/",
         },
         {
           body: "Server Installation & Support",
-          url: "https://safemode.com.au/server-setup/",
+          url: "https://services.safemode.com.au/server-setup/",
         },
         {
           body: "Business-class Email Setup",
-          url: "https://safemode.com.au/business-email/",
+          url: "https://services.safemode.com.au/business-email/",
         },
         {
           body: "Web Hosting Services",
-          url: "https://safemode.com.au/web-hosting/",
+          url: "https://services.safemode.com.au/web-hosting/",
         },
         {
           body: "Business IT Support Plans",
-          url: "https://safemode.com.au/business-it-support-plans/",
+          url: "https://services.safemode.com.au/business-it-support-plans/",
         },
       ],
     },
@@ -61,7 +61,7 @@ const Footer = () => {
       links: [
         {
           body: "SEO Marketing Web App",
-          url: "https://safemode.com.au/web-app/",
+          url: "https://services.safemode.com.au/web-app/",
         },
       ],
     },
@@ -70,31 +70,31 @@ const Footer = () => {
       links: [
         {
           body: "Book appointment",
-          url: "https://safemode.com.au/book-appointment/",
+          url: "https://services.safemode.com.au/book-appointment/",
         },
         {
           body: "Pricing and Info",
-          url: "https://safemode.com.au/pricing-and-info/",
+          url: "https://services.safemode.com.au/pricing-and-info/",
         },
         {
           body: "Contact us",
-          url: "https://safemode.com.au/contact/",
+          url: "https://services.safemode.com.au/contact/",
         },
         {
           body: "Frequently Asked Questions",
-          url: "https://safemode.com.au/faq/",
+          url: "https://services.safemode.com.au/faq/",
         },
         {
           body: "Our Tech Blog",
-          url: "https://safemode.com.au/blog/",
+          url: "https://services.safemode.com.au/blog/",
         },
         {
           body: "Terms of use",
-          url: "https://safemode.com.au/terms/",
+          url: "https://services.safemode.com.au/terms/",
         },
         {
           body: "Privacy Policy",
-          url: "https://safemode.com.au/privacy/",
+          url: "https://services.safemode.com.au/privacy/",
         },
       ],
     },
@@ -124,11 +124,12 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto ">
           <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
             <div className="text-gray-300">
-              © Copyright Safemode Computer Service | All Rights Reserved
+              © Copyright services.Safemode Computer Service | All Rights
+              Reserved
             </div>
             <Link
               className="text-seo-primary text-xl"
-              href="https://www.facebook.com/safemodecomputerservice/"
+              href="https://www.facebook.com/services.safemodecomputerservice/"
               target={"_blank"}
             >
               <FacebookOutlined />
