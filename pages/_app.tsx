@@ -12,14 +12,13 @@ import "../styles/custom-antd.css";
 const poppins = Poppins({
   weight: "400",
   display: "swap",
-  variable: "--font-poppins",
   subsets: ["latin"],
   preload: true,
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${poppins.variable} font-poppins`}>
+    <main className={poppins.className}>
       <ContactBanner />
       <NavBar />
       <Component {...pageProps} />
