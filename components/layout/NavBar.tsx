@@ -4,17 +4,140 @@ import Image from "next/image";
 import Button from "antd/lib/button";
 import Drawer from "antd/lib/drawer";
 import Menu from "antd/lib/menu";
+import type { MenuProps } from "antd";
 import MenuOutlined from "@ant-design/icons/MenuOutlined";
 import { SAFEMODE_LOGO } from "utils/constants";
 
 const NavBar = () => {
   const [visible, setVisible] = useState(false);
+
+  const items: MenuProps["items"] = [
+    {
+      key: "Book appointment",
+      label: (
+        <Button type="primary" href="/book-appointment/" className="text-white">
+          Book appointment
+        </Button>
+      ),
+    },
+    {
+      key: "Home",
+      label: <Link href="https://safemode.com.au">Home</Link>,
+    },
+    {
+      key: "Computer Services",
+      label: "Computer Services",
+      children: [
+        {
+          key: "Computer repairs",
+          label: <Link href="/computer-repairs/">Computer repairs</Link>,
+        },
+        {
+          key: "Apple Mac Repairs",
+          label: <Link href="/apple-repairs/">Apple Mac Repairs</Link>,
+        },
+        {
+          key: "Virus Spyware Removal",
+          label: (
+            <Link href="/virus-spyware-removal/">Virus Spyware Removal</Link>
+          ),
+        },
+        {
+          key: "Computer Speed-up & Upgrades",
+          label: (
+            <Link href="/computer-speed-up/">Computer Speed-up & Upgrades</Link>
+          ),
+        },
+        {
+          key: "Internet Network Setup",
+          label: (
+            <Link href="/internet-network-setup/">Internet Network Setup</Link>
+          ),
+        },
+        {
+          key: "Data Recovery",
+          label: <Link href="/data-recovery/">Data Recovery</Link>,
+        },
+        {
+          key: "Business-class Email Setup",
+          label: (
+            <Link href="https://safemode.com.au/business-email/">
+              Business-class Email Setup
+            </Link>
+          ),
+        },
+        {
+          key: "Business IT Support",
+          label: (
+            <Link href="https://safemode.com.au/business-it-support/">
+              Business IT Support
+            </Link>
+          ),
+        },
+        {
+          key: "Web Hosting Services",
+          label: (
+            <Link href="https://safemode.com.au/web-hosting/">
+              Web Hosting Services
+            </Link>
+          ),
+        },
+      ],
+    },
+    {
+      key: "Web App",
+      label: <Link href="/web-app/">Web App</Link>,
+    },
+    {
+      key: "Pricing",
+      label: <Link href="/pricing-and-info/">Pricing</Link>,
+    },
+    {
+      key: "Blog",
+      label: <Link href="/blog/">Blog</Link>,
+    },
+    {
+      key: "About Us",
+      label: "About Us",
+      children: [
+        {
+          key: "Our Guarantees",
+          label: <Link href="/our-guarantees/">Our Guarantees</Link>,
+        },
+        {
+          key: "Warranty Repairs",
+          label: <Link href="/warranty-repairs/">Warranty Repairs</Link>,
+        },
+        {
+          key: "Trade in",
+          label: <Link href="/tradein/">Trade in</Link>,
+        },
+        {
+          key: "Frequently Asked Questions",
+          label: <Link href="/faq/">Frequently Asked Questions</Link>,
+        },
+        {
+          key: "Careers",
+          label: <Link href="/careers/">Careers</Link>,
+        },
+        {
+          key: "Testimonials",
+          label: <Link href="/testimonials/">Testimonials</Link>,
+        },
+      ],
+    },
+    {
+      key: "Contacts",
+      label: <Link href="/contact/">Contacts</Link>,
+    },
+  ];
+
   return (
     <>
       <div className="sticky top-0 shadow z-30 bg-white">
-        <div className="max-w-6xl mx-auto flex items-center justify-between font-bold px-6 h-20 ">
+        <div className="max-w-6xl mx-auto flex justify-between items-center h-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
           <div>
-            <Link href="https://safemode.com.au/">
+            <Link href="http://safemode.com.au/">
               <Image
                 src={SAFEMODE_LOGO}
                 alt="safemode-logo"
@@ -24,62 +147,8 @@ const NavBar = () => {
               />
             </Link>
           </div>
-          <div className="lg:block hidden">
-            <ul className="flex flex-row items-center gap-7">
-              <li>
-                <Button
-                  type="primary"
-                  href="https://safemode.com.au/book-appointment"
-                >
-                  Book appointment
-                </Button>
-              </li>
-              <li>
-                <Link
-                  href="https://safemode.com.au/"
-                  className="text-seo-default"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="" className="text-seo-default">
-                  Computer Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://safemode.com.au/pricing-and-info/"
-                  className="text-seo-default"
-                >
-                  Pricing & Info
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://safemode.com.au/blog/"
-                  className="text-seo-default"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://safemode.com.au/about-us/"
-                  className="text-seo-default"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://safemode.com.au/contact/"
-                  className="text-seo-default"
-                >
-                  Contacts
-                </Link>
-              </li>
-            </ul>
+          <div className="w-3/4 lg:block hidden">
+            <Menu mode="horizontal" items={items} />
           </div>
           <div className="lg:hidden block">
             <MenuOutlined
@@ -92,43 +161,14 @@ const NavBar = () => {
         <hr />
       </div>
       <Drawer
-        width="60vw"
+        width="70vw"
         placement="right"
         closable={false}
         onClose={() => setVisible(false)}
         open={visible}
-        getContainer={false}
         className="z-50"
       >
-        <Menu className="hover:bg-ss-highlight">
-          <Menu.Item>
-            <Link href="https://safemode.com.au/book-appointment">
-              Book appointment
-            </Link>
-          </Menu.Item>
-          <Menu.Item>
-            <Link href="https://safemode.com.au/">Home</Link>
-          </Menu.Item>
-          <Menu.Item>
-            <Link href="http://localhost:3000/[keyword]">
-              Computer Services
-            </Link>
-          </Menu.Item>
-          <Menu.Item>
-            <Link href="https://safemode.com.au/pricing-and-info/">
-              Pricing & Info
-            </Link>
-          </Menu.Item>
-          <Menu.Item>
-            <Link href="https://safemode.com.au/blog/">Blog</Link>
-          </Menu.Item>
-          <Menu.Item>
-            <Link href="https://safemode.com.au/about-us/">About Us</Link>
-          </Menu.Item>
-          <Menu.Item>
-            <Link href="https://safemode.com.au/contact/">Contacts</Link>
-          </Menu.Item>
-        </Menu>
+        <Menu items={items} mode="inline" />
       </Drawer>
     </>
   );

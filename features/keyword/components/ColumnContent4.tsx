@@ -1,47 +1,57 @@
 import Image from "next/image";
-import { HERO_SECTION_IMAGE } from "utils/constants";
+import { DEFAULT_KEYWORD_IMAGE_5 } from "utils/constants";
+import customParser from "utils/customParser";
 
 const ColumnContent4 = ({
   keyword,
-  content18,
-  content19,
+  location,
+  content1,
+  content2,
+  image,
 }: {
   keyword: string | undefined;
-  content18: string | undefined;
-  content19: string | undefined;
+  location?: string | undefined;
+  content1: string | undefined;
+  content2: string | undefined;
+  image?: string;
 }) => {
   return (
     <div className="max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
-      <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10">
+      <div className="flex flex-col md:flex-row md:justify-between items-center rounded-lg bg-orange-50 p-10 gap-5 md:gap-0">
         <div>
           <Image
-            src={HERO_SECTION_IMAGE}
-            width={400}
-            height={400}
-            priority
-            alt="custom_upload_image_1"
+            src={image || DEFAULT_KEYWORD_IMAGE_5}
+            alt={"Why Safemode Computer Service experts are different"}
+            width={500}
+            height={500}
+            loading="lazy"
           />
         </div>
         <div className="grid grid-cols-1 content-center gap-5 md:gap-10 w-full md:w-1/2">
-          <h3 className="text-3xl text-black font-bold font-sans text-center py-10">
-            Why our {keyword} experts are different
-            {content18 ?? `Why our ${keyword} experts are different`}
+          <h3 className="text-3xl text-black font-bold  text-center md:text-left py-5 md:py-0">
+            {content1
+              ? customParser({ customContent: content1, keyword, location })
+              : `Why our ${keyword} experts are different`}
           </h3>
-          <div className="text-center">
-            {content19 ?? (
+          <div>
+            {content2 ? (
+              customParser({ customContent: content2, keyword, location })
+            ) : (
               <>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen book.
+                Excellent {keyword} knowledge takes a lot more than good tools.{" "}
+                <span className=" font-bold">
+                  Experience, good human judgment, and
+                  customer-company-employee-supplier relationships
+                </span>{" "}
+                make the difference.
                 <br />
                 <br />
-                It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                We&apos;ve worked diligently to build efficient in-house testing
+                systems, a network of trusted suppliers, and {keyword} processes
+                for maximum results and customer satisfaction. Through years of
+                practice, persistence in maintaining excellence in workmanship,
+                we&apos;ve fine-tuned our services to ensure our customers leave
+                happy knowing their computers are in good hands.
               </>
             )}
           </div>

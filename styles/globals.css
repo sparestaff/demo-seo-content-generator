@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito:wght@200;400&family=Quicksand&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +5,11 @@
 html {
   scroll-behavior: smooth;
   height: -webkit-fill-available;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +18,6 @@ body {
   background-color: #fff;
   color: #484848;
   font-size: 16px;
-  font-weight: 600;
 }
 
 a {
@@ -45,13 +48,6 @@ a[disabled] {
   color: rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
   pointer-events: none;
-}
-
-* {
-  font-family: "Fredoka", sans-serif;
-  font-family: "Nunito", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  box-sizing: border-box;
 }
 
 .primary-font-color {
@@ -295,18 +291,6 @@ a[disabled] {
 
 div.gmnoprint > div {
   border-radius: 6px !important;
-}
-
-#applicant-menu .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
-.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
-  color: #484848 !important;
-  border-bottom: 2px solid #f15927 !important;
 }
 
 button#walkInInterviews_enable.switch.ant-switch-checked {

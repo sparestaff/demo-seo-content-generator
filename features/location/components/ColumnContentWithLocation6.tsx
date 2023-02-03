@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { DEFAULT_KEYWORD_IMAGE_4 } from "utils/constants";
+import { DEFAULT_LOCATION_IMAGE_6 } from "utils/constants";
 import customParser from "utils/customParser";
 
-const ColumnContent3 = ({
+const ColumnContent6 = ({
   keyword,
   location,
   content1,
@@ -17,7 +17,7 @@ const ColumnContent3 = ({
 }) => {
   if (!content1) return null;
   return (
-    <div className="flex flex-col-reverse sm:flex-row	sm:justify-between sm:items-center max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
+    <div className="flex flex-col-reverse sm:flex-row sm:justify-between sm:items-center max-w-6xl mx-auto py-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <div className="grid grid-cols-1 content-center gap-5 py-5 sm:gap-10 w-full sm:w-1/2">
         <h3 className="text-3xl text-black font-bold py-5 md:py-0">
           {customParser({ customContent: content1, keyword, location })}
@@ -28,8 +28,8 @@ const ColumnContent3 = ({
       </div>
       <div>
         <Image
-          src={image || DEFAULT_KEYWORD_IMAGE_4}
-          alt={"A computer technician providing support to customers"}
+          src={image || DEFAULT_LOCATION_IMAGE_6}
+          alt={"A computer technician installing network cables"}
           width={400}
           height={400}
           loading="lazy"
@@ -39,4 +39,4 @@ const ColumnContent3 = ({
   );
 };
 
-export default ColumnContent3;
+export default ColumnContent6;

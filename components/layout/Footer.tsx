@@ -7,27 +7,27 @@ const Footer = () => {
       links: [
         {
           body: "Computer Repairs",
-          url: "#",
+          url: "/computer-repairs/",
         },
         {
           body: "Apple Mac Repairs",
-          url: "#",
+          url: "/apple-repairs/",
         },
         {
           body: "Virus Spyware Removal",
-          url: "#",
+          url: "/virus-spyware-removal/",
         },
         {
           body: "Internet Network Setup",
-          url: "#",
+          url: "/internet-network-setup/",
         },
         {
           body: "Data Recovery",
-          url: "#",
+          url: "/data-recovery/",
         },
         {
           body: "Computer Tuneup Upgrades",
-          url: "#",
+          url: "/computer-speed-up/",
         },
       ],
     },
@@ -36,28 +36,32 @@ const Footer = () => {
       links: [
         {
           body: "IT Support and Monitoring",
-          url: "#",
+          url: "/business-it-support/",
         },
         {
           body: "Server Installation & Support",
-          url: "#",
+          url: "/server-setup/",
         },
         {
           body: "Business-class Email Setup",
-          url: "#",
+          url: "/business-email/",
         },
         {
           body: "Web Hosting Services",
-          url: "#",
+          url: "/web-hosting/",
+        },
+        {
+          body: "Business IT Support Plans",
+          url: "/business-it-support-plans/",
         },
       ],
     },
     {
-      title: "SUPPORT PLANS",
+      title: "SAAS WEB APP",
       links: [
         {
-          body: "Business IT Support Plans",
-          url: "#",
+          body: "SEO Marketing Web App",
+          url: "/web-app/",
         },
       ],
     },
@@ -66,31 +70,31 @@ const Footer = () => {
       links: [
         {
           body: "Book appointment",
-          url: "#",
+          url: "/book-appointment/",
         },
         {
           body: "Pricing and Info",
-          url: "#",
+          url: "/pricing-and-info/",
         },
         {
           body: "Contact us",
-          url: "#",
+          url: "/contact/",
         },
         {
           body: "Frequently Asked Questions",
-          url: "#",
+          url: "/faq/",
         },
         {
           body: "Our Tech Blog",
-          url: "#",
+          url: "/blog/",
         },
         {
           body: "Terms of use",
-          url: "#",
+          url: "/terms/",
         },
         {
           body: "Privacy Policy",
-          url: "#",
+          url: "/privacy/",
         },
       ],
     },
@@ -120,11 +124,12 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto ">
           <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
             <div className="text-gray-300">
-              © Copyright Safemode Computer Service | All Rights Reserved
+              © Copyright services.Safemode Computer Service | All Rights
+              Reserved
             </div>
             <Link
               className="text-seo-primary text-xl"
-              href="https://www.facebook.com/safemodecomputerservice/"
+              href="https://www.facebook.com/services.safemodecomputerservice/"
               target={"_blank"}
             >
               <FacebookOutlined />

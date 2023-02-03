@@ -2,7 +2,7 @@ import Image from "next/image";
 import { DEFAULT_KEYWORD_IMAGE_3 } from "utils/constants";
 import customParser from "utils/customParser";
 
-const ColumnContent2 = ({
+const ColumnContentWithLocation5 = ({
   keyword,
   location,
   content1,
@@ -27,7 +27,7 @@ const ColumnContent2 = ({
           loading="lazy"
         />
       </div>
-      <div className="grid grid-cols-1 content-center gap-5 sm:gap-10  text-left w-full sm:w-1/2 py-5 ">
+      <div className="grid grid-cols-1 content-center gap-5 sm:gap-10 text-left w-full sm:w-1/2 py-5 ">
         <h3 className="text-3xl text-black font-bold py-5 md:py-0">
           {customParser({ customContent: content1, keyword, location })}
         </h3>
@@ -39,4 +39,4 @@ const ColumnContent2 = ({
   );
 };
 
-export default ColumnContent2;
+export default ColumnContentWithLocation5;
