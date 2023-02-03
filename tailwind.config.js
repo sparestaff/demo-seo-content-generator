@@ -44,6 +44,7 @@ module.exports = {
         "seo-highlight": "#FDF6F1",
         "seo-primary-blue": "#27bff1",
         "seo-default": "#484848",
+        black: "#24242c",
       },
       backgroundColor: ["group-hover"],
       keyframes: {
