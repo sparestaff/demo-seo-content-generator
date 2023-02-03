@@ -3,7 +3,6 @@ import Image from "next/image";
 import Slider from "components/elements/Slider";
 import Button from "antd/lib/button";
 import Card from "antd/lib/card";
-import { LENOVO_IMAGE, DELL_IMAGE, APPLE_RESCUE_IMAGE } from "utils/constants";
 import customParser from "utils/customParser";
 
 const { Meta } = Card;
@@ -19,26 +18,25 @@ const Articles = ({
 }) => {
   const articlesItems = [
     {
-      src: LENOVO_IMAGE,
-      alt: "lenovo think pad",
-      title: "Lenovo Laptop Computer Repairs",
-      desc: "Lenovo is a popular brand for home and business",
-      link: "https://safemode.com.au/lenovo-computer-repairs/",
+      src: "https://safemode.com.au/wp-content/uploads/2022/07/computer-repairs-near-me-600x338.webp",
+      alt: "computer repairs near me",
+      title: "Computer repairs near me”? Don't ask Google, I'll tell you where",
+      desc: 'As Google has gotten smarter over the years, users are leveraging "near me" searches',
+      link: "https://safemode.com.au/computer-repairs-near-me/",
     },
     {
-      src: DELL_IMAGE,
-      alt: "dell lap top",
-      title: "Dell Laptop Computer Repairs",
-      desc: "Dell is one of the leading computer PC makers. They",
-      link: "https://safemode.com.au/dell-computer-repairs/",
+      src: "https://safemode.com.au/wp-content/uploads/2022/01/slow-apple-computer-600x338.webp",
+      alt: "slow apple computer",
+      title: "6 Reasons Why My Computer is Slow and How to Troubleshoot",
+      desc: "Is your computer slow? or freezes? Trust me, you're not alone. As a professional",
+      link: "https://safemode.com.au/fix-slow-computer/",
     },
     {
-      src: APPLE_RESCUE_IMAGE,
-      alt: "apple laptop rescue",
-      title:
-        "Apple Laptop Rescue 101: All You Need to Know to Rescue Your Apple Laptop",
-      desc: "Are you looking for Apple laptop rescue for your Mac",
-      link: "https://safemode.com.au/apple-laptop-rescue/",
+      src: "https://safemode.com.au/wp-content/uploads/2022/06/repair-or-replace-computer-comparison-600x338.webp",
+      alt: "repair or replace computer comparison",
+      title: "Should I repair or replace my computer?",
+      desc: "As computer technician who has seen so many computers and done thousands of computer",
+      link: "https://safemode.com.au/repair-vs-replace-computer/",
     },
   ];
 
@@ -58,7 +56,7 @@ const Articles = ({
             <Card
               key={idx}
               hoverable
-              className="cursor-pointer h-80 mb-5"
+              className="cursor-pointer h-96 mb-5"
               cover={
                 <Image src={item.src} width={200} height={200} alt={item.alt} />
               }
