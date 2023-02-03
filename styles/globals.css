@@ -5,7 +5,7 @@
 html {
   scroll-behavior: smooth;
   height: -webkit-fill-available;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
