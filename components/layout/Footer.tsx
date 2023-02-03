@@ -27,7 +27,7 @@ const Footer = () => {
         },
         {
           body: "Computer Tuneup Upgrades",
-          url: "https://safemode.com.au/computer-tuneup-upgrades/",
+          url: "https://safemode.com.au/computer-speed-up/",
         },
       ],
     },
