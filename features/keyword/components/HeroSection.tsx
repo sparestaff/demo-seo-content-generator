@@ -49,7 +49,7 @@ const HeroSection = ({
             alt={`Same day ${keyword} IT services`}
             width={450}
             height={400}
-            priority
+            loading="lazy"
           />
         </div>
       </div>

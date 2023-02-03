@@ -59,7 +59,7 @@ const HeroSectionWithLocation = ({
             alt={`Same day ${camelCaseAll(location)} ${camelCaseAll(keyword)}`}
             width={450}
             height={400}
-            priority
+            loading="lazy"
           />
         </div>
       </div>

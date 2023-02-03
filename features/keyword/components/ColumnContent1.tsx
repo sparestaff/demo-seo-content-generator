@@ -101,7 +101,7 @@ const ColumnContent1 = ({
           alt={`How to use our ${keyword} services`}
           width={400}
           height={400}
-          priority
+          loading="lazy"
         />
       </div>
     </div>

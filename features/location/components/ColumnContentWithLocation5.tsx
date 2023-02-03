@@ -24,7 +24,7 @@ const ColumnContentWithLocation5 = ({
           alt={"A computer technician fixing computers"}
           width={400}
           height={400}
-          priority
+          loading="lazy"
         />
       </div>
       <div className="grid grid-cols-1 content-center gap-5 sm:gap-10 text-left w-full sm:w-1/2 py-5 ">

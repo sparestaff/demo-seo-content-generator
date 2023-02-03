@@ -46,7 +46,7 @@ const MainFeedback = ({
             }
             width={300}
             height={300}
-            priority
+            loading="lazy"
             alt="customer testimonial"
           />
         </div>
