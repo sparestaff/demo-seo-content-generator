@@ -180,7 +180,7 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="w-3/4 lg:block hidden">
-            <Menu mode="horizontal" items={items} forceSubMenuRender />
+            <Menu mode="horizontal" items={items} />
           </div>
           <div className="lg:hidden block">
             <MenuOutlined
@@ -201,12 +201,7 @@ const NavBar = () => {
         className="z-50"
         bodyStyle={{ paddingRight: "0", paddingLeft: "0" }}
       >
-        <Menu
-          items={items}
-          mode="inline"
-          forceSubMenuRender
-          inlineIndent={15}
-        />
+        <Menu items={items} mode="inline" inlineIndent={15} />
       </Drawer>
     </>
   );
