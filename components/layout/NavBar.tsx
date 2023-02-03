@@ -17,7 +17,7 @@ const NavBar = () => {
       label: (
         <Button
           type="primary"
-          href="https://safemode.com.au/book-appointment/"
+          href="https://services.safemode.com.au/book-appointment/"
           className="text-white"
         >
           Book appointment
@@ -26,7 +26,7 @@ const NavBar = () => {
     },
     {
       key: "Home",
-      label: <Link href="https://safemode.com.au/">Home</Link>,
+      label: <Link href="https://services.safemode.com.au/">Home</Link>,
     },
     {
       key: "Computer Services",
@@ -35,7 +35,7 @@ const NavBar = () => {
         {
           key: "Computer repairs",
           label: (
-            <Link href="https://safemode.com.au/computer-repairs/">
+            <Link href="https://services.safemode.com.au/computer-repairs/">
               Computer repairs
             </Link>
           ),
@@ -43,7 +43,7 @@ const NavBar = () => {
         {
           key: "Apple Mac Repairs",
           label: (
-            <Link href="https://safemode.com.au/apple-repairs/">
+            <Link href="https://services.safemode.com.au/apple-repairs/">
               Apple Mac Repairs
             </Link>
           ),
@@ -51,7 +51,7 @@ const NavBar = () => {
         {
           key: "Virus Spyware Removal",
           label: (
-            <Link href="https://safemode.com.au/virus-spyware-removal/">
+            <Link href="https://services.safemode.com.au/virus-spyware-removal/">
               Virus Spyware Removal
             </Link>
           ),
@@ -59,7 +59,7 @@ const NavBar = () => {
         {
           key: "Computer Speed-up & Upgrades",
           label: (
-            <Link href="https://safemode.com.au/computer-speed-up/">
+            <Link href="https://services.safemode.com.au/computer-speed-up/">
               Computer Speed-up & Upgrades
             </Link>
           ),
@@ -67,7 +67,7 @@ const NavBar = () => {
         {
           key: "Internet Network Setup",
           label: (
-            <Link href="https://safemode.com.au/internet-network-setup/">
+            <Link href="https://services.safemode.com.au/internet-network-setup/">
               Internet Network Setup
             </Link>
           ),
@@ -75,8 +75,32 @@ const NavBar = () => {
         {
           key: "Data Recovery",
           label: (
-            <Link href="https://safemode.com.au/data-recovery/">
+            <Link href="https://services.safemode.com.au/data-recovery/">
               Data Recovery
+            </Link>
+          ),
+        },
+        {
+          key: "Business-class Email Setup",
+          label: (
+            <Link href="https://safemode.com.au/business-email/">
+              Business-class Email Setup
+            </Link>
+          ),
+        },
+        {
+          key: "Business IT Support",
+          label: (
+            <Link href="https://safemode.com.au/business-it-support/">
+              Business IT Support
+            </Link>
+          ),
+        },
+        {
+          key: "Web Hosting Services",
+          label: (
+            <Link href="https://safemode.com.au/web-hosting/">
+              Web Hosting Services
             </Link>
           ),
         },
@@ -84,17 +108,21 @@ const NavBar = () => {
     },
     {
       key: "Web App",
-      label: <Link href="https://safemode.com.au/web-app/">Web App</Link>,
+      label: (
+        <Link href="https://services.safemode.com.au/web-app/">Web App</Link>
+      ),
     },
     {
       key: "Pricing",
       label: (
-        <Link href="https://safemode.com.au/pricing-and-info/">Pricing</Link>
+        <Link href="https://services.safemode.com.au/pricing-and-info/">
+          Pricing
+        </Link>
       ),
     },
     {
       key: "Blog",
-      label: <Link href="https://safemode.com.au/blog/">Blog</Link>,
+      label: <Link href="https://services.safemode.com.au/blog/">Blog</Link>,
     },
     {
       key: "About Us",
@@ -103,7 +131,7 @@ const NavBar = () => {
         {
           key: "Our Guarantees",
           label: (
-            <Link href="https://safemode.com.au/our-guarantees/">
+            <Link href="https://services.safemode.com.au/our-guarantees/">
               Our Guarantees
             </Link>
           ),
@@ -111,31 +139,39 @@ const NavBar = () => {
         {
           key: "Warranty Repairs",
           label: (
-            <Link href="https://safemode.com.au/warranty-repairs/">
+            <Link href="https://services.safemode.com.au/warranty-repairs/">
               Warranty Repairs
             </Link>
           ),
         },
         {
           key: "Trade in",
-          label: <Link href="https://safemode.com.au/tradein/">Trade in</Link>,
+          label: (
+            <Link href="https://services.safemode.com.au/tradein/">
+              Trade in
+            </Link>
+          ),
         },
         {
           key: "Frequently Asked Questions",
           label: (
-            <Link href="https://safemode.com.au/faq/">
+            <Link href="https://services.safemode.com.au/faq/">
               Frequently Asked Questions
             </Link>
           ),
         },
         {
           key: "Careers",
-          label: <Link href="https://safemode.com.au/careers/">Careers</Link>,
+          label: (
+            <Link href="https://services.safemode.com.au/careers/">
+              Careers
+            </Link>
+          ),
         },
         {
           key: "Testimonials",
           label: (
-            <Link href="https://safemode.com.au/testimonials/">
+            <Link href="https://services.safemode.com.au/testimonials/">
               Testimonials
             </Link>
           ),
@@ -144,7 +180,9 @@ const NavBar = () => {
     },
     {
       key: "Contacts",
-      label: <Link href="https://safemode.com.au/contact/">Contacts</Link>,
+      label: (
+        <Link href="https://services.safemode.com.au/contact/">Contacts</Link>
+      ),
     },
   ];
 

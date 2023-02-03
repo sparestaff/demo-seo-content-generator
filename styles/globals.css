@@ -9,9 +9,8 @@ html {
 }
 
 * {
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  font-display: swap;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
