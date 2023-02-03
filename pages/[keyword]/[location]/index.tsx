@@ -88,11 +88,7 @@ const KeywordPillarPage = ({
         location={location}
         image={result?.image3}
       />
-      <ColumnContentWithLocation3
-        keyword={keyword}
-        location={location}
-        image={result?.image4}
-      />
+      <ColumnContentWithLocation3 keyword={keyword} image={result?.image4} />
       <ColumnContentWithLocation4 keyword={keyword} location={location} />
       <ColumnContentWithLocation5
         keyword={keyword}
