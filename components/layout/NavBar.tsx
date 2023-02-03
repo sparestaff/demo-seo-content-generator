@@ -179,8 +179,8 @@ const NavBar = () => {
               />
             </Link>
           </div>
-          <div className="w-full lg:block hidden">
-            <Menu mode="horizontal" items={items} forceSubMenuRender />
+          <div className="w-3/4 lg:block hidden">
+            <Menu mode="horizontal" items={items} />
           </div>
           <div className="lg:hidden block">
             <MenuOutlined
