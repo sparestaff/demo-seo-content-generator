@@ -11,12 +11,6 @@ export const BEST_COMPUTER_FOUR =
   "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2022.webp";
 export const BEST_COMPUTER_FIVE =
   "https://safemode.com.au/wp-content/uploads/2022/11/Best-Sydney-Computer-Repair-Award-2022.webp";
-export const LENOVO_IMAGE =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673998383/seo-content-generator-mvp/Lenovo-X1-Thinkpad_bki4ee.webp";
-export const DELL_IMAGE =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673998381/seo-content-generator-mvp/dell-laptop_y4oiyx.webp";
-export const APPLE_RESCUE_IMAGE =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674000662/seo-content-generator-mvp/apple-laptop-rescue_h3hzaw.webp";
 export const DEFAULT_KEYWORD_IMAGE_1 =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1675043329/seo-content-generator-mvp/same-day-computer-repairs-it-services-32-800x781_yn7ct1_m99flu.webp";
 export const DEFAULT_KEYWORD_IMAGE_2 =
