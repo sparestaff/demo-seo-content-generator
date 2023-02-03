@@ -34,7 +34,7 @@ const SubFeedbackChild = ({ review }: { review: Review }) => {
   };
   return (
     <div
-      className="w-full grid grid-cols-1 gap-5 rounded-lg shadow-md p-4 my-5"
+      className="w-full grid grid-cols-1 gap-5 rounded-lg shadow-md p-4 my-5 bg-white"
       key={review._id}
     >
       <p className="text-xl font-bold  text-black text-center md:text-left">
