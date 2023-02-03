@@ -32,7 +32,7 @@ const ColumnContent6 = ({
           alt={"A computer technician installing network cables"}
           width={400}
           height={400}
-          priority
+          loading="lazy"
         />
       </div>
     </div>

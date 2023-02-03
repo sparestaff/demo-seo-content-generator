@@ -61,7 +61,7 @@ const ColumnContentWithLocation1 = ({
           src={DEFAULT_LOCATION_IMAGE_2}
           width={400}
           height={400}
-          priority
+          loading="lazy"
           alt={`How to use our ${keyword} services in ${camelCaseAll(
             location
           )}`}

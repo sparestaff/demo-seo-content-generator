@@ -28,7 +28,7 @@ const ColumnContentWithLocation3 = ({
           alt={"People waiting for their computers to be fixed"}
           width={400}
           height={400}
-          priority
+          loading="lazy"
         />
       </div>
     </div>

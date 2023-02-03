@@ -25,7 +25,7 @@ const BusinessDescriptionWithLocation2 = ({
             alt="Why Safemode Computer Service experts are different"
             width={500}
             height={500}
-            priority
+            loading="lazy"
           />
         </div>
         <div className="grid grid-cols-1 content-center gap-5 md:gap-5 w-full md:w-1/2">
