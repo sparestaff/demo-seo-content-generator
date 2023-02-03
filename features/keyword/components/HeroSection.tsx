@@ -36,7 +36,7 @@ const HeroSection = ({
               type="primary"
               size="large"
               shape="round"
-              className="h-14 text-xl"
+              className="h-14 text-xl mt-5"
               href="https://safemode.com.au/quote/"
             >
               <span className="mt-1.5 ">Get a Quick Quote</span>
