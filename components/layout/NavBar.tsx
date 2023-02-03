@@ -143,7 +143,7 @@ const NavBar = () => {
                 alt="safemode-logo"
                 width={150}
                 height={150}
-                loading="lazy"
+                priority
               />
             </Link>
           </div>
