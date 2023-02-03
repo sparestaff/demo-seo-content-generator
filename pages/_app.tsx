@@ -11,7 +11,7 @@ import "../styles/custom-antd.css";
 
 const poppins = Poppins({
   weight: "400",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
