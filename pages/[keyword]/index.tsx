@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 // components
-import BreadCrumbs from "features/keyword/components/BreadCrumbs";
+import BreadCrumbs from "components/elements/BreadCrumbs";
 import HeroSection from "features/keyword/components/HeroSection";
 import Rates from "features/keyword/components/Rates";
 import BusinessDescription from "features/keyword/components/BusinessDescription";
@@ -14,10 +14,10 @@ import ColumnContent4 from "features/keyword/components/ColumnContent4";
 import BusinessDescription4 from "features/keyword/components/BusinessDescription4";
 import MainFeedback from "features/keyword/components/MainFeedback";
 import SubFeedback from "features/keyword/components/SubFeedback";
-import Faq from "features/keyword/components/FAQ";
-import Articles from "features/keyword/components/Articles";
+import Faq from "components/elements/FAQ";
+import Articles from "components/elements/Articles";
 import ServiceAreas from "features/keyword/components/ServiceAreas";
-import BottomContent from "features/keyword/components/BottomContent";
+import BottomContent from "components/elements/BottomContent";
 import Header from "components/layout/Header";
 // type
 import { CustomContent } from "types/CustomContent";
