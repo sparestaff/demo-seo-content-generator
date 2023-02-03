@@ -147,8 +147,8 @@ const NavBar = () => {
               />
             </Link>
           </div>
-          <div className="w-3/4 lg:block hidden">
-            <Menu mode="horizontal" items={items} />
+          <div className="w-full lg:block hidden">
+            <Menu mode="horizontal" items={items} forceSubMenuRender />
           </div>
           <div className="lg:hidden block">
             <MenuOutlined
@@ -167,8 +167,14 @@ const NavBar = () => {
         onClose={() => setVisible(false)}
         open={visible}
         className="z-50"
+        bodyStyle={{ paddingRight: "0", paddingLeft: "0" }}
       >
-        <Menu items={items} mode="inline" />
+        <Menu
+          items={items}
+          mode="inline"
+          forceSubMenuRender
+          inlineIndent={15}
+        />
       </Drawer>
     </>
   );
