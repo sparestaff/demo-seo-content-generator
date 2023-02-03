@@ -47,7 +47,7 @@ const MainFeedback = ({
             width={300}
             height={300}
             priority
-            alt="custom_upload_image_1"
+            alt="customer testimonial"
           />
         </div>
       </div>
