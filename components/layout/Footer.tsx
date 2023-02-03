@@ -18,16 +18,8 @@ const Footer = () => {
           url: "/virus-spyware-removal/",
         },
         {
-          body: "Internet Network Setup",
-          url: "/internet-network-setup/",
-        },
-        {
           body: "Data Recovery",
           url: "/data-recovery/",
-        },
-        {
-          body: "Computer Tuneup Upgrades",
-          url: "/computer-speed-up/",
         },
       ],
     },
@@ -36,23 +28,23 @@ const Footer = () => {
       links: [
         {
           body: "IT Support and Monitoring",
-          url: "/business-it-support/",
+          url: "https://safemode.com.au/business-it-support/",
         },
         {
           body: "Server Installation & Support",
-          url: "/server-setup/",
+          url: "https://safemode.com.au/server-setup/",
         },
         {
           body: "Business-class Email Setup",
-          url: "/business-email/",
+          url: "https://safemode.com.au/business-email/",
         },
         {
           body: "Web Hosting Services",
-          url: "/web-hosting/",
+          url: "https://safemode.com.au/web-hosting/",
         },
         {
           body: "Business IT Support Plans",
-          url: "/business-it-support-plans/",
+          url: "https://safemode.com.au/business-it-support-plans/",
         },
       ],
     },
@@ -61,7 +53,7 @@ const Footer = () => {
       links: [
         {
           body: "SEO Marketing Web App",
-          url: "/web-app/",
+          url: "https://safemode.com.au/web-app/",
         },
       ],
     },
@@ -70,31 +62,31 @@ const Footer = () => {
       links: [
         {
           body: "Book appointment",
-          url: "/book-appointment/",
+          url: "https://safemode.com.au/book-appointment/",
         },
         {
           body: "Pricing and Info",
-          url: "/pricing-and-info/",
+          url: "https://safemode.com.au/pricing-and-info/",
         },
         {
           body: "Contact us",
-          url: "/contact/",
+          url: "https://safemode.com.au/contact/",
         },
         {
           body: "Frequently Asked Questions",
-          url: "/faq/",
+          url: "https://safemode.com.au/faq/",
         },
         {
           body: "Our Tech Blog",
-          url: "/blog/",
+          url: "https://safemode.com.au/blog/",
         },
         {
           body: "Terms of use",
-          url: "/terms/",
+          url: "https://safemode.com.au/terms/",
         },
         {
           body: "Privacy Policy",
-          url: "/privacy/",
+          url: "https://safemode.com.au/privacy/",
         },
       ],
     },
