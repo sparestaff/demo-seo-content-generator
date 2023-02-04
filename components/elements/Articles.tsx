@@ -64,7 +64,7 @@ const Articles = ({
               <Meta
                 title={
                   <Link href={item.link} className="">
-                    {item.desc}
+                    {item.title}
                   </Link>
                 }
                 description={item.desc}
