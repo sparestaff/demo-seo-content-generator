@@ -21,13 +21,14 @@ const HeroSectionWithLocation = ({
     <div className="bg-orange-50">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 justify-items-center sm:max-w-6xl sm:mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
         <div className="flex flex-col gap-5 text-center sm:text-left py-16">
-          <h1 className="text-4xl lg:text-5xl text-black font-bold ">
+          <h1 className="text-4xl lg:text-5xl text-black font-bold">
             {content1 ? (
               customParser({ customContent: content1, keyword, location })
             ) : (
-              <>
-                {camelCaseAll(keyword)} {camelCaseAll(location)}
-              </>
+              <span className="leading-tight">
+                {camelCaseAll(keyword)} {camelCaseAll(location)} Rated Best 3
+                Computer Repairs in Sydney from 2016 to 2023
+              </span>
             )}
           </h1>
           <p className="font-bold text-xl leading-8">
