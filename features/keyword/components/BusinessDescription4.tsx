@@ -24,7 +24,10 @@ const BusinessDescription4 = ({
             Our customers have given us a{" "}
             <span className="text-yellow-500">&#x2605;</span> rating {4.4} (187)
             rating on{" "}
-            <Link href="https://www.google.com/search?q=safemode+computer+service">
+            <Link
+              href="https://www.google.com/search?q=safemode+computer+service"
+              target={"_blank"}
+            >
               Google reviews
             </Link>{" "}
             and 4.9/5 on{" "}
@@ -32,6 +35,7 @@ const BusinessDescription4 = ({
               href={
                 "https://www.truelocal.com.au/business/safemode-computer-service/enmore"
               }
+              target={"_blank"}
             >
               True Local
             </Link>
