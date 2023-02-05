@@ -7,10 +7,12 @@ const MainFeedback = ({
   keyword,
   location,
   content,
+  reviewer,
 }: {
-  keyword: string | undefined;
-  location?: string | undefined;
-  content?: string | undefined;
+  keyword: string;
+  location?: string;
+  content?: string;
+  reviewer?: string;
 }) => {
   return (
     <div className="max-w-6xl mx-auto mb-20 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
@@ -29,7 +31,7 @@ const MainFeedback = ({
             comprehensive quote upfront and completed the job ahead of schedule.
             Very happy with the service they provided.`}
             <br />
-            <br />— Julie Davies
+            <br />— {reviewer}
           </p>
           <div className="flex gap-1 text-yellow-500 text-4xl">
             <AiFillStar />
