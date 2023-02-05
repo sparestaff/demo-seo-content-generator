@@ -102,12 +102,8 @@ const KeywordPillarPage = ({
         image={result?.image5}
       />
       <BusinessDescription4 keyword={keyword} content={result?.content20} />
-      <MainFeedback
-        keyword={keyword}
-        content={result?.content21}
-        reviewer={reviews[reviews.length - 1].reviewer}
-      />
-      <SubFeedback reviews={reviews.slice(0, reviews.length - 1)} />
+      <MainFeedback keyword={keyword} content={result?.content21} />
+      <SubFeedback reviews={reviews} />
       <Faq keyword={keyword} content={result?.content22} faqs={faqs} />
       <Articles keyword={keyword} content={result?.content23} />
       <ServiceAreas
