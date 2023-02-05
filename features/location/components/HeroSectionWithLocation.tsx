@@ -19,15 +19,14 @@ const HeroSectionWithLocation = ({
 }) => {
   return (
     <div className="bg-orange-50">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 justify-items-center sm:max-w-6xl sm:mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
+      <div className="grid sm:grid-cols-2 grid-cols-1 justify-items-center sm:max-w-6xl sm:mx-auto py-10 sm:py-0 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0 ">
         <div className="flex flex-col gap-5 text-center sm:text-left py-16">
           <h1 className="text-4xl lg:text-5xl text-black font-bold">
             {content1 ? (
               customParser({ customContent: content1, keyword, location })
             ) : (
               <span className="leading-tight">
-                {camelCaseAll(keyword)} {camelCaseAll(location)} Rated Best 3
-                Computer Repairs in Sydney from 2016 to 2023
+                {camelCaseAll(keyword)} {camelCaseAll(location)}
               </span>
             )}
           </h1>
@@ -54,7 +53,7 @@ const HeroSectionWithLocation = ({
             </Button>
           </div>
         </div>
-        <div>
+        <div className="self-end">
           <Image
             src={image || DEFAULT_LOCATION_IMAGE_1}
             alt={`Same day ${camelCaseAll(location)} ${camelCaseAll(keyword)}`}
