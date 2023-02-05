@@ -43,7 +43,7 @@ const HeroSection = ({
             </Button>
           </div>
         </div>
-        <div>
+        <div className="self-end">
           <Image
             src={image || DEFAULT_KEYWORD_IMAGE_1}
             alt={`Same day ${keyword} IT services`}
