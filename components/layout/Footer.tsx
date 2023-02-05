@@ -15,7 +15,7 @@ const Footer = () => {
         },
         {
           body: "Virus Spyware Removal",
-          url: "/virus-spyware-removal/",
+          url: "https://safemode.com.au/virus-spyware-removal/",
         },
         {
           body: "Computer Speed-up & Upgrades",
@@ -27,7 +27,7 @@ const Footer = () => {
         },
         {
           body: "Data Recovery",
-          url: "/data-recovery/",
+          url: "https://safemode.com.au/data-recovery/",
         },
       ],
     },

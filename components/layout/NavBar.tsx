@@ -43,7 +43,9 @@ const NavBar = () => {
         {
           key: "Virus Spyware Removal",
           label: (
-            <Link href="/virus-spyware-removal/">Virus Spyware Removal</Link>
+            <Link href="https://safemode.com.au/virus-spyware-removal/">
+              Virus Spyware Removal
+            </Link>
           ),
         },
         {
@@ -64,7 +66,11 @@ const NavBar = () => {
         },
         {
           key: "Data Recovery",
-          label: <Link href="/data-recovery/">Data Recovery</Link>,
+          label: (
+            <Link href="https://safemode.com.au/data-recovery/">
+              Data Recovery
+            </Link>
+          ),
         },
         {
           key: "Business-class Email Setup",
