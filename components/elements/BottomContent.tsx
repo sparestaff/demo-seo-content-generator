@@ -19,7 +19,7 @@ const BottomContent = ({
         max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0 pt-10 md:pt-5"
       >
         <div>
-          <h2 className="text-4xl md:text-5xl text-white font-bold text-center">
+          <p className="text-4xl md:text-5xl text-white font-bold text-center">
             <span className="leading-tight">
               {content
                 ? customParser({ customContent: content, keyword, location })
@@ -27,7 +27,7 @@ const BottomContent = ({
                     location ? ` in ${camelCaseAll(location)}` : ""
                   }?`}
             </span>
-          </h2>
+          </p>
           <div className="flex justify-center gap-3 md:gap-10 py-5 md:py-10">
             <Button
               type="primary"
