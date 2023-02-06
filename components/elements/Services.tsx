@@ -95,9 +95,9 @@ const Services = ({
             key={idx}
           >
             <span className="text-5xl text-seo-primary">{item.icon}</span>
-            <h4 className="text-black text-lg font-bold  pt-2 pb-1">
+            <p className="text-black text-lg font-bold  pt-2 pb-1">
               {item.title}
-            </h4>
+            </p>
             <p>{item.desc}</p>
           </div>
         ))}
