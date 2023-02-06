@@ -18,17 +18,17 @@ const SubFeedbackChild = ({ review }: { review: Review }) => {
     setShowMore: (showMore: boolean) => void;
   }) => {
     if (content.length <= wordLimit) {
-      return <p className="sm:h-32 md:h-44 lg:h-32">{content}</p>;
+      return <p className="sm:h-32 md:h-48 lg:h-36">{content}</p>;
     }
     return (
-      <p className="whitespace-pre-line sm:h-32 md:h-44 lg:h-32">
+      <p className="whitespace-pre-line h-auto">
         {showMore ? `${content} ` : `${content.slice(0, wordLimit)}... `}
-        <a
+        <span
           onClick={() => setShowMore(!showMore)}
           className="primary-font-color hover:underline"
         >
           read {showMore ? "less" : "more"}
-        </a>
+        </span>
       </p>
     );
   };
@@ -45,7 +45,7 @@ const SubFeedbackChild = ({ review }: { review: Review }) => {
       </span>
       {readMore({
         content: review.body,
-        wordLimit: 155,
+        wordLimit: 200,
         showMore,
         setShowMore,
       })}
