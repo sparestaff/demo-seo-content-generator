@@ -63,7 +63,7 @@ const Articles = ({
             >
               <Meta
                 title={
-                  <Link href={item.link} className="">
+                  <Link href={item.link} className="whitespace-pre-line">
                     {item.title}
                   </Link>
                 }

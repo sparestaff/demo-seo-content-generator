@@ -30,13 +30,14 @@ const HeroSectionWithLocation = ({
               </span>
             )}
           </h1>
-          <p className="font-bold text-xl leading-8">
+          <p className="text-xl leading-8">
             {content2 ? (
               customParser({ customContent: content2, keyword, location })
             ) : (
               <>
-                Same-day {camelCaseAll(keyword)} {camelCaseAll(location)}. Get a
-                Free quote on the spot.
+                We&apos;re rated in the best 3 {camelCaseAll(keyword)} from 2016
+                to 2022. Get a <span className="font-bold">FREE</span> quote
+                while you wait. Walk-in or book an appointment today.
               </>
             )}
             <br />
