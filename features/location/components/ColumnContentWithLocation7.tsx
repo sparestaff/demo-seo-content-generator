@@ -11,7 +11,7 @@ const ColumnContentWithLocation6 = ({
   return (
     <div className="max-w-6xl mx-auto py-10 md:py-15 px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h3 className="text-3xl text-black font-bold  text-center mb-5 md:mb-10">
-        About Safemode Computer Service
+        About [Your Company]
       </h3>
       <div className="flex sm:justify-between sm:flex-row flex-col sm:gap-20">
         <div className="grid grid-cols-1 w-full gap-5 sm:w-1/2 py-5 ">
@@ -42,7 +42,7 @@ const ColumnContentWithLocation6 = ({
           <div>
             Trust is an important factor when it comes to choosing a computer
             technician that you can trust. Thus, we have a long-established
-            computer shop for you to come and visit us. So you know that
+            workshop for you to come and visit us. So you know that
             we&apos;re always there when you need us.
           </div>
           <h4 className="text-black  font-bold text-xl md:text-2xl">

@@ -24,13 +24,13 @@ const HeroSection = ({
             <span className="leading-tight">
               {content1
                 ? customParser({ customContent: content1, keyword })
-                : `Rated Best 3 ${camelCaseAll(keyword)}`}
+                : `Top Rated ${camelCaseAll(keyword)}`}
             </span>
           </h1>
-          <p className="font-bold text-xl leading-8">
+          <p className="text-xl leading-8">
             {content2
               ? customParser({ customContent: content2, keyword })
-              : `Award-winning, same-day ${keyword} since 2004.`}
+              : `Award-winning, high-quality ${keyword} services since 2010. Call us Now for a FREE consultation.`}
             <br />
           </p>
           <div>
@@ -39,7 +39,7 @@ const HeroSection = ({
               size="large"
               shape="round"
               className="h-14 text-xl mt-5"
-              href="https://safemode.com.au/quote/"
+              href="https://safemode.com.au/web-app/#WebToolContactForm"
             >
               <span className="mt-1.5 ">Get a Quick Quote</span>
             </Button>

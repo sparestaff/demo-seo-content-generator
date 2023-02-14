@@ -22,10 +22,10 @@ const BusinessDescription = ({
       <p className="py-5 w-4/5 mx-auto">
         {content2
           ? customParser({ customContent: content2, keyword, location })
-          : `Safemode Computer Service is your trusted ${keyword}
-        and IT services in Sydney. Our computer technicians have fixed thousands
-        of problems on PC computers, Apple Mac for home and small businesses.
-        That's why 9.4/10 customers recommend Safemode Computer Service to
+          : `[Your Company] is your trusted ${keyword}
+        in Sydney. Our experienced ${keyword} experts have helped thousands
+        of home and business customers, from small to large projects.
+        That's why 9.4/10 customers recommend [Your Company] to
         their friends and family.`}
       </p>
       <div>

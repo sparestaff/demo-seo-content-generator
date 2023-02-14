@@ -16,9 +16,9 @@ const ColumnContentWithLocation3 = ({
             How long does it take?
           </h3>
           <div>
-            A quote is given on the spot while you wait. After you&apos;ve
+            A quote will be given within 1-2 business days. After you&apos;ve
             approved our quote, we will commence work immediately. We carry
-            stock for common spare parts to complete most {keyword} on the same
+            stock for common parts, material to complete most {keyword} on the same
             day. If a part is out of stock, it will need to be ordered in which
             takes 2-5 business days (standard postage) or 1-2 business days
             (express postage) to arrive.

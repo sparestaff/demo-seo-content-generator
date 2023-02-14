@@ -15,8 +15,8 @@ const BusinessDescriptionWithLocation3 = ({
       </h3>
       <p className="py-5 w-4/5 mx-auto">
         After thousands of completed {keyword} services in {location} and
-        40,000+ services overall, done by our own in-house technicians,
-        we&apos;re experienced with most computer and IT problems. If we are not
+        40,000+ services overall, done by our own in-house experts,
+        we&apos;re experienced with most {keyword} problems. If we are not
         the best people to assist you, we&apos;ll be happy to refer you to
         someone who can.
       </p>

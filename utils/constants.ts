@@ -1,6 +1,6 @@
 // Mutual images
 export const SAFEMODE_LOGO =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1673864129/seo-content-generator-mvp/safemode-logo.webp";
+  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1676291482/seo-content-generator-mvp/demo-logo_l9sp64.svg";
 export const BEST_COMPUTER_ONE =
   "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2019.webp";
 export const BEST_COMPUTER_TWO =
@@ -12,7 +12,7 @@ export const BEST_COMPUTER_FOUR =
 export const BEST_COMPUTER_FIVE =
   "https://safemode.com.au/wp-content/uploads/2022/11/Best-Sydney-Computer-Repair-Award-2022.webp";
 export const DEFAULT_KEYWORD_IMAGE_1 =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1675043329/seo-content-generator-mvp/same-day-computer-repairs-it-services-32-800x781_yn7ct1_m99flu.webp";
+  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1676289374/seo-content-generator-mvp/demo-banner_ckt5jj.webp";
 export const DEFAULT_KEYWORD_IMAGE_2 =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674776894/seo-content-generator-mvp/how-to-use-our-computer-repair-services-800x800_a7nzce.webp";
 export const DEFAULT_KEYWORD_IMAGE_3 =
@@ -22,7 +22,7 @@ export const DEFAULT_KEYWORD_IMAGE_4 =
 export const DEFAULT_KEYWORD_IMAGE_5 =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674623728/seo-content-generator-mvp/safemode-computer-repairs-differences_mozxi4.webp";
 export const DEFAULT_LOCATION_IMAGE_1 =
-  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674780101/seo-content-generator-mvp/same-day-computer-repairs-it-services-27-800x781_m3tmde.webp";
+  "https://res.cloudinary.com/dn9dk0tls/image/upload/v1676290514/seo-content-generator-mvp/demo-banner-1_b7c8uo.webp";
 export const DEFAULT_LOCATION_IMAGE_2 =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1674776894/seo-content-generator-mvp/how-to-use-our-computer-repair-services-800x800_a7nzce.webp";
 export const DEFAULT_LOCATION_IMAGE_3 =

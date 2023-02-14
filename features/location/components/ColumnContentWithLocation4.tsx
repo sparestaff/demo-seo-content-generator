@@ -19,8 +19,8 @@ const ColumnContentWithLocation4 = ({
           </h4>
           <p>
             By providing {keyword} at both customer&apos;s home / office in{" "}
-            {camelCaseAll(location)} and in our workshop, our computer
-            technicians are experienced with {keyword} plus many other computer
+            {camelCaseAll(location)} and in our workshop, our service
+            team are experienced with {keyword} plus many other computer
             IT support for home and small businesses: email support such as
             Office 365, Google Workspace email support; office networking setup;
             system downgrade and upgrade; data backup and security; business
@@ -35,7 +35,7 @@ const ColumnContentWithLocation4 = ({
           <p>
             Providing {keyword} doesn&apos;t end after money is transacted. Most
             customers have questions that need answers after getting their
-            computers serviced. We understand that pre and after-sales support
+            services. We understand that pre and after-sales support
             is an integral part of our business. Thus, our{" "}
             {camelCaseAll(location)} friendly technicians are happy to assist
             you further <span className=" font-bold">free of charge</span>{" "}
