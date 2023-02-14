@@ -30,15 +30,15 @@ const ColumnContentWithLocation2 = ({
         </h3>
         <div>
           The price varies depending what&apos;s required for your {keyword},
-          make and model of your computer. We can also tailor a quote for each
+          project. We can also tailor a quote for each
           customer in {camelCaseAll(location)} according to individual needs.{" "}
           <br />
           <br />
-          Generally if your computer has software issue (i.e. virus), it may
-          cost $100-$200. If your computer has hardware issue (i.e. broken
-          screen), it will incur cost for labour and spare part which varies
-          $200-$400+. Some high-end parts may cost $1,000+. The more expensive
-          your computer is, the more expensive it costs to repair.
+          Generally if your project is one-off that involves minor work, it may
+          cost $100-$200. If the work requires additional materials, parts for
+          installation, it will incur cost for labour and the material which varies
+          $200-$400+. Some high-end parts may cost $1,000+. Our experienced
+          service team will be able to provide you with an estimate after the initial consultation.
           <br />
           <br /> The prices are generic indicators and should be used as a guide
           only. This information does not constitute a fixed quote.

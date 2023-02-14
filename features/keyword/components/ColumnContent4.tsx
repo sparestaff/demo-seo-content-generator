@@ -46,12 +46,12 @@ const ColumnContent4 = ({
                 make the difference.
                 <br />
                 <br />
-                We&apos;ve worked diligently to build efficient in-house testing
-                systems, a network of trusted suppliers, and {keyword} processes
+                We&apos;ve worked diligently to build efficient in-house service
+                team, a network of trusted suppliers, and {keyword} processes
                 for maximum results and customer satisfaction. Through years of
                 practice, persistence in maintaining excellence in workmanship,
                 we&apos;ve fine-tuned our services to ensure our customers leave
-                happy knowing their computers are in good hands.
+                happy knowing they are in good hands.
               </>
             )}
           </div>

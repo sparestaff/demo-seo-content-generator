@@ -23,9 +23,9 @@ const BusinessDescription = ({
       <p className="py-5 w-4/5 mx-auto">
         {content4
           ? customParser({ customContent: content4, keyword, location })
-          : `Safemode Computer Service specialises in ${keyword} services for both Microsoft Windows and Apple Mac computers, personal home computers and business computers. Since 2004, we have been providing ${keyword} services for thousands of customers in ${camelCaseAll(
+          : `[Your Company] in ${keyword} services for both home and businesses, small to large projects. Since 2010, we have been providing ${keyword} services for thousands of customers in ${camelCaseAll(
               String(location)
-            )}. That's why 9.4/10 customers recommend Safemode Computer Service to their friends and family.`}
+            )}. That's why 9.4/10 customers recommend [Your Company] to their friends and family.`}
       </p>
       <div>
         <Button

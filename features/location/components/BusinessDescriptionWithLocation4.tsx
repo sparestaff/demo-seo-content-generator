@@ -12,7 +12,7 @@ const BusinessDescriptionWithLocation4 = ({
   return (
     <div className="text-center pb-20 max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h3 className="text-3xl text-black font-bold ">
-        Customers highly recommend Safemode for {camelCaseAll(location)}{" "}
+        Customers highly recommend [Your Company] for {camelCaseAll(location)}{" "}
         {keyword}
       </h3>
       <p className="py-5">

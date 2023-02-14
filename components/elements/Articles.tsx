@@ -43,12 +43,12 @@ const Articles = ({
   return (
     <div className="max-w-6xl mx-auto px-5 sm:px-5 md:px-5 lg:px-5 xl:px-0">
       <h4 className="text-black text-center font-bold text-3xl py-5">
-        Our top computer tips and tricks
+        Our top {keyword} tips and tricks
       </h4>
       <p className="text-center">
         {content
           ? customParser({ customContent: content, keyword, location })
-          : "Read our best tips and tricks on everything from computer tuneup to how to DIY upgrade your own computer."}
+          : "Read our best tips and tricks on everything from how to DIY repairs to getting the best bang for your buck."}
       </p>
       <div className="py-10">
         <Slider sm={1} md={2} lg={3} xl={3}>

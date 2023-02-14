@@ -37,9 +37,8 @@ const HeroSectionWithLocation = ({
               customParser({ customContent: content2, keyword, location })
             ) : (
               <>
-                We&apos;re rated in the best 3 {camelCaseAll(keyword)} from 2016
-                to 2022. Get a <span className="font-bold">FREE</span> quote
-                while you wait. Walk-in or book an appointment today.
+                Award-wining {camelCaseAll(keyword)}. Servicing {camelCaseAll(location)} since 
+                2010. Book your <span className="font-bold">FREE</span> consultation Now.
               </>
             )}
             <br />

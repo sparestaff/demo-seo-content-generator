@@ -32,7 +32,7 @@ const ServiceAreas = ({
             : `Find ${keyword} in your area`}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 py-10 gap-5">
-          {regions?.length
+          {/* {regions?.length
             ? regions.map((item, idx) => (
                 <Link
                   key={idx}
@@ -57,7 +57,48 @@ const ServiceAreas = ({
                   {keyword} {camelCaseAll(location)}
                 </Link>
               ))
-            : null}
+                  : null} */}
+            { // used ChatGPT to hard-code regions and cities
+            [
+              { region: "sydney" },
+              { region: "melbourne" },
+              { region: "brisbane" },
+              { region: "adelaide" },
+              { region: "perth" }
+            ].map((item, idx) => (
+              <Link
+                key={idx}
+                href={`/${keyword?.replace(/ /g, "-")}/${item.region.replace(
+                  / /g,
+                  "-"
+                )}`}
+              >
+                {keyword} {camelCaseAll(item.region)}
+              </Link>
+            ))}
+            {[
+              "parramatta",
+              "liverpool",
+              "penrith",
+              "campbelltown",
+              "blacktown",
+              "castle hill",
+              "hornsby",
+              "chatswood",
+              "bankstown",
+              "strathfield",
+              "canterbury",
+            ].map((location, idx) => (
+              <Link
+                key={idx}
+                href={`/${keyword?.replace(/ /g, "-")}/${location.replace(
+                  / /g,
+                  "-"
+                )}`}
+              >
+                {keyword} {camelCaseAll(location)}
+              </Link>
+            ))}            
         </div>
       </div>
     </div>

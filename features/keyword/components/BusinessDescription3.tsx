@@ -31,8 +31,8 @@ const BusinessDescription3 = ({
           : location
           ? `After thousands of completed ${keyword} services in ${camelCaseAll(
               location
-            )} and 40,000+ services overall, done by our own in-house technicians, we're experienced with most computer and IT problems. If we are not the best people to assist you, we'll be happy to refer you to someone who can.`
-          : "After 40,000 repairs completed, done by our own in-house technicians, we know computers inside out."}
+            )} and 40,000+ services overall, done by our own in-house experts, we're experienced with every ${keyword} problems. If we are not the best people to assist you, we'll be happy to refer you to someone who can.`
+          : `After 40,000 services completed, done by our own in-house experts, we know how to do ${keyword} for almost every customer.`}
       </p>
       <div>
         <Button

@@ -14,14 +14,14 @@ const Header = ({
     <Head>
       <title>{`Same-day ${keyword && keyword}${
         location ? " " + camelCaseAll(location) : ""
-      }. Rated Best 3 in ${currentYear} - Safemode`}</title>
+      }. Top Rated Services in ${currentYear} - Your Company`}</title>
       <meta name="description" content="Developed by Safemode" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta
         name="title"
         content={`Same-day ${keyword && keyword}${
           location ? " " + camelCaseAll(location) : ""
-        }. Rated Best 3 in ${currentYear} - Safemode`}
+        }. Top Rated Services in ${currentYear} - Your Company`}
       />
       <meta
         property="og:title"
@@ -29,15 +29,15 @@ const Header = ({
       />
       <meta
         name="description"
-        content={`Safemode is rated Best 3 from 2016 to ${currentYear} for ${keyword}${
+        content={`Your company is top rated in Australia from 2010 to ${currentYear} for ${keyword}${
           location ? " " + camelCaseAll(location) : ""
-        }. PC, laptop, Apple Mac, data recovery, water damage repairs. Call Now for Free quote.`}
+        }. Award-wining, same-day services. Call Now for Free quote.`}
       />
       <meta
         property="og:description"
-        content={`Safemode is rated Best 3 from 2016 to ${currentYear} for ${keyword}${
+        content={`Your company is top rated in Australia from 2010 to ${currentYear} for ${keyword}${
           location ? " " + camelCaseAll(location) : ""
-        }. PC, laptop, Apple Mac, data recovery, water damage repairs. Call Now for Free quote.`}
+        }. Award-wining, same-day services. Call Now for Free quote.`}
       />
       <link
         rel="icon"

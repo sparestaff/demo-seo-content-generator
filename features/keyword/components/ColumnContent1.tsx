@@ -44,7 +44,7 @@ const ColumnContent1 = ({
                 <Link href="https://safemode.com.au/book-appointment/">
                   online booking
                 </Link>{" "}
-                to schedule an appointment. Walk-in is also accepted.
+                to schedule an appointment. Or, simply give us a call.
               </>
             )}
           </div>
@@ -57,9 +57,8 @@ const ColumnContent1 = ({
             ) : (
               <>
                 Our {location && camelCaseAll(location) + " "}
-                {keyword} technicians give you a quote for repairs (
-                <span className="font-bold ">FREE</span> quote) and estimated
-                completion date.
+                {keyword} team will provide an initial consultation for 
+                total costs and estimated completion date.
               </>
             )}
           </div>
@@ -84,8 +83,8 @@ const ColumnContent1 = ({
               customParser({ customContent: content5, keyword, location })
             ) : (
               <>
-                If the quote is approved, we&apos;ll fix your computer and
-                notify you when it&apos;s ready. Our work comes with{" "}
+                If the quote is approved, we&apos;ll proceed with the work and
+                keep you updated every step along the way. Our work comes with{" "}
                 <Link href="https://safemode.com.au/our-guarantees/">
                   guarantees
                 </Link>
