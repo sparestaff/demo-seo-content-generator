@@ -2,15 +2,15 @@
 export const SAFEMODE_LOGO =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1676291482/seo-content-generator-mvp/demo-logo_l9sp64.svg";
 export const BEST_COMPUTER_ONE =
-  "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2019.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/02/demo-award-2019.webp";
 export const BEST_COMPUTER_TWO =
-  "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2020.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/02/demo-award-2020.webp";
 export const BEST_COMPUTER_THREE =
-  "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2021.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/02/demo-award-2021.webp";
 export const BEST_COMPUTER_FOUR =
-  "https://safemode.com.au/wp-content/uploads/2023/01/three-best-rated-2022.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/02/demo-award-2022.webp";
 export const BEST_COMPUTER_FIVE =
-  "https://safemode.com.au/wp-content/uploads/2022/11/Best-Sydney-Computer-Repair-Award-2022.webp";
+  "https://safemode.com.au/wp-content/uploads/2023/02/Sydney-Award-1.webp";
 export const DEFAULT_KEYWORD_IMAGE_1 =
   "https://res.cloudinary.com/dn9dk0tls/image/upload/v1676289374/seo-content-generator-mvp/demo-banner_ckt5jj.webp";
 export const DEFAULT_KEYWORD_IMAGE_2 =
