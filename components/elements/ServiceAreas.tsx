@@ -62,9 +62,9 @@ const ServiceAreas = ({
             [
               { region: "sydney" },
               { region: "melbourne" },
-              { region: "brisbane" },
-              { region: "adelaide" },
-              { region: "perth" }
+              { region: "inner west sydney" },
+              { region: "lower north shore sydney" },
+              { region: "western sydney" }
             ].map((item, idx) => (
               <Link
                 key={idx}
