@@ -65,7 +65,7 @@ const Services = ({
       title: "Proud to be Aussie-owned",
       desc: (
         <>
-          We're proud to be an Australian owned and operated company supporting Australian families.
+          We are proud to be an Australian owned and operated company supporting Australian families.
         </>
       ),
     },
