@@ -30,7 +30,7 @@ const HeroSection = ({
           <p className="text-xl leading-8">
             {content2
               ? customParser({ customContent: content2, keyword })
-              : `Award-winning, high-quality ${keyword} services since 2010. Call us Now for a FREE consultation.`}
+              : `Award-winning, high-quality ${keyword} since 2010. Call us Now for a FREE consultation.`}
             <br />
           </p>
           <div>
