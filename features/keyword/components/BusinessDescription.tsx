@@ -17,7 +17,7 @@ const BusinessDescription = ({
       <h2 className="text-3xl text-black font-bold ">
         {content1
           ? customParser({ customContent: content1, keyword, location })
-          : `Top rated ${keyword} since 2004`}
+          : `Top rated ${keyword} since 2010`}
       </h2>
       <p className="py-5 w-4/5 mx-auto">
         {content2

@@ -18,7 +18,7 @@ const BusinessDescription = ({
       <h3 className="text-3xl text-black font-bold ">
         {content3
           ? customParser({ customContent: content3, keyword, location })
-          : `Quality ${camelCaseAll(String(location))} ${keyword} since 2004`}
+          : `Quality ${camelCaseAll(String(location))} ${keyword} since 2010`}
       </h3>
       <p className="py-5 w-4/5 mx-auto">
         {content4
