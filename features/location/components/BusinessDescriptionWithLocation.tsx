@@ -23,7 +23,7 @@ const BusinessDescription = ({
       <p className="py-5 w-4/5 mx-auto">
         {content4
           ? customParser({ customContent: content4, keyword, location })
-          : `[Your Company] in ${keyword} services for both home and businesses, small to large projects. Since 2010, we have been providing ${keyword} services for thousands of customers in ${camelCaseAll(
+          : `[Your Company] is a long-established ${keyword} experts for both home and businesses, small to large projects. Since 2010, we have been providing ${keyword} services for thousands of customers in ${camelCaseAll(
               String(location)
             )}. That's why 9.4/10 customers recommend [Your Company] to their friends and family.`}
       </p>
